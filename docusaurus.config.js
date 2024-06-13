@@ -73,28 +73,57 @@ const config = {
           src: 'img/logo_icon.png',
         },
         items: [
+
+          // Projects
           {to: '/projects', label: 'Projects', position: 'left'},
+
+          // Tutorials
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorials',
           },
+
+          // Events (Engage)
+          {
+            href: 'https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub/events',
+            position: 'left',
+            label: 'Events',
+          },
+
+          // News (Engage)
           {
             href: 'https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub/news',
             position: 'left',
             label: 'News',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+        
+          // Github
           {
             href: 'https://github.com/UMLCloudComputing',
+            'aria-label': 'GitHub',
+            className: 'navbar__icon navbar__github',
             position: 'right',
-            className: "header-github-link",
-            "aria-label": "GitHub repository",
+            html: '<i class="fa fa-github"></i>',
           },
           {
             href: 'https://github.com/UMLCloudComputing',
             label: 'GitHub',
+            position: 'right',
+          },
+
+          // Discord
+          {
+            href: 'https://discord.gg/WC2NdqYtDt',
+            label: 'Discord',
+            position: 'right',
+          },
+
+          // LinkedIn
+          {
+            href: 'https://www.linkedin.com/company/umass-lowell-cloud-computing-club/',
+            label: 'LinkedIn',
             position: 'right',
           },
         ],
