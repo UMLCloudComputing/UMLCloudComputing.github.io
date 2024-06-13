@@ -9,8 +9,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'UML Cloud Computing Club',
-  tagline: 'The UMass Lowell Cloud Computing Club.',
-  favicon: 'img/favicon.ico',
+  tagline: 'Exploring Cloud Computing at UMass Lowell',
+  favicon: 'img/logo_icon.png',
 
   // Set the production url of your site here
   url: 'https://UMLCloudComputing.github.io',
@@ -45,15 +45,15 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/UMLCloudComputing/UMLCloudComputing.github.io/edit/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     'https://github.com/UMLCloudComputing/UMLCloudComputing.github.io/edit/main/',
+        // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -65,23 +65,35 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/logo_icon.png',
       navbar: {
-        title: 'My Site',
+        title: 'UML Cloud Computing Club',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'UML Cloud Computing Club Logo',
+          src: 'img/logo_icon.png',
         },
         items: [
+          {to: '/projects', label: 'Projects', position: 'left'},
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Tutorials',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub/news',
+            position: 'left',
+            label: 'News',
+          },
+          // {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://github.com/UMLCloudComputing',
+            position: 'right',
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
+          },
+          {
+            href: 'https://github.com/UMLCloudComputing',
             label: 'GitHub',
             position: 'right',
           },
@@ -91,7 +103,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Tutorials',
             items: [
               {
                 label: 'Tutorial',
@@ -103,16 +115,20 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/WC2NdqYtDt',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'UML Engage',
+                href: 'https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/UMLCloudComputing',
+              },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/umass-lowell-cloud-computing-club/',
               },
             ],
           },
@@ -120,17 +136,13 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'News',
+                to: 'https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub/news',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} UMass Lowell Cloud Computing Club`,
       },
       prism: {
         theme: prismThemes.github,
