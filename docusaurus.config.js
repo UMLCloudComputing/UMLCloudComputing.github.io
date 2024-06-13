@@ -140,7 +140,7 @@ const config = {
               },
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/welcome',
               },
             ],
           },
