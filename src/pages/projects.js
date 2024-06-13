@@ -9,21 +9,7 @@ export default function Projects() {
                 <div className="row">
                     <div className="col col--12">
                         <h1>Courses</h1>
-                        <p>Welcome to the UML Cloud Computing Club Courses page. Below are the courses available:</p>
-                        <ul>
-                            <li>
-                                <Link to="/docs/intro">Introduction to Cloud Computing</Link>
-                            </li>
-                            <li>
-                                <Link to="/docs/intro">Advanced Cloud Computing</Link>
-                            </li>
-                            <li>
-                                <Link to="/docs/intro">AWS Essentials</Link>
-                            </li>
-                            <li>
-                                <Link to="/docs/intro">Docker and Containerization</Link>
-                            </li>
-                        </ul>
+                        <p>Welcome to the UML Cloud Computing Club Courses page. This page will be updated with our projects and their documentation.</p>
                     </div>
                 </div>
             </div>

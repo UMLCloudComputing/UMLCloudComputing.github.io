@@ -132,8 +132,12 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Tutorials',
+            title: 'Home',
             items: [
+              {
+                label: 'Projects',
+                to: '/projects',
+              },
               {
                 label: 'Tutorial',
                 to: '/docs/intro',
