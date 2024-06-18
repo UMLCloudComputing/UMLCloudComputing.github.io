@@ -29,9 +29,11 @@ The club is open to all UMass Lowell students, faculty, and staff. To become a m
 ### Our Projects
 
 We work on a variety of projects that cover different aspects of cloud computing:
-- **UniPath.io**: A full-stack web application that helps users create, plan, and share their class schedules.
+- **UniPath.io**: A full-stack web application that helps users create, plan, and share their class schedules. 📆
 - **AWS Essentials**: Practical sessions on using AWS services for real-world applications.
 - **Docker Containerization**: Hands-on experience with Docker and containerization technologies.
+- **Rowdybot**: A practical discord bot that can provide general advising about UMass Lowell and it's curriculum. 🤖
+
 
 ## Get Involved
 

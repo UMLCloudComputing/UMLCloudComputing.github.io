@@ -39,11 +39,10 @@ const config = {
 
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
+      '@docusaurus/preset-classic',
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: 'sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -63,6 +62,19 @@ const config = {
     ],
   ],
 
+  // plugins: [
+  //   [
+  //     '@docusaurus/plugin-content-docs',
+  //     {
+  //       id: 'projects',
+  //       path: './projects',
+  //       routeBasePath: './projects',
+  //       sidebarPath: 'projectsSidebars.js',
+  //     },
+  //   ],
+  // ],
+
+ 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -77,7 +89,12 @@ const config = {
         items: [
 
           // Projects
-          {to: '/projects', label: 'Projects', position: 'left'},
+          {
+            type: 'docSidebar',
+            sidebarId: 'projectSidebar',
+            position: 'left',
+            label: 'Projects',
+          },
 
           // Tutorials
           {
@@ -138,11 +155,11 @@ const config = {
             items: [
               {
                 label: 'Projects',
-                to: '/projects',
+                to: '/docs/projects/welcome',
               },
               {
                 label: 'Tutorial',
-                to: '/docs/welcome',
+                to: '/docs/tutorials/welcome',
               },
             ],
           },

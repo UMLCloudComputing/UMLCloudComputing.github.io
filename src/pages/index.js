@@ -56,7 +56,7 @@ function HomepageHeader() {
                         size="large"
                         sx={{ mt: 4 }}
                         component={RouterLink}
-                        to="/docs/welcome"
+                        to="docs/tutorials/welcome"
                     >
                         Explore Tutorials
                     </Button>
@@ -66,7 +66,7 @@ function HomepageHeader() {
                         size="large"
                         sx={{ mt: 2, ml: 2 }}
                         component={RouterLink}
-                        to="/projects"
+                        to="docs/projects/welcome"
                     >
                         View Projects
                     </Button>
