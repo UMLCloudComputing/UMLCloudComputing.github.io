@@ -56,6 +56,12 @@ html[data-theme='dark'] .navbar__github {
   color: #fff;
 }
 
+footer {
+  align-items: center;
+  text-align: center;
+  border-radius: 16px 16px 0px 0px;
+}
+
 .navbar__github:hover {
   background: var(--ifm-color-emphasis-200);
 }
