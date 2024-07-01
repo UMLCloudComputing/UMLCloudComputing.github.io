@@ -1,6 +1,6 @@
 
 // React
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { useColorMode } from '@docusaurus/theme-common';
@@ -14,6 +14,8 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Unstable_Grid2';
 import Paper from '@mui/material/Paper';
+import SchoolIcon from '@mui/icons-material/School';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 
 // Local
 import Layout from '@theme/Layout';
@@ -22,25 +24,39 @@ function HomepageHeader() {
     const { siteConfig } = useDocusaurusContext();
     const { colorMode } = useColorMode();
     const isDarkMode = colorMode === 'dark';
+    
+    const [gradientAngle, setGradientAngle] = useState(0); // Initial gradient angle
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+          setGradientAngle((prevAngle) => (prevAngle + 0.2));
+        }, 30); // Change image every 15 seconds
+    
+        return () => clearInterval(intervalId); // Cleanup interval on component unmount
+    }, []);
 
     return (
         <Box
             component="header"
             sx={{
-                backgroundImage: `url('/img/logo_icon.png')`,
+                // backgroundImage: `url(${images[currentImageIndex]})`,
+                backgroundImage: isDarkMode ? `linear-gradient(${gradientAngle}deg, #534666, #CD7672)` : `linear-gradient(${gradientAngle}deg, #9dcbfc, white)`,
+                borderRadius: '16px',
+                filter: isDarkMode ? 'drop-shadow(0 0.4rem 0.3rem rgba(123, 123, 123, 0.5))' : 'drop-shadow(0 0.4rem 0.3rem rgba(0,0,0,0.5))',
+                transition: 'background-image 0.5s ease', // smooth transition 
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 color: 'white',
                 textAlign: 'center',
                 py: 10,
-                bgcolor: isDarkMode ? 'grey.900' : 'primary.main',
+                // bgcolor: isDarkMode ? 'grey.900' : 'primary.main',
             }}
         >
             <Container maxWidth="md">
-                <Typography variant="h1" component="h1" className="animate__animated animate__fadeInDown">
+                <Typography variant="h1" component="h1" className="animate__animated animate__fadeInDown" color={isDarkMode ? 'white' : '#707070'}>
                     {siteConfig.title}
                 </Typography>
-                <Typography variant="h5" component="p" sx={{ mt: 2 }} className="animate__animated animate__fadeInUp">
+                <Typography variant="h5" component="p" sx={{ mt: 2 }} className="animate__animated animate__fadeInUp" color={isDarkMode ? 'white' : '#707070'}>
                     {siteConfig.tagline}
                 </Typography>
                 <Stack
@@ -52,21 +68,23 @@ function HomepageHeader() {
                 >
                     <Button
                         variant="contained"
-                        color="primary"
-                        size="large"
+                        size="large"z
                         sx={{ mt: 4 }}
+                        color='primary'
                         component={RouterLink}
                         to="docs/tutorials/welcome"
+                        startIcon={<SchoolIcon/>}
                     >
                         Explore Tutorials
                     </Button>
                     <Button
-                        variant="outlined"
-                        color="primary"
+                        variant="contained"
                         size="large"
-                        sx={{ mt: 2, ml: 2 }}
+                        sx={{ mt: 2, ml: 2, }}
+                        color='primary'
                         component={RouterLink}
                         to="docs/projects/welcome"
+                        endIcon={<AutoStoriesIcon/>}
                     >
                         View Projects
                     </Button>
@@ -85,6 +103,7 @@ const PaperCard = ({ children, isDarkMode }) => (
             bgcolor: isDarkMode ? 'grey.800' : 'background.paper',
             color: isDarkMode ? 'white' : 'text.primary',
             height: '100%',
+            borderRadius: '16px',
         }}
     >
         {children}
