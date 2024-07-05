@@ -1,5 +1,5 @@
 # Author: Gurpreet Singh
-# Date: 6/27/2024
+# Date: 7/1/2024
 # Copyright 2024
 # Property of UML Cloud Computing Club
 
@@ -85,6 +85,7 @@ if __name__== "__main__":
     log_verbose_group.add_argument('--logging', action="store_true", help="Enable logging to a file")
     args = parser.parse_args()
 
+    # Manual mutually exclusive arugment checking because argparse cannot do this natively
     if args.filename and (args.username or args.policy_group):
         print("--filename and --username|--policy_group are mutually exclusive arguments")
         if (args.logging):
@@ -102,7 +103,6 @@ if __name__== "__main__":
         if (args.logging):
             logger.error("Invalid runtime argument combination (p!u)") 
         sys.exit(2)
-
 
 
     password = DEFAULT_PASSWORD if args.use_default_pswd else None

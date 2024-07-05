@@ -80,6 +80,9 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/logo_icon.png',
+      colorMode: {
+        respectPrefersColorScheme: true,
+      },
       navbar: {
         title: 'UML Cloud Computing Club',
         logo: {
@@ -143,6 +146,12 @@ const config = {
           {
             href: 'https://www.linkedin.com/company/umass-lowell-cloud-computing-club/',
             label: 'LinkedIn',
+            position: 'right',
+          },
+
+          // Sign In
+          {
+            type: 'custom-accountButton',
             position: 'right',
           },
         ],
