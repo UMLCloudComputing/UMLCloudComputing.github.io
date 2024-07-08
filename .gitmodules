@@ -1,0 +1,6 @@
+[submodule "rowdybot"]
+	path = rowdybot
+	url = git@github.com:UMLCloudComputing/rowdybot.git
+[submodule "UniPath.io"]
+	path = UniPath.io
+	url = git@github.com:UMLCloudComputing/UniPath.io.git
