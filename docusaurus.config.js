@@ -91,6 +91,13 @@ const config = {
         },
         items: [
 
+          // Schedule
+          {
+            position: 'left',
+            label: 'Schedule',
+            to: '/docs/Meeting Schedule',
+          },
+
           // Projects
           {
             type: 'docSidebar',
@@ -119,6 +126,13 @@ const config = {
             href: 'https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub/news',
             position: 'left',
             label: 'News',
+          },
+
+          // FAQ
+          {
+            position: 'left',
+            label: 'FAQ',
+            to: '/docs/Getting Started and FAQ',
           },
         
           // Github
