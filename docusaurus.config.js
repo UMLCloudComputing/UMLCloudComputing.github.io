@@ -178,11 +178,11 @@ const config = {
             items: [
               {
                 label: 'Projects',
-                to: '/docs/projects/welcome',
+                to: '/docs/projects/Welcome',
               },
               {
                 label: 'Tutorial',
-                to: '/docs/tutorials/welcome',
+                to: '/docs/tutorials/Welcome',
               },
             ],
           },

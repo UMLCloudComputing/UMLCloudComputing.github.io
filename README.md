@@ -1,6 +1,6 @@
 <div align="center">
     <a href="https://cloudcomputingclub.cs.uml.edu/">
-        <img src="./club-logo.png" alt="Logo" width="50%" height="50%">
+        <img src="./club-logo.png" alt="Logo" width="50%" height="50%"/>
     </a>
     <hr>
     <h1>The UML Cloud Computing Club Website</h1>
