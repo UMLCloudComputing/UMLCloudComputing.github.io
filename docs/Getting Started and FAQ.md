@@ -11,7 +11,7 @@ If you're interested in getting involved with our club, the best way to start is
 
 Feel free to reach out to our club leaders for more information. We look forward to seeing you!
 
-## Frequently Asked Questions (FAQ)
+## 💬 Frequently Asked Questions (FAQ)
 
 #### Q: Who can join the UMass Lowell Cloud Computing Club?
 **A**: The club is open to all UMass Lowell students, faculty, and staff, regardless of their experience level with cloud computing.

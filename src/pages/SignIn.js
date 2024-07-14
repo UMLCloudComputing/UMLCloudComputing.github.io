@@ -166,9 +166,11 @@ export default function SignIn() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  // IMPORTANT TO-DO: When the handle submit functionality is implemented, make sure to change the variant type of this button to text instead of disabled
+  // Again, only when sign in works via backend!
   return (
     <div>
-      <Button variant='text' onClick={handleOpen} startIcon={ <LoginIcon /> }>Sign In</Button>
+      <Button variant='disabled' onClick={handleOpen} startIcon={ <LoginIcon /> }>Sign In</Button>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
