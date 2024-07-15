@@ -29,8 +29,8 @@ function HomepageHeader() {
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-          setGradientAngle((prevAngle) => (prevAngle + 0.2));
-        }, 30); // Change image every 15 seconds
+          setGradientAngle((prevAngle) => (prevAngle + 0.6));
+        }, 30); // Change angle every 30 milliseconds
     
         return () => clearInterval(intervalId); // Cleanup interval on component unmount
     }, []);
@@ -40,7 +40,7 @@ function HomepageHeader() {
             component="header"
             sx={{
                 // backgroundImage: `url(${images[currentImageIndex]})`,
-                backgroundImage: isDarkMode ? `linear-gradient(${gradientAngle}deg, #534666, #CD7672)` : `linear-gradient(${gradientAngle}deg, #9dcbfc, white)`,
+                backgroundImage: isDarkMode ? `linear-gradient(${gradientAngle}deg, #7b5caa, #CD7672)` : `linear-gradient(${gradientAngle}deg, #9dcbfc, white)`,
                 borderRadius: '16px',
                 filter: isDarkMode ? 'drop-shadow(0 0.4rem 0.3rem rgba(123, 123, 123, 0.5))' : 'drop-shadow(0 0.4rem 0.3rem rgba(0,0,0,0.5))',
                 transition: 'background-image 0.5s ease', // smooth transition 
