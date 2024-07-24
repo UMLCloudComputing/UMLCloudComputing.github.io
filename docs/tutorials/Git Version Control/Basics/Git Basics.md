@@ -10,12 +10,12 @@ Git is a version control system that helps collaborate on code and keep track of
 
 ## What does Git do?
 
-* Manage projects with [**repositories**](./Index.md/#repository).
+* Manage projects with [**repositories**](./Index.md#repository-repo).
 * **Clone** a project to work with a local copy.
-* Control changes with [**Staging**](./Index.md/#staging) and [**Committing**](./Index.md/#commit).
-* [**Branch**](./Index.md/#branch) and [**Merge**](./Index.md/#merge) to work on different parts and versions of a project.
-* [**Pull**](./Index.md/#pull) the latest version of the project a local copy.
-* [**Push**](./Index.md/#push) local updates to a project.
+* Control changes with [**Staging**](./Index.md#stage) and [**Committing**](./Index.md#commit).
+* [**Branch**](./Index.md#branch) and [**Merge**](./Index.md#merge) to work on different parts and versions of a project.
+* [**Pull**](./Index.md#pull) the latest version of the project a local copy.
+* [**Push**](./Index.md#push) local updates to a project.
 
 ## Git vs Github
 * Git and Github are <mark>not</mark> the same.
@@ -43,7 +43,7 @@ If installed properly, the output should be in format `git version X.Y`.
 ```
 
 ## Configuring Git
-When performing git [**commits**](./Index.md/#commit), git needs to know who you are. <br />
+When performing git [**commits**](./Index.md#commit), git needs to know who you are. <br />
 Configure the username and email for git with the following commands:
 ``` bash
 git config --global user.name "YOUR_USERNAME"

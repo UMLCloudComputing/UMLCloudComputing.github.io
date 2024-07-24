@@ -12,8 +12,8 @@ Creating a new folder for a project:
 [user@localhost] $ cd newProject
 ```
 
-[`mkdir`](./Index.md/#mkdir) makes a new directory. <br />
-[`cd`](./Index.md/#cd) changes the current working directory.
+[`mkdir`](./Index.md#mkdir) makes a new directory. <br />
+[`cd`](./Index.md#cd) changes the current working directory.
 
 ## Initialize Git
 Once in the correct folder, initialize git on the folder:

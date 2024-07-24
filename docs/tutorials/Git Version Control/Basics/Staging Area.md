@@ -8,14 +8,14 @@ sidebar_position: 4
 
 As you are working on a project, you add, edit, and remove files. When you reach a satisfactory point, you should add the files to a staging area.
 
-[Staged](Index.md/#stage) files are ready to be [committed](./Index.md/#commit) to your working repository. 
+[Staged](Index.md#stage) files are ready to be [committed](./Index.md#commit) to your working repository. 
 
 Back to our `newProject`, we can now make `index.html` as a tracked file by simple adding it to the staging area using `git add`:
 ``` shell
 [user@localhost] $ git add index.html
 ```
 
-Now `index.html` should be [staged](./Index.md/#stage):
+Now `index.html` should be [staged](./Index.md#stage):
 ``` shell
 [user@localhost] $ git status
                   On branch master
@@ -31,7 +31,7 @@ In other words, the file is now added to the staging area!
 
 ### Staging more than one file
 
-It's often that we end up modifying more than one file within a project before we decide to [stage](./Index.md/#stage) them. Let's see how to [stage](./Index.md/#stage) them all at once:
+It's often that we end up modifying more than one file within a project before we decide to [stage](./Index.md#stage) them. Let's see how to [stage](./Index.md#stage) them all at once:
 
 Let's start by adding a `README.md` file to our repository to describe it:
 ``` shell
@@ -42,7 +42,7 @@ and add the following content:
 # Hello world
 This repository exists as part of a git tutorial!
 ```
->Recall to use the `:wq` command in [Vim](./Index.md/#vim) to write and quit.
+>Recall to use the `:wq` command in [Vim](./Index.md#vim) to write and quit.
 
 Let's also add a CSS file called `styles.css`:
 ``` shell
@@ -60,7 +60,7 @@ body {
     animation-duration: 4s;
 }
 ```
->Again, recall to use the `:wq` command in [Vim](./Index.md/#vim) to write and quit.
+>Again, recall to use the `:wq` command in [Vim](./Index.md#vim) to write and quit.
 
 Finally let's update `index.html` to include our new stylesheet (`styles.css`):
 ``` shell
@@ -80,7 +80,7 @@ Finally let's update `index.html` to include our new stylesheet (`styles.css`):
     </body>
 </html>
 ```
-> Once again, recall to use the `:wq` command in [Vim](./Index.md/#vim) to write and quit.
+> Once again, recall to use the `:wq` command in [Vim](./Index.md#vim) to write and quit.
 
 Now let's add all these new files and changes to our staging area using the following command:
 ``` shell

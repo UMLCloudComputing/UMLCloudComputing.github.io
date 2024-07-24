@@ -6,9 +6,9 @@ sidebar_position: 5
 
 ![Git-Staging-Diagram-2](../../../../static/img/git-tutorial/git-workflow-2.png)
 
-Commits keep track of progress and changes as we work. Git treats each [`commit`](./Index.md/#commit) as a "save point". It's a point in the project which can be reverted to if a bug is found, or you want to make a change. 
+Commits keep track of progress and changes as we work. Git treats each [`commit`](./Index.md#commit) as a "save point". It's a point in the project which can be reverted to if a bug is found, or you want to make a change. 
 
-Whenever performing a [`commit`](./Index.md/#commit), **always** include a commit **message**. 
+Whenever performing a [`commit`](./Index.md#commit), **always** include a commit **message**. 
 It's always best practice to do so and improves understanding of your code for others and subsequently maintainability of your project. 
 
 ``` bash
@@ -46,16 +46,16 @@ To show this let's update `index.html` slightly:
     </body>
 </html>
 ```
->Recall, to open a file to edit in your working directory with [Vim](./Index.md/#vim), enter the command `vim `*`filename`* and enter insert mode (`I` key on the keyboard). To save and exit enter normal mode (`esc` key) and enter the command `:wq` (write and quit).
+>Recall, to open a file to edit in your working directory with [Vim](./Index.md#vim), enter the command `vim `*`filename`* and enter insert mode (`I` key on the keyboard). To save and exit enter normal mode (`esc` key) and enter the command `:wq` (write and quit).
 
-Now let's check the status of our [repo](./Index.md/#repository-repo), however with the `--short` option to get a more compact response:
+Now let's check the status of our [repo](./Index.md#repository-repo), however with the `--short` option to get a more compact response:
 ``` bash 
 [user@localhost] $ git status --short
                    M index.html
 ```
 > Note: The `--short` option on `git status` is also synonymous with `-s`. Hence, either `git status -s` or `git status --short` can be used to perform the same action.
 
-Here's some valuable [information](./Index.md/#git-status-short) about short git status flags.
+Here's some valuable [information](./Index.md#git-status-short) about short git status flags.
 
 Now let's commit directly:
 ``` bash
