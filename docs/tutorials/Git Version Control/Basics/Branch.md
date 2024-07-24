@@ -6,21 +6,21 @@ sidebar_position: 6
 
 ### Using Git branches
 
-A [branch](./Index.md/#branch) is a seperate version of the main repository.<br/>
+A [branch](/docs/tutorials/Git%20Version%20Control/Basics/Index.md/#branch) is a seperate version of the main repository.<br/>
 Branches are particuarly useful when a developer wants to update parts of a large project.
 
 Git branches allow development on a new features and designs independent from other work on the main branch.<br/>
-When the work is complete on a branch, it can be [merged](./Index.md/#merge) back into the main branch/project.<br/>
+When the work is complete on a branch, it can be [merged](/docs/tutorials/Git%20Version%20Control/Basics/Index.md/#merge) back into the main branch/project.<br/>
 With branches, it's also possible to work on different parts of a project simultaneously without any part impacting another.
 
 ### Creating a new Branch
 
-Let's create a new [branch](./Index.md/#branch) to work on a feature without modifying the main project's working code:
+Let's create a new [branch](/docs/tutorials/Git%20Version%20Control/Basics/Index.md/#branch) to work on a feature without modifying the main project's working code:
 
 ``` bash
 [user@localhost] $ git branch hello-world-pictures
 ```
-The command `git branch hello-world-pictures` will create a new [branch](./Index.md/#branch) called "hello-world-pictures".<br />
+The command `git branch hello-world-pictures` will create a new [branch](/docs/tutorials/Git%20Version%20Control/Basics/Index.md/#branch) called "hello-world-pictures".<br />
 Let's confirm that the branch was created:
 ``` bash
 [user@localhost] $ git branch
@@ -29,12 +29,12 @@ hello-world-pictures
 ```
 > Important: Whenever creating new branches, the branch from which the *new* branch is sourced from is the branch which was mounted when the git branch command was called. In scenario above, the command was called from within the `master` branch. Hence, all the initial files and changes are sourced from the `master` branch for the `hello-world-pictures` branch.
 
-A new branch called "hello-world-pictures" has been created, however the `*` symbol indicates that we are currently still on the `master` [branch](./Index.md/#branch). 
+A new branch called "hello-world-pictures" has been created, however the `*` symbol indicates that we are currently still on the `master` [branch](/docs/tutorials/Git%20Version%20Control/Basics/Index.md/#branch). 
 > When viewing the output of `git branch`, the `*` symbol indicates the current branch.
 
 ![Git-Staging-Diagram-3](../../../../static/img/git-tutorial/git-workflow-3.png)
 
-In order to leave the `master` [branch](./Index.md/#branch) and change to the "hello-world-pictures" [branch](./Index.md/#branch) we have to use the [`checkout`](./Index.md/#checkout) command. 
+In order to leave the `master` [branch](/docs/tutorials/Git%20Version%20Control/Basics/Index.md/#branch) and change to the "hello-world-pictures" [branch](/docs/tutorials/Git%20Version%20Control/Basics/Index.md/#branch) we have to use the [`checkout`](/docs/tutorials/Git%20Version%20Control/Basics/Index.md/#checkout) command. 
 
 ``` bash
 [user@localhost] $ git checkout hello-world-pictures
@@ -77,7 +77,7 @@ Then let's update our html code:
 </html>
 ```
 
-Let's [save and exit](./New%20Files.md/#basic-editing-on-vim) and check the status of the current [branch](./Index.md/#branch)
+Let's [save and exit](/docs/tutorials/Git%20Version%20Control/Basics/Index.md/#basic-editing-on-vim) and check the status of the current [branch](./Index.md/#branch)
 
 ``` bash
 [user@localhost] $ git status
@@ -94,14 +94,14 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-The output indicates that there are tracked changes to `index.html`, however the file is not [staged](./Index.md/#stage) for a [commit](./Index.md/#commit). Moreover, there is also the image `git.png` that is currently untracked.
+The output indicates that there are tracked changes to `index.html`, however the file is not [staged](./Index.md/#stage) for a [commit](/docs/tutorials/Git%20Version%20Control/Basics/Index.md/#commit). Moreover, there is also the image `git.png` that is currently untracked.
 
-So let's add all the changes to the [staging area](./Index.md/#staging-area):
+So let's add all the changes to the [staging area](/docs/tutorials/Git%20Version%20Control/Basics/Index.md/#staging-area):
 ``` bash
 [user@localhost] $ git add --all
 ```
 
-Now let's check the status of the [branch](./Index.md/#branch):
+Now let's check the status of the [branch](/docs/tutorials/Git%20Version%20Control/Basics/Index.md/#branch):
 ``` bash
 [user@localhost] $ git status
 On branch hello-world-pictures
@@ -113,7 +113,7 @@ Changes to be committed:
 
 Now all the changes are staged and can be committed.
 
-Since we're satifisied with our changes, let's [commit](./Index.md/#commit) them to our [branch](./Index.md/#branch):
+Since we're satifisied with our changes, let's [commit](/docs/tutorials/Git%20Version%20Control/Basics/Index.md/#commit) them to our [branch](/docs/tutorials/Git%20Version%20Control/Basics/Index.md/#branch):
 ``` bash
 [user@localhost] $ git commit -m "feat: Added image to hello world"
 [hello-world-pictures 83d7fb0] feat: Added image to hello world
@@ -130,7 +130,7 @@ Let's check content within our branch:
 [user@localhost] $ ls
 git.png  index.html  README.md  styles.css
 ```
-Notice how the `hello-world-pictures` [branch](./Index.md/#branch) has the image `git.png`. As per the edits we've made, `index.html` should also have modified code to include the image. 
+Notice how the `hello-world-pictures` [branch](/docs/tutorials/Git%20Version%20Control/Basics/Index.md/#branch) has the image `git.png`. As per the edits we've made, `index.html` should also have modified code to include the image. 
 
 Now's let's change to the `master` branch using the `checkout` command:
 ``` bash
@@ -138,7 +138,7 @@ Now's let's change to the `master` branch using the `checkout` command:
                    Switched to branch 'master'
 ```
 
-Finally let's check the content of this [branch](./Index.md/#branch):
+Finally let's check the content of this [branch](/docs/tutorials/Git%20Version%20Control/Basics/Index.md/#branch):
 ``` bash
 [user@localhost] $ ls
 index.html  README.md  styles.css
