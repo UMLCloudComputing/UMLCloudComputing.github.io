@@ -40,7 +40,7 @@ Index of terminology within this tutorial
 >*Text Editor* <br /> A free and open-source, screen-based text editor. It is an improved version of the **vi** editor. It's primary interface is in text user interface with commands rather than menus or icons.  
 
 ### Stage
->*verb*: To prepare a file for a [commit](#commit). `git stage`
+>*verb*: To prepare a file for a [commit](#commit) by placing it into the [staging area](#staging-area). `git stage`
 
 ### Staging area
 >*noun*: The *conceptual* area between your working directory and your repostory that maintains all of your [staged](#stage) changes. A useful [diagram](../../../../static/img/git-tutorial/staging-area.png).
