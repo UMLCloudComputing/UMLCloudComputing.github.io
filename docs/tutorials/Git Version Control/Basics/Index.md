@@ -7,7 +7,10 @@ sidebar_position: 10
 Index of terminology within this tutorial
 
 ### Push 
->*noun*: To publish your changes to a repository: `git push`
+>*noun, verb*: To publish your changes to a repository: `git push`
+
+### Pull
+>*noun, verb*: To fetch and integrate changes in a remote [repository](#repository-repo) with the changes in a local [repository](#repository-repo). `git pull`*` remote-name branch-name`*
 
 ### Repository (*repo*)
 >*noun*: A type of centrally located storage where you can keep all your project's files and resources.

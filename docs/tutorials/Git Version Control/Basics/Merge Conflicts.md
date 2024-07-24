@@ -43,12 +43,12 @@ Second, we need open `index.html` for editing and adding in our new [image](http
     </body>
 </html>
 ```
-After saving and exiting, we need to [stage](./Index.md/#stage) all the changes:
+After saving and exiting, we need to [stage](./Index.md#stage) all the changes:
 ``` bash
 [user@localhost] $ git add --all
 ```
 
-Now let's [commit](./Index.md/#commit) the changes to the `hello-world-pictures` branch:
+Now let's [commit](./Index.md#commit) the changes to the `hello-world-pictures` branch:
 ``` bash
 [user@localhost] $ git commit -m "feat: Added hello world image"
 [hello-world-pictures 9356dc6] feat: added hello world image
@@ -63,7 +63,7 @@ Now let's merge the changes from `hello-world-pictures`:
 CONFLICT (content): Merge conflict in index.html
 Automatic merge failed; fix conflicts and then commit the result.
 ```
-Yikes! We've encountered a [merge conflict](./Index.md/#merge-conflict)! 
+Yikes! We've encountered a [merge conflict](./Index.md#merge-conflict)! 
 
 ## What is a Merge Conflict?
 

@@ -6,7 +6,7 @@ sidebar_position: 7
 
 ## Merging Branches
 
-Branch [merging](./Index.md/#merge) allows the changes from one branch to be added to another, essentially combining the changes. Merging typically goes hand in hand with branches since the changes specific to a branch are often combined back to the main project code. A common scenario in industry is to use [branches](./Index.md/#branch) to work of specific issues, features, or perform code maintainence. Once the edits are complete, the [branch's](./Index.md/#branch) edits are [merged](./Index.md/#merge) back into a `master` or main branch which contains the code used in production. 
+Branch [merging](./Index.md#merge) allows the changes from one branch to be added to another, essentially combining the changes. Merging typically goes hand in hand with branches since the changes specific to a branch are often combined back to the main project code. A common scenario in industry is to use [branches](./Index.md#branch) to work of specific issues, features, or perform code maintainence. Once the edits are complete, the [branch's](./Index.md#branch) edits are [merged](./Index.md#merge) back into a `master` or main branch which contains the code used in production. 
 
 Let's demonstrate how to merge branches alongside a bit of review!
 
@@ -58,8 +58,8 @@ Great! Now since our modifications are unstaged, let's go ahead and stage them a
 ```
 > Note: The command above used the `-a` option to stage and commit all changes in one-step.
 
-Finally, now let's [merge](./Index.md/#merge) our changes back into the `master` branch! <br/>
-First we need to [`checkout`](./Index.md/#checkout) to to the `master` branch. 
+Finally, now let's [merge](./Index.md#merge) our changes back into the `master` branch! <br/>
+First we need to [`checkout`](./Index.md#checkout) to to the `master` branch. 
 ``` bash
 [user@localhost] $ git checkout master
 Switched to branch 'master'
@@ -80,4 +80,4 @@ Since we're done working on the `copyright-fix` branch and it's no longer needed
 Deleted branch copyright-fix (was 5be7c4a).
 ```
 
-Amazing! We successfully managed to add a new piece to our project using [branches](./Index.md/#branch) and sucessfully [merged](./Index.md/#merge) the changes back to the `master` [branch](./Index.md/#branch).
+Amazing! We successfully managed to add a new piece to our project using [branches](./Index.md#branch) and sucessfully [merged](./Index.md#merge) the changes back to the `master` [branch](./Index.md#branch).
