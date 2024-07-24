@@ -19,7 +19,7 @@ Feel free to reach out to our club leaders for more information. We look forward
 #### Q: How do I join the club?
 **A**: The best way to join is to attend our regular meetings. You can also join our [Discord server](https://discord.gg/WC2NdqYtDt) for updates and discussions.
 
-### Meetings
+### 📡 Meetings
 
 #### Q: When and where are the meetings held?
 **A**: The meeting schedule is outlined in the README. The location will be announced prior to each meeting.
@@ -30,7 +30,7 @@ Feel free to reach out to our club leaders for more information. We look forward
 #### Q: What if I miss a meeting?
 **A**: Don't worry! Meeting materials and summaries will be uploaded to the respective week's folder in our GitHub repository.
 
-### Projects
+### 👩‍💻 Projects
 
 #### Q: Do I need prior experience to contribute to the project?
 **A**: No, you don't need prior experience. We aim to make the project inclusive for members at all skill levels.
@@ -38,7 +38,7 @@ Feel free to reach out to our club leaders for more information. We look forward
 #### Q: How can I contribute to the project?
 **A**: Contributions can be made through our project repository on GitHub. More details can be found in the "Project Repository" section of this README.
 
-### Technologies
+### 💡 Technologies
 
 #### Q: Do I need to know all the technologies listed to participate?
 **A**: No, you don't need to be proficient in all the technologies. The club serves as a learning platform, and we'll cover various technologies throughout the semester.
@@ -46,7 +46,7 @@ Feel free to reach out to our club leaders for more information. We look forward
 #### Q: What if I'm interested in a technology not listed?
 **A**: We're open to exploring new technologies! Feel free to bring it up during meetings or on our Discord server.
 
-### Contact
+### 🙌 Contact
 
 #### Q: How can I contact the club leaders?
 **A**: You can reach out to us via our [Discord server](https://discord.gg/WC2NdqYtDt) or by sending an email to [cloudcomputingclub@uml.edu](mailto:cloudcomputingclub@uml.edu).

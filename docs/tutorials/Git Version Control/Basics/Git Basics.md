@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Basics
+# Git Basics
 
 ## What is Git?
 
@@ -29,15 +29,15 @@ Git can be [downloaded](https://git-scm.com/) for free!
 To start using Git, open your command shell.
 
 >Windows: Can use Git bash which is included in Git for Windows.<br />
-Linux and Mac: Built-in terminal.
+Linux & Mac: Built-in terminal.
 
 Let's check for a proper install by running the following command in the command shell:
-``` zsh
+``` bash
 git --version
 ```
 
 If installed properly, the output should be in format `git version X.Y`.
-``` zsh
+``` bash
 [user@localhost] $  git --version
                     git version 2.33.1.windows.1
 ```
@@ -45,12 +45,19 @@ If installed properly, the output should be in format `git version X.Y`.
 ## Configuring Git
 When performing git [**commits**](./Index.md/#commit), git needs to know who you are. <br />
 Configure the username and email for git with the following commands:
-``` zsh
+``` bash
 git config --global user.name "YOUR_USERNAME"
 ```
-``` zsh
+``` bash
 git config --global user.email "USER@example.com" 
 ```
-> Use `global` to set the username and email for **every repository** on your computer. <br/> Remove `global` if you only want to the credentials for the current repo.
+> Use `--global` to set the username and email for **every repository** on your computer. <br/> Remove `global` if you only want to the credentials for the current repo.
 
-Date of last update: July 14th, 2024
+## Git Help
+Git comes with integrated documentation for all of it's commands. It is good developer practice to utilize docuemtnation for a program when learning or when confused on how a particular part works.
+
+In order to access git's help documentation use any of the two commands:
+- `git`*`command`*`-help` $\rightarrow$ All available options for the the specified *`command`*
+- `git help --all` $\rightarrow$ All possible commands
+
+Date of last update: July 21th, 2024
