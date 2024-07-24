@@ -77,7 +77,7 @@ Then let's update our html code:
 </html>
 ```
 
-Let's [save and exit](./New%20Files.md/#basic-editing-on-vim) and check the status of the current [branch](./Index.md#branch)
+Let's [save and exit](./New%20Files.md#basic-editing-on-vim) and check the status of the current [branch](./Index.md#branch)
 
 ``` bash
 [user@localhost] $ git status
