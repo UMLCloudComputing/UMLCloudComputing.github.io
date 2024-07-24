@@ -5,6 +5,8 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer'
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 const process = require('node:process');
 
@@ -36,6 +38,15 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+  ],
 
   presets: [
     [
@@ -47,6 +58,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/UMLCloudComputing/UMLCloudComputing.github.io/edit/main/',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         // blog: {
         //   showReadingTime: true,
@@ -174,19 +187,6 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Home',
-            items: [
-              {
-                label: 'Projects',
-                to: '/docs/projects/welcome',
-              },
-              {
-                label: 'Tutorial',
-                to: '/docs/tutorials/welcome',
-              },
-            ],
-          },
-          {
             title: 'Community',
             items: [
               {
@@ -222,6 +222,7 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        additionalLanguages: ['powershell', 'bash']
       },
     }),
 };
