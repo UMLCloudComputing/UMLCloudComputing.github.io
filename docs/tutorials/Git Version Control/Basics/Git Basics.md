@@ -59,5 +59,3 @@ Git comes with integrated documentation for all of it's commands. It is good dev
 In order to access git's help documentation use any of the two commands:
 - `git`*`command`*`-help` $\rightarrow$ All available options for the the specified *`command`*
 - `git help --all` $\rightarrow$ All possible commands
-
-Date of last update: July 21th, 2024

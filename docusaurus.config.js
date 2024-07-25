@@ -60,6 +60,8 @@ const config = {
             'https://github.com/UMLCloudComputing/UMLCloudComputing.github.io/edit/main/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
+          showLastUpdateAuthor:true,
+          showLastUpdateTime: true,
         },
         // blog: {
         //   showReadingTime: true,
