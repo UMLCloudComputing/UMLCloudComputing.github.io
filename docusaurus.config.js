@@ -169,6 +169,13 @@ const config = {
             position: 'right',
           },
 
+          // Instagram
+          {
+            href: 'https://www.instagram.com/umlcloudcomputing/',
+            label: 'Instagram',
+            position: 'right',
+          }.
+
           // LinkedIn
           {
             href: 'https://www.linkedin.com/company/umass-lowell-cloud-computing-club/',
