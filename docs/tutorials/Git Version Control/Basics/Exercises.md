@@ -2,5 +2,6 @@
 sidebar_position: 9
 ---
 
-# Excersises
+# Exersises
 
+*Work in Progress...*

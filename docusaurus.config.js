@@ -60,6 +60,8 @@ const config = {
             'https://github.com/UMLCloudComputing/UMLCloudComputing.github.io/edit/main/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
+          showLastUpdateAuthor:true,
+          showLastUpdateTime: true,
         },
         // blog: {
         //   showReadingTime: true,
@@ -174,7 +176,7 @@ const config = {
             href: 'https://www.instagram.com/umlcloudcomputing/',
             label: 'Instagram',
             position: 'right',
-          }.
+          },
 
           // LinkedIn
           {
