@@ -176,7 +176,7 @@ const config = {
             href: 'https://www.instagram.com/umlcloudcomputing/',
             label: 'Instagram',
             position: 'right',
-          }.
+          },
 
           // LinkedIn
           {
