@@ -42,7 +42,12 @@ and add the following content:
 # Hello world
 This repository exists as part of a git tutorial!
 ```
->Recall to use the `:wq` command in [Vim](./Index.md#vim) to write and quit.
+
+:::info
+
+Recall to use the `:wq` command in [Vim](./Index.md#vim) to write and quit.
+
+:::
 
 Let's also add a CSS file called `styles.css`:
 ``` shell
@@ -60,7 +65,11 @@ body {
     animation-duration: 4s;
 }
 ```
->Again, recall to use the `:wq` command in [Vim](./Index.md#vim) to write and quit.
+:::info
+
+Again, recall to use the `:wq` command in [Vim](./Index.md#vim) to write and quit.
+
+:::
 
 Finally let's update `index.html` to include our new stylesheet (`styles.css`):
 ``` shell
@@ -80,7 +89,11 @@ Finally let's update `index.html` to include our new stylesheet (`styles.css`):
     </body>
 </html>
 ```
-> Once again, recall to use the `:wq` command in [Vim](./Index.md#vim) to write and quit.
+:::info
+
+ Once again, recall to use the `:wq` command in [Vim](./Index.md#vim) to write and quit.
+
+:::
 
 Now let's add all these new files and changes to our staging area using the following command:
 ``` shell
@@ -105,4 +118,8 @@ Now checking via `git status`:
 
 We can now do commits since all three files are in the staging area!
 
->The alternative option synonymous with `--all` is `-A`. Hence, `git add --all` is equivalent to `git add -A`.
+:::note
+
+The alternative option synonymous with `--all` is `-A`. Hence, `git add --all` is equivalent to `git add -A`.
+
+:::
