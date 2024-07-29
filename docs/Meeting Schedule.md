@@ -8,7 +8,9 @@
 
 **Events & Meeting Location**: https://sesh.fyi/dashboard/890983857938116729/events?view=calendar
 
-**Meeting Time**: Every meeting will be Thursday from 6:30pm-9:30pm. 
+**Meeting Time**: Thursday's from 6:30pm-9:30pm. 
+
+**Meeting Format**:
 
 - **Presentation Section (6:30pm-8:00pm)**: This portion is reserved for presentations, demos, and sometimes special guest speakers. It is more structured and follows the weekly topics closely.
   
@@ -22,7 +24,7 @@ Legend
 
 | Date        | Week and Topic                | Speaker      | Description  |
 |-------------|-------------------------------|--------------|--------------|
-| 🔵 Jan 18th   | Week 1: Welcome to the Cloud Computing Club  | Club Leaders          | **Presentation Section:**<br />- Brief presentation on the UML Cloud Computing Club and introduction to who we are and what we do.<br />**Hands-On Section:**<br />- Work on UniPath.io |
+| 🔵 Jan 18th   | Week 1: Welcome to the Cloud Computing Club  | Club Leaders          | **Presentation Section:**<br />- Brief presentation on the UML Cloud Computing Club and introduction to who we are and what we do.<br />**Hands-On Section:**<br />- Work on a simple introductory tutorial regarding Cloud Fundamentals |
 | 🔵 Jan 25th   | Week 2: Guest Speaker   | [Dr. Johannes Weis](https://www.uml.edu/sciences/computer-science/people/weis-johannes.aspx)          | **Presentation Section:**<br />- TBD<br />**Hands-On Section:**<br />- Work on UniPath.io |
 | 🔵 Feb 1st    | Week 3: Guest Speaker - Co-Op Program Overview and Internships Open Q&A   | [Anthony Terravecchia](https://linkedin.com/in/anthony-terravecchia)          | **Presentation Section:**<br />- We will have a speaker from the Career & Co-op Center at UMass Lowell give us an informative session with an overview of the Co-Op Program and answer any questions regarding internships.<br />**Hands-On Section:**<br />- Work on UniPath.io |
 | 🔵 Feb 8th    | Week 4: Intro to Docker & Containerization   | Matthew Harper          | **Presentation Section:**<br />- Introduction to Docker and the concept of containerization in cloud computing.<br />**Hands-On Section:**<br />- Continue work on UniPath.io |
