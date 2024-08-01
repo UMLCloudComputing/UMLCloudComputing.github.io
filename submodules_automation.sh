@@ -7,5 +7,5 @@ git pull origin main
 projects=("UniPath.io" "rowdybot" "react-mui-resume")
 git submodule foreach git pull origin main
 for i in "${projects[@]}"; do
-    rsync submodules/$i/docs/web_docs/* docs/projects/$i
+    rsync ./submodules/$i/docs/web_docs/* ./docs/projects/$i
 done
