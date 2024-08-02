@@ -46,7 +46,12 @@ To show this let's update `index.html` slightly:
     </body>
 </html>
 ```
->Recall, to open a file to edit in your working directory with [Vim](./Index.md#vim), enter the command `vim `*`filename`* and enter insert mode (`I` key on the keyboard). To save and exit enter normal mode (`esc` key) and enter the command `:wq` (write and quit).
+
+:::info
+
+Recall, to open a file to edit in your working directory with [Vim](./Index.md#vim), enter the command `vim `*`filename`* and enter insert mode (`I` key on the keyboard). To save and exit enter normal mode (`esc` key) and enter the command `:wq` (write and quit).
+
+:::
 
 Now let's check the status of our [repo](./Index.md#repository-repo), however with the `--short` option to get a more compact response:
 ``` bash 
@@ -65,7 +70,11 @@ Now let's commit directly:
 ```
 > Notice how the commit message follows the [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) structure.
 
-<blockquote className="warning">Warning: It's typically not best practice to skip the staging area since it's possible to accidentally commit unwanted changes. Commit carefully. </blockquote>
+:::warning
+
+Warning: It's typically not best practice to skip the staging area since it's possible to accidentally commit unwanted changes. Commit carefully. 
+
+:::
 
 In order to view the commit history of your repository, use the `log` command:
 ``` bash

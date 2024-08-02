@@ -15,7 +15,11 @@ Let's create a *new* branch called `copyright-fix` from the `master` branch whic
 [user@localhost] $ git checkout -b copyright-fix
 Switched to a new branch 'copyright-fix'
 ```
-> Notice how the use of the `-b` option to create and change to the new `copyright-fix` branch in one command.
+:::info
+
+ Notice how the use of the `-b` option to create and change to the new `copyright-fix` branch in one command.
+
+:::
 
 Now let's edit `index.html` to add our copyright message by **replacing** our previously added "new line" paragraph block:
 ``` html
@@ -36,8 +40,11 @@ Now let's edit `index.html` to add our copyright message by **replacing** our pr
     </body>
 </html>
 ```
-> Feel free to edit the copyright message to your liking! After all, it's **your** work!
+:::tip
 
+ Feel free to edit the copyright message to your liking! After all, it's **your** work!
+
+:::
 Let's check the status of the branch to make sure our edits are recorded:
 ``` bash
 [user@localhost] $ git status 
@@ -56,7 +63,12 @@ Great! Now since our modifications are unstaged, let's go ahead and stage them a
 [copyright-fix a618dec] chore: added copyright to footer
  1 file changed, 3 insertions(+)
 ```
-> Note: The command above used the `-a` option to stage and commit all changes in one-step.
+
+:::note
+
+The command above used the `-a` option to stage and commit all changes in one-step.
+
+:::
 
 Finally, now let's [merge](./Index.md#merge) our changes back into the `master` branch! <br/>
 First we need to [`checkout`](./Index.md#checkout) to to the `master` branch. 

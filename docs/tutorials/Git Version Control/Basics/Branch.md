@@ -27,10 +27,19 @@ Let's confirm that the branch was created:
 hello-world-pictures
 * master
 ```
-> Important: Whenever creating new branches, the branch from which the *new* branch is sourced from is the branch which was mounted when the git branch command was called. In scenario above, the command was called from within the `master` branch. Hence, all the initial files and changes are sourced from the `master` branch for the `hello-world-pictures` branch.
+:::note
+
+Whenever creating new branches, the branch from which the *new* branch is sourced from is the branch which was mounted when the git branch command was called. In scenario above, the command was called from within the `master` branch. Hence, all the initial files and changes are sourced from the `master` branch for the `hello-world-pictures` branch.
+
+:::
 
 A new branch called "hello-world-pictures" has been created, however the `*` symbol indicates that we are currently still on the `master` [branch](./Index.md#branch). 
-> When viewing the output of `git branch`, the `*` symbol indicates the current branch.
+
+:::info
+
+ When viewing the output of `git branch`, the `*` symbol indicates the current branch.
+
+:::
 
 ![Git-Staging-Diagram-3](../../../../static/img/git-tutorial/git-workflow-3.png)
 
@@ -40,7 +49,11 @@ In order to leave the `master` [branch](./Index.md) and change to the "hello-wor
 [user@localhost] $ git checkout hello-world-pictures
                    Switched to branch 'hello-world-pictures'
 ```
-> Note: Adding the `-b` option on `git checkout` will create a new branch and move to it, if it does not exist.  
+:::note
+
+Adding the `-b` option on `git checkout` will create a new branch and move to it, if it does not exist.  
+
+:::
 
 Now let's make some edits now that we're in the correct branch.
 Let's add an [image](https://software.3metas.com/wp-content/uploads/2017/06/git.png)(needs to be downloaded) to our html page:

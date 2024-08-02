@@ -51,7 +51,11 @@ git config --global user.name "YOUR_USERNAME"
 ``` bash
 git config --global user.email "USER@example.com" 
 ```
-> Use `--global` to set the username and email for **every repository** on your computer. <br/> Remove `global` if you only want to the credentials for the current repo.
+:::tip
+
+ Use `--global` to set the username and email for **every repository** on your computer. <br/> Remove `global` if you only want to the credentials for the current repo.
+
+:::
 
 ## Git Help
 Git comes with integrated documentation for all of it's commands. It is good developer practice to utilize docuemtnation for a program when learning or when confused on how a particular part works.
