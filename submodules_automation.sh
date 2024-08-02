@@ -8,5 +8,5 @@ git submodule update --init
 git submodule foreach git pull origin main
 projects=("UniPath.io" "rowdybot" "react-mui-resume")
 for i in "${projects[@]}"; do
-    rsync ~/UMLCloudComputing.github.io/submodules/$i/docs/web_docs/* ~/UMLCloudComputing.github.io/docs/projects/$i
+    rsync submodules/$i/docs/web_docs/* docs/projects/$i
 done
