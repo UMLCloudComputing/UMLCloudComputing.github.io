@@ -23,4 +23,8 @@ Once in the correct folder, initialize git on the folder:
 ```
 New Git repository created!
 
-> Git automatically knows to watch this folder for changes within a hidden folder.
+:::info
+
+ Git automatically knows to watch this folder for changes within a hidden folder.
+
+ :::
