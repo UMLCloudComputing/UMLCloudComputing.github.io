@@ -40,7 +40,7 @@ To add a new project's docuemtnation onto the project docs section of the websit
                 └── intro.md | Introduction/
                     _category_.json
     ```
-3. The project's documentation files must follow [Docusaurus's](https://docusaurus.io/docs/create-doc) doc creation guidelines. <br/> This inlcudes having proper front-matter and an appropriate `_category_.json` file for each folder. 
+3. The project's documentation files must follow [Docusaurus's](https://docusaurus.io/docs/create-doc) doc creation guidelines. <br/> This includes having proper front-matter and an appropriate `_category_.json` file for each folder. 
 
 Front Matter requirements:
 1. All markdown files must have the following front-matter: (`#` is an integer)
