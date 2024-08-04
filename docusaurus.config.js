@@ -216,15 +216,6 @@ const config = {
               },
             ],
           },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'News',
-                to: 'https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub/news',
-              },
-            ],
-          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} UMass Lowell Cloud Computing Club`,
       },
