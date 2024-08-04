@@ -3,6 +3,8 @@
 
 # Production
 /build
+/docs/projects/
+/submodules
 
 # Generated files
 .docusaurus
@@ -18,3 +20,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+# 
