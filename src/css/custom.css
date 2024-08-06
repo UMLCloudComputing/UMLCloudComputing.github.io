@@ -79,3 +79,10 @@ footer {
 .navbar__github:hover {
   background: var(--ifm-color-emphasis-200);
 }
+
+/** In mobile view, reduce the padding */
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
