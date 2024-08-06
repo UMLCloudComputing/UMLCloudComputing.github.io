@@ -129,6 +129,14 @@ const config = {
             label: 'Tutorials',
           },
 
+          // Activities
+          {
+            type: 'docSidebar',
+            sidebarId: 'activitiesSidebar',
+            position: 'left',
+            label: 'Activities',
+          },
+
           // Events (Engage)
           {
             href: 'https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub/events',
