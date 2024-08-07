@@ -19,11 +19,11 @@ import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
+import { BottomNavigation, BottomNavigationAction, createTheme, CssBaseline, responsiveFontSizes } from '@mui/material';
 
 // Local
 import Layout from '@theme/Layout';
 import { ThemeProvider } from '@emotion/react';
-import { BottomNavigation, BottomNavigationAction, createTheme, CssBaseline, responsiveFontSizes } from '@mui/material';
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
