@@ -12,6 +12,7 @@ import NavbarMobileSidebarLayout from '@theme/Navbar/MobileSidebar/Layout';
 import NavbarMobileSidebarHeader from '@theme/Navbar/MobileSidebar/Header';
 import NavbarMobileSidebarPrimaryMenu from '@theme/Navbar/MobileSidebar/PrimaryMenu';
 import NavbarMobileSidebarSecondaryMenu from '@theme/Navbar/MobileSidebar/SecondaryMenu';
+import { useLocation } from '@docusaurus/router';
 
 // MUI
 import Box from '@mui/material/Box';
@@ -24,18 +25,13 @@ import { BottomNavigation, BottomNavigationAction } from '@mui/material';
 function MobileBottomNav() {
   const mobileSidebar = useNavbarMobileSidebar();
   const ref = React.useRef(null);
-  const [value, setValue] = React.useState('Home');
+  const location = useLocation();
+  const [value, setValue] = React.useState(location);
   const { colorMode } = useColorMode();
   const isDarkMode = colorMode === 'dark';
   
   const handleChange = (event, newValue) => {
       setValue(newValue);
-      if (newValue === "Schedule") {
-        <Redirect to="/docs/Meeting Schedule" />
-      }
-      if (newValue === "Home") {
-        <Redirect to="/src/pages/index.js" />
-      }
   }
 
   return (
@@ -54,10 +50,11 @@ function MobileBottomNav() {
                         color: isDarkMode ? 'white' : 'black'
                       }
                   }}
-              >   
-                  <BottomNavigationAction value={"Schedule"} label="Schedule" icon={<CalendarMonthOutlinedIcon/>} />
-                  <BottomNavigationAction value={"Home"} label="Home" icon={<HomeOutlinedIcon/>}/>
-                  <BottomNavigationAction onClick={() => {mobileSidebar.toggle();}} value={"More"} label="More" icon={<MoreHorizOutlinedIcon/>}/>
+              >
+                  <Redirect to={value} />
+                  <BottomNavigationAction value={"/docs/Meeting Schedule"} label="Schedule" icon={<CalendarMonthOutlinedIcon/>} />
+                  <BottomNavigationAction value={""} label="Home" icon={<HomeOutlinedIcon/>}/>
+                  <BottomNavigationAction onClick={() => {mobileSidebar.toggle();}} label="More" icon={<MoreHorizOutlinedIcon/>}/>
               </BottomNavigation>
           </Paper>
       </Box>
