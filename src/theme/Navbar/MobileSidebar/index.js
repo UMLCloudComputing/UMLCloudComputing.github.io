@@ -5,6 +5,7 @@ import React from 'react';
 import {
   useLockBodyScroll,
   useNavbarMobileSidebar,
+  useColorMode
 } from '@docusaurus/theme-common/internal';
 import { Redirect } from '@docusaurus/router';
 import NavbarMobileSidebarLayout from '@theme/Navbar/MobileSidebar/Layout';
@@ -23,12 +24,18 @@ import { BottomNavigation, BottomNavigationAction } from '@mui/material';
 function MobileBottomNav() {
   const mobileSidebar = useNavbarMobileSidebar();
   const ref = React.useRef(null);
-  const [value, setValue] = React.useState('./');
-  // const { colorMode } = useColorMode();
-  const colorMode = 'dark';
+  const [value, setValue] = React.useState('Home');
+  const { colorMode } = useColorMode();
   const isDarkMode = colorMode === 'dark';
+  
   const handleChange = (event, newValue) => {
       setValue(newValue);
+      if (newValue === "Schedule") {
+        <Redirect to="/docs/Meeting Schedule" />
+      }
+      if (newValue === "Home") {
+        <Redirect to="/src/pages/index.js" />
+      }
   }
 
   return (
@@ -48,9 +55,9 @@ function MobileBottomNav() {
                       }
                   }}
               >   
-                  <BottomNavigationAction onClick={() => {return (<Redirect to="/docs/Meeting Schedule"/>);}} label="Schedule" icon={<CalendarMonthOutlinedIcon/>} />
-                  <BottomNavigationAction label="Home" icon={<HomeOutlinedIcon/>}/>
-                  <BottomNavigationAction onClick={() => {mobileSidebar.toggle();}} label="More" icon={<MoreHorizOutlinedIcon/>}/>
+                  <BottomNavigationAction value={"Schedule"} label="Schedule" icon={<CalendarMonthOutlinedIcon/>} />
+                  <BottomNavigationAction value={"Home"} label="Home" icon={<HomeOutlinedIcon/>}/>
+                  <BottomNavigationAction onClick={() => {mobileSidebar.toggle();}} value={"More"} label="More" icon={<MoreHorizOutlinedIcon/>}/>
               </BottomNavigation>
           </Paper>
       </Box>
