@@ -16,9 +16,17 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Paper from '@mui/material/Paper';
 import SchoolIcon from '@mui/icons-material/School';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
+import { BottomNavigation, BottomNavigationAction, createTheme, CssBaseline, responsiveFontSizes } from '@mui/material';
 
 // Local
 import Layout from '@theme/Layout';
+import { ThemeProvider } from '@emotion/react';
+
+let theme = createTheme();
+theme = responsiveFontSizes(theme);
 
 function HomepageHeader() {
     const { siteConfig } = useDocusaurusContext();
@@ -34,7 +42,6 @@ function HomepageHeader() {
     
         return () => clearInterval(intervalId); // Cleanup interval on component unmount
     }, []);
-
     return (
         <Box
             component="header"
@@ -44,21 +51,22 @@ function HomepageHeader() {
                 borderRadius: '16px',
                 filter: isDarkMode ? 'drop-shadow(0 0.4rem 0.3rem rgba(123, 123, 123, 0.5))' : 'drop-shadow(0 0.4rem 0.3rem rgba(0,0,0,0.5))',
                 transition: 'background-image 0.5s ease', // smooth transition 
-                backgroundSize: 'cover',
+                backgroundSize: 'cover', 
                 backgroundPosition: 'center',
                 color: 'white',
                 textAlign: 'center',
                 py: 10,
-                // bgcolor: isDarkMode ? 'grey.900' : 'primary.main',
             }}
         >
             <Container maxWidth="md">
-                <Typography variant="h1" component="h1" className="animate__animated animate__fadeInDown" color={isDarkMode ? 'white' : '#707070'}>
-                    {siteConfig.title}
-                </Typography>
-                <Typography variant="h5" component="p" sx={{ mt: 2 }} className="animate__animated animate__fadeInUp" color={isDarkMode ? 'white' : '#707070'}>
-                    {siteConfig.tagline}
-                </Typography>
+                <ThemeProvider theme = {theme}>
+                    <Typography variant="h1" component="h1" className="animate__animated animate__fadeInDown" color={isDarkMode ? 'white' : '#707070'}>
+                        {siteConfig.title}
+                    </Typography>
+                    <Typography variant="h5" component="p" sx={{ mt: 2 }} className="animate__animated animate__fadeInUp" color={isDarkMode ? 'white' : '#707070'}>
+                        {siteConfig.tagline}
+                    </Typography>
+                </ThemeProvider>
                 <Stack
                     sx={{ mt: 4 }}
                     direction="row"
@@ -68,25 +76,23 @@ function HomepageHeader() {
                 >
                     <Button
                         variant="contained"
-                        size="large"z
                         sx={{ mt: 4 }}
                         color='primary'
                         component={RouterLink}
                         to="docs/tutorials/welcome"
                         startIcon={<SchoolIcon/>}
                     >
-                        Explore Tutorials
+                    Explore Tutorials
                     </Button>
                     <Button
                         variant="contained"
-                        size="large"
                         sx={{ mt: 2, ml: 2, }}
                         color='primary'
                         component={RouterLink}
                         to="docs/projects/welcome"
                         endIcon={<AutoStoriesIcon/>}
                     >
-                        View Projects
+                    View Projects
                     </Button>
                 </Stack>
             </Container>
@@ -115,8 +121,8 @@ function ClubDetails() {
     const isDarkMode = colorMode === 'dark';
 
     return (
-        <Container sx={{ py: 8 }} maxWidth="lg">
-            <Grid container spacing={4} >
+        <Container sx={{ py: 4 }}>
+            <Grid container spacing={4}>
                 <Grid item xs={12} sm={4} >
                     <PaperCard isDarkMode={isDarkMode}>
                         <Typography variant="h6">About Us</Typography>
@@ -151,7 +157,7 @@ function HomepageFeatures() {
     const isDarkMode = colorMode === 'dark';
 
     return (
-        <Container sx={{ py: 8 }} maxWidth="lg">
+        <Container sx={{ pb: 4 }}>
             <Grid container spacing={4}>
                 <Grid item xs={12} sm={4}>
                     <PaperCard isDarkMode={isDarkMode}>
@@ -182,6 +188,38 @@ function HomepageFeatures() {
     );
 }
 
+function MobileBottomNav() {
+    const ref = React.useRef(null);
+    const [value, setValue] = React.useState(0);
+    const { colorMode } = useColorMode();
+    const isDarkMode = colorMode === 'dark';
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    }
+    return (
+        <Box sx={{ pb: 7 }} ref = {ref}>
+            <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} square={false} elevation={3}>
+                <BottomNavigation
+                    showLabels
+                    value={value}
+                    onChange={handleChange}
+                    sx = {{
+                        bgcolor: isDarkMode ? 'black' : 'white',
+                        '& .MuiSvgIcon-root, & .MuiBottomNavigationAction-label': {
+                            color: isDarkMode ? 'white' : '#707070'
+                        }
+                    }}
+                >   
+                    <BottomNavigationAction label="Schedule" icon={<CalendarMonthOutlinedIcon/>} />
+                    <BottomNavigationAction label="Home" icon={<HomeOutlinedIcon/>}/>
+                    <BottomNavigationAction label="More" icon={<MoreHorizOutlinedIcon/>}/>
+                </BottomNavigation>
+            </Paper>
+        </Box>
+    )
+}
+
 export default function Home() {
     const { siteConfig } = useDocusaurusContext();
     return (
@@ -191,12 +229,10 @@ export default function Home() {
         >
             <HomepageHeader />
             <main>
-                <Typography variant="h4" align="center" sx={{ mt: 8 }}>
-                    Welcome to the UML Cloud Computing Club 🚀
-                </Typography>
                 <ClubDetails />
                 <HomepageFeatures />
             </main>
+            {/* <MobileBottomNav /> */}
         </Layout>
     );
 }
