@@ -54,7 +54,7 @@ function MobileBottomNav() {
                   <Redirect to={value} />
                   <BottomNavigationAction value={"/docs/Meeting Schedule"} label="Schedule" icon={<CalendarMonthOutlinedIcon/>} />
                   <BottomNavigationAction value={""} label="Home" icon={<HomeOutlinedIcon/>}/>
-                  <BottomNavigationAction onClick={() => {mobileSidebar.toggle();}} label="More" icon={<MoreHorizOutlinedIcon/>}/>
+                  <BottomNavigationAction value={location} onClick={() => {mobileSidebar.toggle();}} label="More" icon={<MoreHorizOutlinedIcon/>}/>
               </BottomNavigation>
           </Paper>
       </Box>
