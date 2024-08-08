@@ -1,5 +1,5 @@
 import Button  from '@mui/material/Button';
-import { useColorMode } from '@docusaurus/theme-common';
+import { useColorMode } from '@docusaurus/theme-common/internal';
 import LogoutIcon from '@mui/icons-material/Logout'
 import { Link as RouterLink } from 'react-router-dom';
 import SignIn from '../../pages/SignIn';

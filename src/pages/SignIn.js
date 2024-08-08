@@ -1,7 +1,7 @@
 // React
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { useColorMode } from '@docusaurus/theme-common';
+import { useColorMode } from '@docusaurus/theme-common/internal';
 
 // MUI
 import Avatar from '@mui/material/Avatar';
@@ -30,7 +30,7 @@ import { ThemeProvider } from '@emotion/react';
 
 function Copyright(props, isDarkMode) {
   return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
+    <Typography variant="body2" color={isDarkMode ? 'grey.300' : "text.secondary"} align="center" {...props}>
       {'Copyright © '}
       <Link sx={{ color: 'palette.text.primary'}} component={RouterLink} to="">
         UML Cloud Computing Club
@@ -73,80 +73,78 @@ function SignInPage() {
   }, []);
 
   return (
-    <ThemeProvider theme={lightTheme}>
-      <Container component="main" maxWidth="xs">
-        <CssBaseline />
-        <Box
-          sx={{
-            marginTop: 8,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
+    <Container component="main" maxWidth="xs">
+      <CssBaseline />
+      <Box
+        sx={{
+          marginTop: 8,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}
+      >
+        <Avatar sx={{ 
+          m: 1, 
+          backgroundImage: 
+            isDarkMode ? 
+              `linear-gradient(${gradientAngle}deg, #7b5caa, #CD7672)` :
+              `linear-gradient(${gradientAngle}deg, #9dcbfc, white)` 
           }}
         >
-          <Avatar sx={{ 
-            m: 1, 
-            backgroundImage: 
-              isDarkMode ? 
-               `linear-gradient(${gradientAngle}deg, #7b5caa, #CD7672)` :
-                `linear-gradient(${gradientAngle}deg, #9dcbfc, white)` 
-            }}
+          <LockOutlinedIcon />
+        </Avatar>
+        <Typography component="h1" variant="h5" sx={{ color: 'palette.text.primary'}}>
+          Sign in 
+        </Typography>
+        <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+          <TextField
+            margin="normal"
+            required
+            fullWidth
+            id="email"
+            label="Email Address"
+            name="email"
+            autoComplete="email"
+            autoFocus
+          />
+          <TextField
+            margin="normal"
+            required
+            fullWidth
+            name="password"
+            label="Password"
+            type="password"
+            id="password"
+            autoComplete="current-password"
+          />
+          <FormControlLabel
+            control={<Checkbox value="remember" sx={{color: 'palette.text.primary'}} />}
+            label="Remember me" 
+          />
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            sx={{ mt: 3, mb: 2 }}
           >
-            <LockOutlinedIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5" sx={{ color: 'palette.text.primary'}}>
-            Sign in 
-          </Typography>
-          <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              id="email"
-              label="Email Address"
-              name="email"
-              autoComplete="email"
-              autoFocus
-            />
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              name="password"
-              label="Password"
-              type="password"
-              id="password"
-              autoComplete="current-password"
-            />
-            <FormControlLabel
-              control={<Checkbox value="remember" sx={{color: 'palette.text.primary'}} />}
-              label="Remember me" 
-            />
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              sx={{ mt: 3, mb: 2 }}
-            >
-              Sign In
-            </Button>
-            <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2" sx={{ color: 'palette.text.primary'}}>
-                  Forgot password? 
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link href="#3" variant="body2" sx={{ color: 'palette.text.primary'}}>
-                  {"Don't have an account? Sign Up"}
-                </Link>
-              </Grid>
+            Sign In
+          </Button>
+          <Grid container>
+            <Grid item xs>
+              <Link href="#" variant="body2" sx={{ color: 'palette.text.primary'}}>
+                Forgot password? 
+              </Link>
             </Grid>
-          </Box>
+            <Grid item>
+              <Link href="#3" variant="body2" sx={{ color: 'palette.text.primary'}}>
+                {"Don't have an account? Sign Up"}
+              </Link>
+            </Grid>
+          </Grid>
         </Box>
-        <Copyright sx={{ mt: 8, mb: 4 }} isDarkMode={isDarkMode} />
-      </Container>
-    </ThemeProvider>
+      </Box>
+      <Copyright sx={{ mt: 8, mb: 4 }} isDarkMode={isDarkMode} />
+    </Container>
   );
 }
 
@@ -155,7 +153,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  bgcolor: 'background.paper',
+  bgcolor: 'black',
   borderRadius: '16px',
   padding: '16px',
 };
@@ -165,7 +163,6 @@ export default function SignIn() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-
   // IMPORTANT TO-DO: When the handle submit functionality is implemented, make sure to change the variant type of this button to text instead of disabled
   // Again, only when sign in works via backend!
   return (
@@ -177,12 +174,13 @@ export default function SignIn() {
         open={open}
         onClose={handleClose}
         closeAfterTransition
-        // slots={{ backdrop: Backdrop }}
-        // slotProps={{
-        //   backdrop: {
-        //     timeout: 500,
-        //   },
-        // }}
+        style={{ backdropFilter: "blur(5px)" }}
+        slots={{ backdrop: Backdrop }}
+        slotProps={{
+          backdrop: {
+            timeout: 500,
+          },
+        }}
       >
         <Fade in={open}>
           <Box sx={style}>
