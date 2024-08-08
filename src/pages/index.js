@@ -188,38 +188,6 @@ function HomepageFeatures() {
     );
 }
 
-function MobileBottomNav() {
-    const ref = React.useRef(null);
-    const [value, setValue] = React.useState(0);
-    const { colorMode } = useColorMode();
-    const isDarkMode = colorMode === 'dark';
-
-    const handleChange = (event, newValue) => {
-        setValue(newValue);
-    }
-    return (
-        <Box sx={{ pb: 7 }} ref = {ref}>
-            <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} square={false} elevation={3}>
-                <BottomNavigation
-                    showLabels
-                    value={value}
-                    onChange={handleChange}
-                    sx = {{
-                        bgcolor: isDarkMode ? 'black' : 'white',
-                        '& .MuiSvgIcon-root, & .MuiBottomNavigationAction-label': {
-                            color: isDarkMode ? 'white' : '#707070'
-                        }
-                    }}
-                >   
-                    <BottomNavigationAction label="Schedule" icon={<CalendarMonthOutlinedIcon/>} />
-                    <BottomNavigationAction label="Home" icon={<HomeOutlinedIcon/>}/>
-                    <BottomNavigationAction label="More" icon={<MoreHorizOutlinedIcon/>}/>
-                </BottomNavigation>
-            </Paper>
-        </Box>
-    )
-}
-
 export default function Home() {
     const { siteConfig } = useDocusaurusContext();
     return (
@@ -232,7 +200,6 @@ export default function Home() {
                 <ClubDetails />
                 <HomepageFeatures />
             </main>
-            {/* <MobileBottomNav /> */}
         </Layout>
     );
 }

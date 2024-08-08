@@ -137,25 +137,11 @@ const config = {
             label: 'Activities',
           },
 
-          // Events (Engage)
+          // Engage
           {
-            href: 'https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub/events',
+            href: 'https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub',
             position: 'left',
-            label: 'Events',
-          },
-
-          // News (Engage)
-          {
-            href: 'https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub/news',
-            position: 'left',
-            label: 'News',
-          },
-
-          // FAQ
-          {
-            position: 'left',
-            label: 'FAQ',
-            to: '/docs/Getting Started and FAQ',
+            label: 'Engage',
           },
         
           // Github
@@ -166,31 +152,32 @@ const config = {
             position: 'right',
             html: '<i class="fa fa-github"></i>',
           },
-          {
-            href: 'https://github.com/UMLCloudComputing',
-            label: 'GitHub',
-            position: 'right',
-          },
 
-          // Discord
+          // Socials (Discord, Instagram, LinkedIn)
           {
-            href: 'https://discord.gg/WC2NdqYtDt',
-            label: 'Discord',
+            type: 'dropdown',
+            label: 'Socials',
             position: 'right',
-          },
+            items: [
+              
+              // Discord
+              {
+                href: 'https://discord.gg/WC2NdqYtDt',
+                label: 'Discord',
+              },
+              
+              // Instagram
+              {
+                href: 'https://www.instagram.com/umlcloudcomputing/',
+                label: 'Instagram',
+              },
 
-          // Instagram
-          {
-            href: 'https://www.instagram.com/umlcloudcomputing/',
-            label: 'Instagram',
-            position: 'right',
-          },
-
-          // LinkedIn
-          {
-            href: 'https://www.linkedin.com/company/umass-lowell-cloud-computing-club/',
-            label: 'LinkedIn',
-            position: 'right',
+              // LinkedIn
+              {
+                href: 'https://www.linkedin.com/company/umass-lowell-cloud-computing-club/',
+                label: 'LinkedIn',
+              },
+            ]
           },
 
           // Sign In
@@ -224,6 +211,15 @@ const config = {
               },
             ],
           },
+          {
+            title: 'Help',
+            items: [
+              {
+                label: 'FAQ',
+                to: '/docs/Getting Started and FAQ'
+              }
+            ]
+          }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} UMass Lowell Cloud Computing Club`,
       },
