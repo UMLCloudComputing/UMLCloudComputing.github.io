@@ -30,7 +30,7 @@ All markdown files should follow Docusaurus's guidelines for folder structure fo
 
 ## 🛤️ Adding New Repository to Project Docs
 
-To add a new project's docuemtnation onto the project docs section of the website, you must meet a few pre-reqs:
+To add a new project's documentation onto the project docs section of the website, you must meet a few pre-reqs:
 
 1. The project must be a remote git repository (Github, BitBucket, etc)
 2. The project's repository must contain folder with the following structure: <br/>
