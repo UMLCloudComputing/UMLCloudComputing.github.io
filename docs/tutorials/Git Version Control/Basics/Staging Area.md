@@ -6,9 +6,11 @@ sidebar_position: 4
 
 ![Git-Staging-Diagram-1](../../../../static/img/git-tutorial/git-workflow-1.png)
 
-As you are working on a project, you add, edit, and remove files. When you reach a satisfactory point, you should add the files to a staging area.
+As you are working on a project, you add, edit, and remove files. When you reach a satisfactory point, you should add the files to the staging area.
 
 [Staged](Index.md#stage) files are ready to be [committed](./Index.md#commit) to your working repository. 
+
+With this basic terminology in mind, let's jump back to our repository:
 
 Back to our `newProject`, we can now make `index.html` as a tracked file by simple adding it to the staging area using `git add`:
 ``` shell
@@ -33,11 +35,11 @@ In other words, the file is now added to the staging area!
 
 It's often that we end up modifying more than one file within a project before we decide to [stage](./Index.md#stage) them. Let's see how to [stage](./Index.md#stage) them all at once:
 
-Let's start by adding a `README.md` file to our repository to describe it:
+Let's start by adding a `README.md` file to our repository to describe our project for other developers:
 ``` shell
 [user@localhost] $ vim README.md
 ```
-and add the following content:
+With the following content:
 ``` md
 # Hello world
 This repository exists as part of a git tutorial!
@@ -45,7 +47,7 @@ This repository exists as part of a git tutorial!
 
 :::info
 
-Recall to use the `:wq` command in [Vim](./Index.md#vim) to write and quit.
+Recall to use insert mode to edit. Similarly, escape to normal mode to use the `:wq` command in [Vim](./Index.md#vim) to write and quit.
 
 :::
 
@@ -53,7 +55,7 @@ Let's also add a CSS file called `styles.css`:
 ``` shell
 [user@localhost] $ vim styles.css
 ```
-and add the following content:
+With the following content:
 ``` css
 @keyframes ani {
     from {background-color: #4038e6;}
@@ -89,11 +91,6 @@ Finally let's update `index.html` to include our new stylesheet (`styles.css`):
     </body>
 </html>
 ```
-:::info
-
- Once again, recall to use the `:wq` command in [Vim](./Index.md#vim) to write and quit.
-
-:::
 
 Now let's add all these new files and changes to our staging area using the following command:
 ``` shell
@@ -116,7 +113,7 @@ Now checking via `git status`:
                            new file:   styles.css
 ```
 
-We can now do commits since all three files are in the staging area!
+We can now perform commits since all three files are in the staging area!
 
 :::note
 
