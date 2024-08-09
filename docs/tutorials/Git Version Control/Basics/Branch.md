@@ -13,6 +13,10 @@ Git branches allow development on a new features and designs independent from ot
 When the work is complete on a branch, it can be [merged](./Index.md#merge) back into the main branch/project.<br/>
 With branches, it's also possible to work on different parts of a project simultaneously without any part impacting another.
 
+Whenever starting a new repository, there is always the `master` branch. It's the default name for a branch in git. Within large projects, it representative as the ground-truth branch with the most stable and working version of a project. It's typical for it to contain the project's **working** code.
+
+Within Git, `HEAD` is a special pointer to a local branch you're currently on. When you change branches or make commits, `HEAD` moves accordingly.
+
 ### Creating a new Branch
 
 Let's create a new [branch](./Index.md#branch) to work on a feature without modifying the main project's working code:
@@ -56,7 +60,7 @@ Adding the `-b` option on `git checkout` will create a new branch and move to it
 :::
 
 Now let's make some edits now that we're in the correct branch.
-Let's add an [image](https://software.3metas.com/wp-content/uploads/2017/06/git.png)(needs to be downloaded) to our html page:
+Let's add an [image](https://software.3metas.com/wp-content/uploads/2017/06/git.png) to our html page:
 
 First let's obtain the image:
 > In order to download the image via the CLI use one of the following commands from the same working directory as `index.html`:
@@ -157,6 +161,8 @@ Finally let's check the content of this [branch](./Index.md#branch):
 index.html  README.md  styles.css
 ```
 `git.png` is gone! Moreover, if we open and check `index.html` we can see that it no longer has the edits we made recently!
+
+Within the process of changing branches the `HEAD` pointer changed from `hello-world-pictures` to `master`. Since both branches maintain different commits as their most recent, the `checkout` also changes the current working directory with the content of the `master` branch's latest commit.  
 
 Branches enable you to work on parts of a project independently.
 

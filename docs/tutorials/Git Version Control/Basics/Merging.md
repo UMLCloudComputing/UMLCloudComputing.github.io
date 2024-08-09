@@ -6,7 +6,7 @@ sidebar_position: 7
 
 ## Merging Branches
 
-Branch [merging](./Index.md#merge) allows the changes from one branch to be added to another, essentially combining the changes. Merging typically goes hand in hand with branches since the changes specific to a branch are often combined back to the main project code. A common scenario in industry is to use [branches](./Index.md#branch) to work of specific issues, features, or perform code maintainence. Once the edits are complete, the [branch's](./Index.md#branch) edits are [merged](./Index.md#merge) back into a `master` or main branch which contains the code used in production. 
+Branch [merging](./Index.md#merge) allows the changes from one branch to be added to another, essentially combining the changes.A common scenario in industry is to use [branches](./Index.md#branch) to work of specific issues, features, or perform code maintainence. Once the edits are complete, the [branch's](./Index.md#branch) edits are [merged](./Index.md#merge) back into a `master` or main branch which contains the code used in production. 
 
 Let's demonstrate how to merge branches alongside a bit of review!
 

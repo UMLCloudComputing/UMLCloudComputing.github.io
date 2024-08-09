@@ -49,13 +49,13 @@ Let's put some code within `index.html`:
 >In order to enter content into `index.html` using [Vim](./Index.md#vim), enter insert mode by pressing the "I" key on your keyboard. Then either type or paste the code into the editor. <br />
 To save and exit out of [Vim](./Index.md#vim) simply press the escape key and then type and enter `:wq` (write and quit). 
 
-Now let's check the contant of our directory using [`ls`](./Index.md#ls):
+Now let's check the content of our directory using [`ls`](./Index.md#ls):
 ``` shell
 [user@localhost] $ ls
                   index.html
 ```
 
-Since the file is within our directory now, let's check if it's part of our [repo](./Index.md#repository-repo) using `git status`:
+Since the file is within our working directory now, let's check if it's part of our [repository](./Index.md#repository-repo) using `git status`:
 ``` shell
 [user@localhost] $ git status
                 On branch master
@@ -71,8 +71,12 @@ Since the file is within our directory now, let's check if it's part of our [rep
 
 The output above indicates that now git is aware of the `index.html` however it has not be added to our repository.
 
-There are two potentional states for files in a repository folder:
-* Tracked: git knows about these and they are in your repository
-* Untracked: files that are in your working directory, however not added to your repository.
+There are three potential states for files in a repository folder:
+* Tracked: Git knows about these and they are in your repository. These are files from the last snapshot. These files have three sub-states:
+    * Modified
+    * Staged
+    * Committed
+* Untracked: These files are in your working directory, however not in the previous snapshot or in the [staging area](./Index.md#staging-area). 
+* Modified: A file that has changes made to it. However, these changes haven't been [committed](./Index.md#commit) yet. These changes include adding, modifying, or deleting a file's content. These files will be included in the next commit with their new changes. 
 
-Adding the first files to an empty repository are all untracked. In order for them to be tracked, they must be [staged](./Index.md#stage) or must add them to a [staging area](./Index.md#staging-area)
+Adding the first files to an empty repository are all untracked. In order for them to be tracked, they must be [staged](./Index.md#stage).
