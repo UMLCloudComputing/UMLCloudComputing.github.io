@@ -1,12 +1,11 @@
-# Schedule a cron job every hour that fetches submodules
 name: Fetch Submodules
 
 on:
   schedule:
-    - cron: '0 * * * *' # Runs every hour
+    - cron: '0 0 * * *' # Runs every hour
   push:
     branches:
-      - **
+      - main
 
 jobs:
   fetch-submodules:
@@ -19,3 +18,16 @@ jobs:
 
       - name: Run submodule update script
         run: ./submodule-update.sh
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Commit and push changes
+        run: |
+          git add .
+          git commit -m "Update submodules"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
