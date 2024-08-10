@@ -51,7 +51,7 @@ const config = {
   presets: [
     [
       '@docusaurus/preset-classic',
-      ({
+      {
         docs: {
           sidebarPath: 'sidebars.js',
           // Please change this to your repo.
@@ -63,17 +63,18 @@ const config = {
           showLastUpdateAuthor:true,
           showLastUpdateTime: true,
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/UMLCloudComputing/UMLCloudComputing.github.io/edit/main/',
-        // },
+
+        blog: {
+          showReadingTime: true,
+          authorsMapPath: 'authors.yml',
+          tags: 'tags.yml',
+          blogDescription: 'The Offical Blog page of UML Cloud Computing Club'    
+        },
+
         theme: {
           customCss: './src/css/custom.css',
         },
-      }),
+      },
     ],
   ],
 
@@ -111,6 +112,13 @@ const config = {
             position: 'left',
             label: 'Schedule',
             to: '/docs/Meeting Schedule',
+          },
+
+          // Blog
+          {
+            to: 'blog',
+            label: 'Blog',
+            position: 'left',
           },
 
           // Projects
