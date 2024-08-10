@@ -1,0 +1,24 @@
+UniPath.io:
+  label: 'UniPath.io'
+  permalink: "/Unipath"
+  description: 'Blog posts related to the UniPath.io project'
+
+UniBot: 
+  label: 'UniBot'
+  permalink: "/UniBot"
+  description: 'Blog posts related to the UniBot project'
+
+UML-Now-CLI:
+  label: 'UML Now CLI'
+  permalink: "/UmlNowCLI"
+  description: 'Blog posts related to the UML-Now-CLI project'
+
+react-mui-resume:
+  label: 'React MUI Resume'
+  permalink: "/reactMuiResume"
+  description: 'Blog posts related to the React MUI Resume project'
+
+hawkerscrape:
+  label: 'Hawkerscrape'
+  permalink: "/hawkerscrape"
+  description: 'Blog posts related to the hawkerscrape project'
