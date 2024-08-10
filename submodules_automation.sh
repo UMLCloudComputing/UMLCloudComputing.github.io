@@ -6,7 +6,7 @@ git pull origin main
 # add it's proper name into the sequence below called `projects`
 git submodule update --init
 git submodule foreach git pull origin main
-projects=("UniPath.io" "rowdybot" "react-mui-resume")
+projects=("UniPath.io" "UniBot" "react-mui-resume")
 for i in "${projects[@]}"; do
     rsync submodules/$i/docs/web_docs/* docs/projects/$i
 done
