@@ -25,6 +25,6 @@ New Git repository created!
 
 :::info
 
- Git automatically knows to watch this folder for changes within a hidden folder.
+ Git automatically knows to watch this folder for changes.
 
  :::

@@ -9,7 +9,7 @@ sidebar_position: 5
 Commits keep track of progress and changes as we work. Git treats each [`commit`](./Index.md#commit) as a "save point". It's a point in the project which can be reverted to if a bug is found, or you want to make a change. 
 
 Whenever performing a [`commit`](./Index.md#commit), **always** include a commit **message**. 
-It's always best practice to do so and improves understanding of your code for others and subsequently maintainability of your project. 
+Following this practice improves the comprehension of your code and subsequently improves your project's maintainability. 
 
 ``` bash
 [user@localhost] $ git commit -m "init commit"
@@ -56,7 +56,7 @@ Recall, to open a file to edit in your working directory with [Vim](./Index.md#v
 Now let's check the status of our [repo](./Index.md#repository-repo), however with the `--short` option to get a more compact response:
 ``` bash 
 [user@localhost] $ git status --short
-                   M index.html
+M index.html
 ```
 > Note: The `--short` option on `git status` is also synonymous with `-s`. Hence, either `git status -s` or `git status --short` can be used to perform the same action.
 
@@ -65,8 +65,8 @@ Here's some valuable [information](./Index.md#git-status-short) about short git 
 Now let's commit directly:
 ``` bash
 [user@localhost] $ git commit -a -m "feat: Added a new line in index.html"
-                   feat: Added a new line in index.html
-                   1 file changed, 1 insertion(+)
+feat: Added a new line in index.html
+ 1 file changed, 1 insertion(+)
 ```
 > Notice how the commit message follows the [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) structure.
 
@@ -79,15 +79,15 @@ Warning: It's typically not best practice to skip the staging area since it's po
 In order to view the commit history of your repository, use the `log` command:
 ``` bash
 [user@localhost] $ git log
-                    commit c4c4abe5c0156a5626cdafc1e5722d5b2b23e833 (HEAD -> master)
-                    Author: example user <user@example.com>
-                    Date:   Sun Jul 21 14:12:35 2024 -0400
+commit c4c4abe5c0156a5626cdafc1e5722d5b2b23e833 (HEAD -> master)
+Author: example user <user@example.com>
+Date:   Sun Jul 21 14:12:35 2024 -0400
 
-                        feat: Added a new line in index.html
+    feat: Added a new line in index.html
 
-                    commit d3d38f65bb0bde98b47a6747d8d02b2e53bd0bcb
-                    Author: example user <user@example.com>
-                    Date:   Sun Jul 21 13:46:57 2024 -0400
+commit d3d38f65bb0bde98b47a6747d8d02b2e53bd0bcb
+Author: example user <user@example.com>
+Date:   Sun Jul 21 13:46:57 2024 -0400
 
-                        init commit
+    init commit
 ```
