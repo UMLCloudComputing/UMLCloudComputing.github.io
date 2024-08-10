@@ -17,7 +17,7 @@ jobs:
           submodules: true # Fetches submodules
 
       - name: Run submodule update script
-        run: $GITHUB_WORKSPACE/submodule-update.sh
+        run: ./submodules_automation.sh
 
       - name: Configure Git
         run: |
