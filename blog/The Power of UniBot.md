@@ -7,8 +7,6 @@ tags:
  - hawkerscrape
 ---
 
-## The Power of UniBot
-
 Let's explore the power of UniBot
 
 <!-- truncate -->

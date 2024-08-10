@@ -6,11 +6,11 @@ tags:
  - UniPath.io
 ---
 
-## The Story Behind UniPath.io
-
 Here's the story behind the origin of UniPath.io
 
 <!-- truncate -->
+
+![UniPath.io Logo](./The%20Story%20Behind%20UniPath.io/UniPath_Logo.png)
 
 Maxime harum non et dolor enim quia. Corporis eum doloremque aspernatur esse reiciendis ut unde. Labore minus quisquam nostrum suscipit. Hic in perferendis possimus animi hic pariatur nulla ipsam. Ex exercitationem similique deleniti et rerum possimus.
 

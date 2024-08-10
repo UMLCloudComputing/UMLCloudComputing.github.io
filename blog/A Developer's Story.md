@@ -2,8 +2,6 @@
 authors: Org
 ---
 
-## A Developer's Story
-
 Here lies a dear story of a fellow developer...
 
 <!-- truncate -->
