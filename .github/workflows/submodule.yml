@@ -1,0 +1,21 @@
+# Schedule a cron job every hour that fetches submodules
+name: Fetch Submodules
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Runs every hour
+  push:
+    branches:
+      - **
+
+jobs:
+  fetch-submodules:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          submodules: true # Fetches submodules
+
+      - name: Run submodule update script
+        run: ./submodule-update.sh
