@@ -27,8 +27,6 @@ TOKEN=
 ID=
 DISCORD_PUBLIC_KEY=
 ```
-</details>
-
 2. Do not share this file with anyone. It contains your secret key.
 
 
