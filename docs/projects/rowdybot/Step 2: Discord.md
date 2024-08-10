@@ -4,9 +4,6 @@ sidebar_position: 3
 
 ### Discord Application Setup
 
-<details>
-<summary>Expand</summary>
-
 1. Go to discord.dev and create a new application.
 
 Navigate to application creation
