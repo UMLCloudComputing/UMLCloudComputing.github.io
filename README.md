@@ -9,7 +9,7 @@
 
 This is the official repo for the UML Cloud Computing Club's website.
 
-The website is implemented using [Docusaurus](https://docusaurus.io/) and some fundamental [ReactJS](https://react.dev/).
+The website is implemented using [Docusaurus](https://docusaurus.io/), [MUI](https://mui.com/), and some fundamental [ReactJS](https://react.dev/).
 
 
 ## 👨‍💻 Documentation and Tutorials Contribution Guidelines
