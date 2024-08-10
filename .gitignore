@@ -3,8 +3,8 @@
 
 # Production
 /build
-/docs/projects/
-/submodules
+# /docs/projects/
+# /submodules
 
 # Generated files
 .docusaurus
