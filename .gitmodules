@@ -1,9 +1,9 @@
-[submodule "submodules/rowdybot"]
-	path = submodules/rowdybot
-	url = https://github.com/UMLCloudComputing/rowdybot
 [submodule "submodules/UniPath.io"]
 	path = submodules/UniPath.io
 	url = https://github.com/UMLCloudComputing/UniPath.io
 [submodule "submodules/react-mui-resume"]
 	path = submodules/react-mui-resume
 	url = https://github.com/UMLCloudComputing/react-mui-resume
+[submodule "submodules/UniBot"]
+	path = submodules/UniBot
+	url = https://github.com/UMLCloudComputing/UniBot
