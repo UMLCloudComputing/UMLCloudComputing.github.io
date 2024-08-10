@@ -16,6 +16,9 @@ jobs:
         with:
           submodules: true # Fetches submodules
 
+      - name: Make submodule update script executable
+        run: chmod +x ./submodules_automation.sh
+
       - name: Run submodule update script
         run: ./submodules_automation.sh
 
