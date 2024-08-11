@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   build:
@@ -19,6 +21,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Fetch Latest Documentation
+        run: npm run import
 
       - name: Build Docusaurus site
         run: npm run build
