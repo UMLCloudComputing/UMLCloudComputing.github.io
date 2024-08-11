@@ -1,6 +1,6 @@
-import { execSync } from 'child_process';
-import { readFileSync, mkdirSync, existsSync } from 'fs';
-import { join } from 'path';
+const { execSync } = require('child_process');
+const { readFileSync, mkdirSync, existsSync } = require('fs');
+const { join } = require('path');
 
 const repos = JSON.parse(readFileSync('repos.json', 'utf8'));
 
