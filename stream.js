@@ -3,7 +3,7 @@ const { readFileSync, mkdirSync, existsSync, writeFileSync } = require('fs');
 const { join } = require('path');
 
 const repos = JSON.parse(readFileSync('repos.json', 'utf8'));
-position = 1;
+position = 2;
 
 for (const [name, url] of Object.entries(repos)) {
   const repoDir = join(__dirname, 'temp', name);
