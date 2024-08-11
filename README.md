@@ -179,17 +179,13 @@ react-mui-resume
 ### In order to add your project:
 1. Create a new branch from the **main** branch
 2. Name the branch with the following convention: `feat: Add new project docs: PROJECTNAME` with `PROJECTNAME` being the name of your project.
-3. Run the following command from within the root directory of your new branch:
-    ``` shell
-    git submodule add REPO_URL submodules/
-    ```
-    `REPO_URL` is the **URL** for your repository. Do not confuse this with the `.git` link to your repository. It's specically the **URL**. <br/>
-    IE for this very Github repository it's: https://github.com/UMLCloudComputing/UMLCloudComputing.github.io
-4. Open the `submodules_automation.sh` file for editing. Add the proper name of your git repository into the sequence called `projects`. Be sure to include a **space** between your repository name and the name of the previous repository. The **proper** name of your repository is typically simply the name of your repository. To be extra sure, confirm with the name of the folder added to `submodules/` marking your project. That folder is named the **proper** name of your repository. 
-5. Run the script you just edited by calling the command `./submodules_automation.sh` or `bash submodules_automation.sh` from the root directory of your branch. 
-6. Now your docs have been imported to the website's collection of docs. All that's left is to stage, commit and push the changes from your branch to the main branch.
-7. After your pull request is approved, your project's docs will be visible in production on the website!
-
+3. Add your repository to package.json. Add the following line to the `projects` array:
+``` json
+{
+    "<Your Project Name>": "<Project Github URL>",
+}
+```
+4. Make a Pull Request to merge your branch into **main**. Your project will be added to the website once the PR is approved and merged.
 
 ## 🎉Acknowledgements 
 Many thanks to the [UMass Lowell Cloud Computing Club](https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub) members, our faculty advisor [Dr. Johannes Weis](https://www.uml.edu/sciences/computer-science/people/weis-johannes.aspx), and the [UMass Lowell Computer Science Department](https://www.uml.edu/Sciences/computer-science/) for their support and guidance.
