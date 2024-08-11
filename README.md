@@ -179,10 +179,11 @@ react-mui-resume
 ### In order to add your project:
 1. Create a new branch from the **main** branch
 2. Name the branch with the following convention: `feat: Add new project docs: PROJECTNAME` with `PROJECTNAME` being the name of your project.
-3. Add your repository to package.json. Add the following line to the `projects` array:
+3. Add your repository to package.json. Add your project as a key-value pair in the json file:
 ``` json
 {
-    "<Your Project Name>": "<Project Github URL>",
+    "<Other Project>": "<Other Project Github URL>",
+    "<Your Project Name>": "<Your Project Github URL>",
 }
 ```
 4. Make a Pull Request to merge your branch into **main**. Your project will be added to the website once the PR is approved and merged.
