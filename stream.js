@@ -1,8 +1,9 @@
 const { execSync } = require('child_process');
-const { readFileSync, mkdirSync, existsSync } = require('fs');
+const { readFileSync, mkdirSync, existsSync, writeFileSync } = require('fs');
 const { join } = require('path');
 
 const repos = JSON.parse(readFileSync('repos.json', 'utf8'));
+position = 1;
 
 for (const [name, url] of Object.entries(repos)) {
   const repoDir = join(__dirname, 'temp', name);
@@ -19,5 +20,16 @@ for (const [name, url] of Object.entries(repos)) {
   // Copy the docs/web_docs directory to the destination
   execSync(`cp -r ${join(repoDir, 'docs', 'web_docs')}/* ${destDir}`);
 
+  // Create _category_.json file
+  const categoryContent = {
+    label: name,
+    position: position,
+    link: {
+      type: "generated-index"
+    }
+  };
+  writeFileSync(join(destDir, '_category_.json'), JSON.stringify(categoryContent, null, 2));
+
   console.log(`Copied docs from ${name}`);
+  position++;
 }
