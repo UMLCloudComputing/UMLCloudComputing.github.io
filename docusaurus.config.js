@@ -144,13 +144,6 @@ const config = {
             position: 'left',
             label: 'Activities',
           },
-
-          // Engage
-          {
-            href: 'https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub',
-            position: 'left',
-            label: 'Engage',
-          },
         
           // Github
           {
@@ -185,6 +178,13 @@ const config = {
                 href: 'https://www.linkedin.com/company/umass-lowell-cloud-computing-club/',
                 label: 'LinkedIn',
               },
+
+              // Engage
+              {
+                href: 'https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub',
+                label: 'Engage',
+              },
+
             ]
           },
 
