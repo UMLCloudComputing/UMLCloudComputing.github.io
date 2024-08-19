@@ -6,7 +6,7 @@
 
 ## 📆 Meeting Schedule
 
-**Events & Meeting Location**: https://sesh.fyi/dashboard/890983857938116729/events?view=calendar
+**Events & Meeting Location**: https://sesh.fyi/calendar/890983857938116729
 
 **Meeting Time**: Thursday's from 6:30pm-9:30pm. 
 
