@@ -5,12 +5,16 @@ slug: /spring-2023
 ---
 
 :::danger
-This schedule is outdated and refers to a past semester. Please check the [latest schedule](./schedule) for current information.
+This schedule is outdated and refers to a past semester. Please check the [latest schedule](./current-schedule) for current information.
 :::
+
+<center>
 
 [![Website](https://img.shields.io/badge/Website-UML%20Engage-blue.svg?style=for-the-badge)](https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub)
 [![Discord](https://img.shields.io/discord/890983857938116729?logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/WC2NdqYtDt)
 [![Email](https://img.shields.io/badge/Email-cloudcomputingclub%40uml.edu-red.svg?logo=gmail&logoColor=white&style=for-the-badge)](mailto:cloudcomputingclub@uml.edu)
+
+</center>
 
 # UMass Lowell Cloud Computing Club: Spring 2024
 
