@@ -1,0 +1,38 @@
+name: PR Build Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Docusaurus site
+        run: npm run build
+
+      - name: Post success message
+        if: success()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const branchName = context.payload.pull_request.head.ref;
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `Build check completed successfully for ${branchName}!`
+            }) 
