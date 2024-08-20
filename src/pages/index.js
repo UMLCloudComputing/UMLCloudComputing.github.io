@@ -92,7 +92,8 @@ function HomepageHeader() {
                     >
                     View Projects
                     </Button>
-                    <Button
+                </Stack>
+                <Button
                         variant="contained"
                         sx={{ mt: 2, ml: 2, }}
                         color='primary'
@@ -102,7 +103,6 @@ function HomepageHeader() {
                     >
                     About Us
                     </Button>
-                </Stack>
             </Container>
         </Box>
     );
