@@ -16,9 +16,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Paper from '@mui/material/Paper';
 import SchoolIcon from '@mui/icons-material/School';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
-import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
+import Groups2RoundedIcon from '@mui/icons-material/Groups2Rounded';
 import { BottomNavigation, BottomNavigationAction, createTheme, CssBaseline, responsiveFontSizes } from '@mui/material';
 
 // Local
@@ -93,6 +91,16 @@ function HomepageHeader() {
                         endIcon={<AutoStoriesIcon/>}
                     >
                     View Projects
+                    </Button>
+                    <Button
+                        variant="contained"
+                        sx={{ mt: 2, ml: 2, }}
+                        color='primary'
+                        component={RouterLink}
+                        to="docs/About Us"
+                        endIcon={<Groups2RoundedIcon/>}
+                    >
+                    About Us
                     </Button>
                 </Stack>
             </Container>

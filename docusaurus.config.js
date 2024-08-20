@@ -188,14 +188,6 @@ const config = {
             ]
           },
 
-          // About Us
-          {
-            to:'docs/About Us',
-            activeBasePath: 'docs',
-            label: 'About Us',
-            position: 'right',
-          },
-
           // Sign In
           {
             type: 'custom-accountButton',
