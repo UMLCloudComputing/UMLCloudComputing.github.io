@@ -185,8 +185,15 @@ const config = {
                 href: 'https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub',
                 label: 'Engage',
               },
-
             ]
+          },
+
+          // About Us
+          {
+            to:'docs/About Us',
+            activeBasePath: 'docs',
+            label: 'About Us',
+            position: 'right',
           },
 
           // Sign In
