@@ -109,9 +109,10 @@ const config = {
 
           // Schedule
           {
+            type: 'docSidebar',
+            sidebarId: 'scheduleSidebar',
             position: 'left',
             label: 'Schedule',
-            to: '/docs/Meeting Schedule',
           },
 
           // Blog
