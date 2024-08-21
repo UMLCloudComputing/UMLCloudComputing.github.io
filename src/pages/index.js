@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Link from '@docusaurus/Link';
 import { useColorMode } from '@docusaurus/theme-common';
 import 'animate.css';
 
@@ -23,6 +24,7 @@ import { BottomNavigation, BottomNavigationAction, createTheme, CssBaseline, res
 import Layout from '@theme/Layout';
 import { ThemeProvider } from '@emotion/react';
 
+
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
@@ -30,7 +32,7 @@ function HomepageHeader() {
     const { siteConfig } = useDocusaurusContext();
     const { colorMode } = useColorMode();
     const isDarkMode = colorMode === 'dark';
-    
+
     const [gradientAngle, setGradientAngle] = useState(0); // Initial gradient angle
 
     useEffect(() => {
@@ -44,24 +46,23 @@ function HomepageHeader() {
         <Box
             component="header"
             sx={{
-                // backgroundImage: `url(${images[currentImageIndex]})`,
                 backgroundImage: isDarkMode ? `linear-gradient(${gradientAngle}deg, #7b5caa, #CD7672)` : `linear-gradient(${gradientAngle}deg, #9dcbfc, white)`,
                 borderRadius: '16px',
                 filter: isDarkMode ? 'drop-shadow(0 0.4rem 0.3rem rgba(123, 123, 123, 0.5))' : 'drop-shadow(0 0.4rem 0.3rem rgba(0,0,0,0.5))',
                 transition: 'background-image 0.5s ease', // smooth transition 
                 backgroundSize: 'cover', 
                 backgroundPosition: 'center',
-                color: 'white',
                 textAlign: 'center',
                 py: 10,
+                color: isDarkMode ? 'white' : '#707070'
             }}
         >
             <Container maxWidth="md">
                 <ThemeProvider theme = {theme}>
-                    <Typography variant="h1" component="h1" className="animate__animated animate__fadeInDown" color={isDarkMode ? 'white' : '#707070'}>
+                    <Typography variant="h1" component="h1" className="animate__animated animate__fadeInDown">
                         {siteConfig.title}
                     </Typography>
-                    <Typography variant="h5" component="p" sx={{ mt: 2 }} className="animate__animated animate__fadeInUp" color={isDarkMode ? 'white' : '#707070'}>
+                    <Typography variant="h5" component="p" sx={{ mt: 2 }} className="animate__animated animate__fadeInUp">
                         {siteConfig.tagline}
                     </Typography>
                 </ThemeProvider>
@@ -94,66 +95,61 @@ function HomepageHeader() {
                     </Button>
                 </Stack>
                 <Button
-                        variant="contained"
-                        sx={{ mt: 2, ml: 2, }}
-                        color='primary'
-                        component={RouterLink}
-                        to="docs/About Us"
-                        endIcon={<Groups2RoundedIcon/>}
+                    variant="contained"
+                    sx={{ mt: 2, ml: 2, }}
+                    color='primary'
+                    component={RouterLink}
+                    to="docs/About Us"
+                    endIcon={<Groups2RoundedIcon/>}
                     >
-                    About Us
-                    </Button>
+                About Us
+                </Button>
             </Container>
         </Box>
     );
 }
 
-const PaperCard = ({ children, isDarkMode }) => (
-    <Paper
-        elevation={3}
-        sx={{
-            p: 3,
-            textAlign: 'center',
-            bgcolor: isDarkMode ? 'grey.800' : 'background.paper',
-            color: isDarkMode ? 'white' : 'text.primary',
-            height: '100%',
-            borderRadius: '16px',
-        }}
-    >
-        {children}
-    </Paper>
+const PaperCard = ({ Header, Content, footerButton }) => (
+    <div class="card">
+        <div class="card__header text--center">
+            <h3>{Header}</h3>
+        </div>
+        <div class="card__body text--center">
+            <p>
+                {Content}
+            </p>
+        </div>
+        <div class="card__footer">
+            {footerButton}
+        </div>
+    </div>
 );
 
 function ClubDetails() {
-    const { colorMode } = useColorMode();
-    const isDarkMode = colorMode === 'dark';
+
+    const Buttons = {
+        'about us': <Link class="button button--secondary button--block" to="/docs/About Us">See More</Link>,
+        'join us': <Link class="button button--secondary button--block" to="https://discord.gg/WC2NdqYtDt">Discord</Link>,
+        'our projects': <Link class="button button--secondary button--block" to="/docs/projects/welcome">Project Docs</Link>,
+    };
 
     return (
         <Container sx={{ py: 4 }}>
             <Grid container spacing={4}>
                 <Grid item xs={12} sm={4} >
-                    <PaperCard isDarkMode={isDarkMode}>
-                        <Typography variant="h6">About Us</Typography>
-                        <Typography>
-                            We are a student-led organization dedicated to exploring cloud computing and its applications through hands-on learning, projects, and industry connections.
-                        </Typography>
-                    </PaperCard>
+                    <PaperCard Header={"About Us"} 
+                    Content={"We are a student-led organization dedicated to exploring cloud computing and its applications through hands-on learning, projects, and industry connections."}
+                    footerButton={Buttons['about us']} />
                 </Grid>
                 <Grid item xs={12} sm={4}>
-                    <PaperCard isDarkMode={isDarkMode}>
-                        <Typography variant="h6">Join Us</Typography>
-                        <Typography>
-                            Open to all UMass Lowell students, faculty, and staff. Join us at our weekly meetings to learn, build, and connect.
-                        </Typography>
-                    </PaperCard>
+                    <PaperCard Header={"Join Us"} 
+                    Content={"Open to all UMass Lowell students, faculty, and staff. Join us at our weekly meetings to learn, build, and connect."}
+                    footerButton={Buttons['join us']}/>
                 </Grid>
                 <Grid item xs={12} sm={4}>
-                    <PaperCard isDarkMode={isDarkMode}>
-                        <Typography variant="h6">Our Projects</Typography>
-                        <Typography>
-                            We work on various projects including UniPath.io, AWS Essentials, and Docker containerization. Contribute and gain practical experience.
-                        </Typography>
-                    </PaperCard>
+                    <PaperCard Header={"Our Projects"} 
+                    Content={"We work on our various projects including UniPath.io, UniBot, the UML-Now-CLI, react mui resume, and more. Contribute and gain practical experience."}
+                    footerButton={Buttons['our projects']}/>
                 </Grid>
             </Grid>
         </Container>
@@ -161,43 +157,40 @@ function ClubDetails() {
 }
 
 function HomepageFeatures() {
-    const { colorMode } = useColorMode();
-    const isDarkMode = colorMode === 'dark';
+    const Buttons = {
+        'resources': <Link class="button button--secondary button--block" to="/docs/resources/welcome">Resources</Link>,
+        'meetings': <Link class="button button--secondary button--block" to="/docs/schedule/current-schedule" >Meetings</Link>,
+        'collaborative projects': <Link class="button button--secondary button--block" to="https://github.com/UMLCloudComputing">Github</Link>,
+    };
 
     return (
         <Container sx={{ pb: 4 }}>
             <Grid container spacing={4}>
                 <Grid item xs={12} sm={4}>
-                    <PaperCard isDarkMode={isDarkMode}>
-                        <Typography variant="h6">Hands-On Learning</Typography>
-                        <Typography>
-                            Engage in hands-on learning experiences with cloud computing technologies like AWS, Docker, and more.
-                        </Typography>
-                    </PaperCard>
+                    <PaperCard Header={"Hands-On Learning"} 
+                    Content={"Engage in hands-on learning experiences with cloud computing technologies like AWS, Docker, Kubernetes, and more."}
+                    footerButton={Buttons['resources']}/>
                 </Grid>
                 <Grid item xs={12} sm={4}>
-                    <PaperCard isDarkMode={isDarkMode}>
-                        <Typography variant="h6">Industry Connections</Typography>
-                        <Typography>
-                            Connect with industry professionals through guest lectures, workshops, and networking events.
-                        </Typography>
-                    </PaperCard>
+                    <PaperCard Header={"Industry Connections"} 
+                    Content={"Connect with industry professionals through guest lectures, workshops, and networking events."}
+                    footerButton={Buttons['meetings']}/>
                 </Grid>
                 <Grid item xs={12} sm={4}>
-                    <PaperCard isDarkMode={isDarkMode}>
-                        <Typography variant="h6">Collaborative Projects</Typography>
-                        <Typography>
-                            Work on real-world projects and collaborate with peers to develop practical cloud computing skills.
-                        </Typography>
-                    </PaperCard>
+                    <PaperCard Header={"Collaborative Work"} 
+                    Content={"Work on real-world projects and collaborate with peers to develop practical cloud computing skills."}
+                    footerButton={Buttons['collaborative projects']}/>
                 </Grid>
             </Grid>
         </Container>
     );
 }
 
+function Members() {
+    
+}
+
 export default function Home() {
-    const { siteConfig } = useDocusaurusContext();
     return (
         <Layout
             title={`Welcome`}

@@ -97,7 +97,6 @@ const config = {
       // Replace with your project's social card
       image: 'img/logo_icon.png',
       colorMode: {
-        defaultMode: 'light',
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
@@ -132,12 +131,12 @@ const config = {
             label: 'Projects',
           },
 
-          // Tutorials
+          // Resources
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'resourcesSidebar',
             position: 'left',
-            label: 'Tutorials',
+            label: 'Resources',
           },
 
           // Activities
