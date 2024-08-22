@@ -6,7 +6,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Link from '@docusaurus/Link';
 import { useColorMode } from '@docusaurus/theme-common';
 import 'animate.css';
-import InfiniteScroll from 'react-infinite-scroll-component';
 
 // MUI
 import Stack from '@mui/material/Stack';
