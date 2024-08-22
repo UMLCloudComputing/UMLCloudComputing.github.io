@@ -6,6 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Link from '@docusaurus/Link';
 import { useColorMode } from '@docusaurus/theme-common';
 import 'animate.css';
+import InfiniteScroll from 'react-infinite-scroll-component';
 
 // MUI
 import Stack from '@mui/material/Stack';
@@ -14,15 +15,15 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Unstable_Grid2';
-import Paper from '@mui/material/Paper';
 import SchoolIcon from '@mui/icons-material/School';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import Groups2RoundedIcon from '@mui/icons-material/Groups2Rounded';
-import { BottomNavigation, BottomNavigationAction, createTheme, CssBaseline, responsiveFontSizes } from '@mui/material';
+import { createTheme,responsiveFontSizes } from '@mui/material';
 
 // Local
 import Layout from '@theme/Layout';
 import { ThemeProvider } from '@emotion/react';
+import members from "../members_meta/members.json";
 
 
 let theme = createTheme();
@@ -134,7 +135,7 @@ function ClubDetails() {
     };
 
     return (
-        <Container sx={{ py: 4 }}>
+        <Container sx={{ pb: 4 }}>
             <Grid container spacing={4}>
                 <Grid item xs={12} sm={4} >
                     <PaperCard Header={"About Us"} 
@@ -159,7 +160,7 @@ function ClubDetails() {
 function HomepageFeatures() {
     const Buttons = {
         'resources': <Link class="button button--secondary button--block" to="/docs/resources/welcome">Resources</Link>,
-        'meetings': <Link class="button button--secondary button--block" to="/docs/schedule/current-schedule" >Meetings</Link>,
+        'meetings': <Link class="button button--secondary button--block" to="/docs/current-schedule" >Meetings</Link>,
         'collaborative projects': <Link class="button button--secondary button--block" to="https://github.com/UMLCloudComputing">Github</Link>,
     };
 
@@ -186,8 +187,36 @@ function HomepageFeatures() {
     );
 }
 
+const AvatarLarge = ({ Image, Name, Subtitle}) =>(
+    <div class="avatar">
+        <img 
+            class="avatar__photo avatar__photo--lg"
+            src={Image} />
+        <div class="avatar_intro">
+            <div class="avatar__name"> {Name} </div>
+            <small class="avatar__subtitle"> {Subtitle} </small>
+        </div>
+    </div>
+);
+
 function Members() {
-    
+    return (
+        <Box wrap="nowrap" sx={{ display: 'block', overflowX: 'auto', py:4, pl: 4, 
+            '&::-webkit-scrollbar': {
+                display: 'none',
+            },
+            '-ms-overflow-style': 'none',  // IE and Edge
+            'scrollbar-width': 'none',  // Firefox
+        }}>
+            <Grid container wrap="nowrap">
+                {members.map(member => {
+                    return (
+                        <Grid item sx={{ minWidth: '430px' }}><AvatarLarge Image={member.image} Name={member.name} Subtitle={member.subtitle} /></Grid>
+                    );
+                })}
+            </Grid>
+        </Box>
+    );
 }
 
 export default function Home() {
@@ -198,6 +227,7 @@ export default function Home() {
         >
             <HomepageHeader />
             <main>
+                <Members />
                 <ClubDetails />
                 <HomepageFeatures />
             </main>

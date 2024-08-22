@@ -42,7 +42,7 @@ function MobileBottomNav() {
                   value={value}
                   onChange={handleChange}
                   sx = {{
-                      bgcolor: isDarkMode ? 'grey.800' : 'white',
+                      bgcolor: isDarkMode ? 'black' : 'white',
                       '& .MuiSvgIcon-root, & .MuiBottomNavigationAction-label': {
                           color: isDarkMode ? 'grey.300' : 'grey.700'
                       },
@@ -52,7 +52,7 @@ function MobileBottomNav() {
                   }}
               >
                   <Redirect to={value} />
-                  <BottomNavigationAction value={"/docs/Meeting Schedule"} label="Schedule" icon={<CalendarMonthOutlinedIcon/>} />
+                  <BottomNavigationAction value={"/docs/current-schedule"} label="Schedule" icon={<CalendarMonthOutlinedIcon/>} />
                   <BottomNavigationAction value={""} label="Home" icon={<HomeOutlinedIcon/>}/>
                   <BottomNavigationAction value={location} onClick={() => {mobileSidebar.toggle();}} label="More" icon={<MoreHorizOutlinedIcon/>}/>
               </BottomNavigation>
