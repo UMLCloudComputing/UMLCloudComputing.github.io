@@ -1,0 +1,37 @@
+[
+    {
+        "image": "https://avatars.githubusercontent.com/u/44274319?v=4",
+        "name": "Martin Marwad",
+        "subtitle": "Founder, Alumni Advisor, UniPath.io Founder"
+    },
+    {
+        "image": "https://avatars.githubusercontent.com/u/136134023?v=4",
+        "name": "Alvin Yu",
+        "subtitle": "President, UniBot Founder, UniPath.io Dev"
+    },
+    {
+        "image": "https://avatars.githubusercontent.com/u/81245965?v=4",
+        "name": "Nick Bottari",
+        "subtitle": "Vice President, UniPath.io General Lead"
+    },
+    {
+        "image": "https://avatars.githubusercontent.com/u/60888380?v=4",
+        "name": "Christopher Coco",
+        "subtitle": "Secretary, Attendance Bot Lead, UniPath.io Dev"
+    },
+    {
+        "image": "https://media.licdn.com/dms/image/v2/D4E03AQEnHtWDIh-mBg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1700494525950?e=1729728000&v=beta&t=SsM6J2qHqALo4otJYYdKUKOAMrcliF-dMXpmEUzC2pw",
+        "name": "Gurpreet Singh",
+        "subtitle": "Treasurer, Club Website Lead, UniPath.io Dev"
+    },
+    {
+        "image": "https://avatars.githubusercontent.com/u/109564679?v=4",
+        "name": "Rahul Rajesh",
+        "subtitle": "Former VP, UniPath.io Dev, UML-Now-CLI Dev"
+    },
+    {
+        "image": "https://media.licdn.com/dms/image/v2/D4E03AQGZblBKFmKCmg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1703034903861?e=1729728000&v=beta&t=lcd6aBE3hfJ7sx4_y_sGEcAcyLTnxZ6JXsHzN8Sn9DA",
+        "name": "Noah Shayne",
+        "subtitle": "UniPath.io Dev, UniBot Dev, Hawkerscrape Dev"
+    }
+]

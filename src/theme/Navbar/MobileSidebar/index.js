@@ -42,7 +42,7 @@ function MobileBottomNav() {
                   value={value}
                   onChange={handleChange}
                   sx = {{
-                      bgcolor: isDarkMode ? 'grey.800' : 'white',
+                      bgcolor: isDarkMode ? 'black' : 'white',
                       '& .MuiSvgIcon-root, & .MuiBottomNavigationAction-label': {
                           color: isDarkMode ? 'grey.300' : 'grey.700'
                       },
