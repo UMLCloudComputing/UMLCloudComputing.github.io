@@ -23,7 +23,7 @@ import { createTheme,responsiveFontSizes } from '@mui/material';
 import Layout from '@theme/Layout';
 import { ThemeProvider } from '@emotion/react';
 import members from "../members_meta/members.json";
-
+import AvatarLarge from "../components/AvatarLarge";
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
@@ -186,17 +186,17 @@ function HomepageFeatures() {
     );
 }
 
-const AvatarLarge = ({ Image, Name, Subtitle}) =>(
-    <div class="avatar">
-        <img 
-            class="avatar__photo avatar__photo--lg"
-            src={Image} />
-        <div class="avatar_intro">
-            <div class="avatar__name"> {Name} </div>
-            <small class="avatar__subtitle"> {Subtitle} </small>
-        </div>
-    </div>
-);
+// const AvatarLarge = ({ Image, Name, Subtitle }) =>(
+//     <div class="avatar">
+//         <img 
+//             class="avatar__photo avatar__photo--lg"
+//             src={Image} />
+//         <div class="avatar_intro">
+//             <div class="avatar__name"> {Name} </div>
+//             <small class="avatar__subtitle"> {Subtitle} </small>
+//         </div>
+//     </div>
+// );
 
 function Members() {
     return (
@@ -208,9 +208,13 @@ function Members() {
             'scrollbar-width': 'none',  // Firefox
         }}>
             <Grid container wrap="nowrap">
-                {members.map(member => {
+                {members.map((member, idx) => {
                     return (
-                        <Grid item sx={{ minWidth: '430px' }}><AvatarLarge Image={member.image} Name={member.name} Subtitle={member.subtitle} /></Grid>
+                        <Grid item key={idx} sx={{ minWidth: '430px' }}>
+                            <AvatarLarge 
+                                member={member}
+                            />
+                        </Grid>
                     );
                 })}
             </Grid>
