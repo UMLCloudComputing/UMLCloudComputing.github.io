@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Project Documentation
+# 📄 Project Documentation
 Welcome to the official documentation of our various projects!
 
 These docs contain important information regarding the workings under the hood of our various projects. 
