@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: Spring 2023
+title: 🌿 Spring 2023
 slug: /schedule/spring-2023
 ---
 
