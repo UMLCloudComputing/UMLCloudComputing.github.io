@@ -84,6 +84,15 @@ footer {
   background: var(--ifm-color-emphasis-200);
 }
 
+.iframe_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 450px;
+  display: block;
+}
+
 /** In mobile view, reduce the padding */
 @media screen and (max-width: 996px) {
   .heroBanner {
