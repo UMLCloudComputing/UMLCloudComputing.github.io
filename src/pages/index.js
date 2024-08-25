@@ -134,7 +134,7 @@ function ClubDetails() {
     };
 
     return (
-        <Container sx={{ pb: 4 }}>
+        <Container sx={{ py: 4 }}>
             <Grid container spacing={4}>
                 <Grid item xs={12} sm={4} >
                     <PaperCard Header={"About Us"} 
@@ -200,7 +200,7 @@ function HomepageFeatures() {
 
 function Members() {
     return (
-        <Box wrap="nowrap" sx={{ display: 'block', overflowX: 'auto', py:4, pl: 4, 
+        <Box wrap="nowrap" sx={{ display: 'block', overflowX: 'auto', py:6, pl: 4, 
             '&::-webkit-scrollbar': {
                 display: 'none',
             },
@@ -222,6 +222,24 @@ function Members() {
     );
 }
 
+const LandingPageUniBotiFrame = () => (
+    <div class="hero shadow--lw">
+        <div class="container">
+            <h1 class="hero__title">UniBot</h1>
+            <p class="hero_subtitle">For all your UML Questions</p>
+            <div style={{paddingBottom: '25px'}}>
+                <Link to="https://github.com/UMLCloudComputing/UniBot" class="button button--secondary button--outline button--lg" >Github</Link>
+            </div>
+            <div>
+                <iframe
+                    src="https://unibotio.streamlit.app?embed=true"
+                    class="iframe_container"
+                >UniBot iFrame</iframe>
+            </div>
+        </div>
+    </div>
+);
+
 export default function Home() {
     return (
         <Layout
@@ -231,6 +249,7 @@ export default function Home() {
             <HomepageHeader />
             <main>
                 <Members />
+                <LandingPageUniBotiFrame />
                 <ClubDetails />
                 <HomepageFeatures />
             </main>
