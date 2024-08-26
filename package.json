@@ -6,7 +6,7 @@
     "import": "node stream.js && rm -rf temp",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "docusaurus build",
+    "build": "docusaurus build && cp CNAME build/",
     "swizzle": "docusaurus swizzle",
     "deploy": "gh-pages -d build",
     "clear": "docusaurus clear",
