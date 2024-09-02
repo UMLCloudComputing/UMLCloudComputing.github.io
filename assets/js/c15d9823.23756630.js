@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkumlcloudcomputing=self.webpackChunkumlcloudcomputing||[]).push([[8146],{9328:l=>{l.exports=JSON.parse('{"metadata":{"permalink":"/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"The Offical Blog page of UML Cloud Computing Club","blogTitle":"Blog"}}')}}]);
