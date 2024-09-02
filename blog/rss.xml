@@ -4,7 +4,7 @@
         <title>UML Cloud Computing Club Blog</title>
         <link>https://UMLCloudComputing.github.io/blog</link>
         <description>UML Cloud Computing Club Blog</description>
-        <lastBuildDate>Mon, 02 Sep 2024 02:15:03 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Sep 2024 20:27:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[A Developer's Story]]></title>
             <link>https://UMLCloudComputing.github.io/blog/A Developer's Story</link>
             <guid>https://UMLCloudComputing.github.io/blog/A Developer's Story</guid>
-            <pubDate>Mon, 02 Sep 2024 02:15:03 GMT</pubDate>
+            <pubDate>Mon, 02 Sep 2024 20:27:59 GMT</pubDate>
             <description><![CDATA[Here lies a dear story of a fellow developer...]]></description>
             <content:encoded><![CDATA[<p>Here lies a dear story of a fellow developer...</p>
 <p>Maxime harum non et dolor enim quia. Corporis eum doloremque aspernatur esse reiciendis ut unde. Labore minus quisquam nostrum suscipit. Hic in perferendis possimus animi hic pariatur nulla ipsam. Ex exercitationem similique deleniti et rerum possimus.</p>
@@ -26,7 +26,7 @@
             <title><![CDATA[The Power of UniBot]]></title>
             <link>https://UMLCloudComputing.github.io/blog/The Power of UniBot</link>
             <guid>https://UMLCloudComputing.github.io/blog/The Power of UniBot</guid>
-            <pubDate>Mon, 02 Sep 2024 02:15:03 GMT</pubDate>
+            <pubDate>Mon, 02 Sep 2024 20:27:59 GMT</pubDate>
             <description><![CDATA[Let's explore the power of UniBot]]></description>
             <content:encoded><![CDATA[<p>Let's explore the power of UniBot</p>
 <p>Maxime harum non et dolor enim quia. Corporis eum doloremque aspernatur esse reiciendis ut unde. Labore minus quisquam nostrum suscipit. Hic in perferendis possimus animi hic pariatur nulla ipsam. Ex exercitationem similique deleniti et rerum possimus.</p>
@@ -43,7 +43,7 @@
             <title><![CDATA[The Story Behind UniPath.io]]></title>
             <link>https://UMLCloudComputing.github.io/blog/The Story Behind UniPath.io</link>
             <guid>https://UMLCloudComputing.github.io/blog/The Story Behind UniPath.io</guid>
-            <pubDate>Mon, 02 Sep 2024 02:15:03 GMT</pubDate>
+            <pubDate>Mon, 02 Sep 2024 20:27:59 GMT</pubDate>
             <description><![CDATA[Here's the story behind the origin of UniPath.io]]></description>
             <content:encoded><![CDATA[<p>Here's the story behind the origin of UniPath.io</p>
 <p><img decoding="async" loading="lazy" alt="UniPath.io Logo" src="https://umlcloudcomputing.github.io/assets/images/UniPath_Logo-6a36d7c68d4d56d3040ea7d20860b4f6.png" width="800" height="200" class="img_ev3q"></p>
@@ -60,7 +60,7 @@
             <title><![CDATA[🚀 Welcome to the UML Cloud Computing Club!]]></title>
             <link>https://UMLCloudComputing.github.io/blog/welcome-fall-2024</link>
             <guid>https://UMLCloudComputing.github.io/blog/welcome-fall-2024</guid>
-            <pubDate>Mon, 02 Sep 2024 02:15:03 GMT</pubDate>
+            <pubDate>Mon, 02 Sep 2024 20:27:59 GMT</pubDate>
             <description><![CDATA[The UML Cloud Computing Club is a thriving hub for all students and faculty passionate about Cloud Computing, DevOps, Software Engineering, and Frontend Web Development. We encourage people from all backgrounds to join our community, share their insights, and learn together.]]></description>
             <content:encoded><![CDATA[<center><img src="https://avatars.githubusercontent.com/u/126843517?s=400&amp;u=e5f3b4c17f654443727ffa175403684a138d42a7&amp;v=4" alt="Club Logo" width="400"></center>
 <br>
@@ -106,11 +106,13 @@ Join us for our kickoff event with faculty speaker <a href="https://www.uml.edu/
 <li><strong>Skill Enhancement:</strong> Gain practical experience in trending technologies within the cloud domain.</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-our-projects">📐 Our Projects<a href="https://umlcloudcomputing.github.io/blog/welcome-fall-2024#-our-projects" class="hash-link" aria-label="Direct link to 📐 Our Projects" title="Direct link to 📐 Our Projects">​</a></h2>
-<p><a href="https://github.com/UMLCloudComputing/UniPath.io" target="_blank" rel="noopener noreferrer">📆 UniPath.io</a>: a full-stack web application that allows users to create, plan, and share their class schedules for their entire degree program.
-<a href="https://github.com/UMLCloudComputing/UniBot" target="_blank" rel="noopener noreferrer">🤖 UniBot</a>: a chatbot for universities. It utilizes Retrieval Augmented Generation (RAG) to improve the accuracy of responses.
-<a href="https://github.com/UMLCloudComputing/UML-NOW-CLI" target="_blank" rel="noopener noreferrer">⌨️ UML NOW CLI</a>: a Command Line Interface for the University of Massachusetts Lowell's NOW Student Dashboard API.
-<a href="https://github.com/UMLCloudComputing/UMLCloudComputing.github.io" target="_blank" rel="noopener noreferrer">🖥️ Club Website</a>: this very website which we use to host all of our project documentation, semester schedule, and more.
-<a href="https://github.com/UMLCloudComputing/attendance" target="_blank" rel="noopener noreferrer">📒 Attendance System</a>: a Discord application that we use to track attendance at our events.</p>
+<ul>
+<li><a href="https://github.com/UMLCloudComputing/UniPath.io" target="_blank" rel="noopener noreferrer">📆 UniPath.io</a>: a full-stack web application that allows users to create, plan, and share their class schedules for their entire degree program.</li>
+<li><a href="https://github.com/UMLCloudComputing/UniBot" target="_blank" rel="noopener noreferrer">🤖 UniBot</a>: a chatbot for universities. It utilizes Retrieval Augmented Generation (RAG) to improve the accuracy of responses.</li>
+<li><a href="https://github.com/UMLCloudComputing/UML-NOW-CLI" target="_blank" rel="noopener noreferrer">⌨️ UML NOW CLI</a>: a Command Line Interface for the University of Massachusetts Lowell's NOW Student Dashboard API.</li>
+<li><a href="https://github.com/UMLCloudComputing/UMLCloudComputing.github.io" target="_blank" rel="noopener noreferrer">🖥️ Club Website</a>: this very website which we use to host all of our project documentation, semester schedule, and more.</li>
+<li><a href="https://github.com/UMLCloudComputing/attendance" target="_blank" rel="noopener noreferrer">📒 Attendance System</a>: a Discord application that we use to track attendance at our events.</li>
+</ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-stay-engaged">🤝 Stay Engaged<a href="https://umlcloudcomputing.github.io/blog/welcome-fall-2024#-stay-engaged" class="hash-link" aria-label="Direct link to 🤝 Stay Engaged" title="Direct link to 🤝 Stay Engaged">​</a></h2>
 <p>Keep up with the latest club news and projects through our various platforms:</p>
 <center><a style="padding:4px" href="https://discord.gg/TZuMgMsC8X"><img src="https://img.shields.io/discord/890983857938116729?logo=discord&amp;logoColor=white&amp;style=for-the-badge" alt="Join our Discord community"></a><a style="padding:4px" href="https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub"><img src="https://img.shields.io/badge/Website-UML%20Cloud%20Computing%20Club-blue.svg?style=for-the-badge" alt="View our club website"></a></center>
