@@ -24,6 +24,9 @@ yarn-error.log*
 # AWS Secrets
 IAM_Automation/aws_creds.py
 
+# Igonre everyhting in docs/activities except md files in the root of docs/activities
+docs/activities/*
+!docs/activities/*.md
 # Ignore everything in docs/projects except md files in the root of docs/projects
 docs/projects/*
 !docs/projects/*.md
