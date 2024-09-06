@@ -103,7 +103,7 @@ const config = {
       announcementBar: {
         id: 'announcement-bar',
         content:
-          '🚀Kick-off meeting coming soon!🚀',
+          '🚀Kick-off meeting next Thursday (9/12/2024)!🚀',
         backgroundColor: '#48a0ff',
         textColor: '#fff',
         isCloseable: false
