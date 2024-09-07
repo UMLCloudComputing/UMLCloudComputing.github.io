@@ -182,7 +182,7 @@ To add a new activity's instructions onto the activities section of the website,
     ---
     ```
 
-### In order to add your activity:
+#### In order to add your activity:
 1. Create a new branch from the **main** branch
 2. Name the branch with the following convention: `feat: Add new activuty docs: ACTIVITYNAME` with `ACTIVITYNAME` being the name of your project.
 3. Add your repository to package.json. Add your project as a key-value pair in the `activity_repos.json`:
