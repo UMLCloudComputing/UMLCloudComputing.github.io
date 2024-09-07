@@ -35,9 +35,7 @@ All markdown files should follow Docusaurus's guidelines for folder structure fo
 
 
 > [!CAUTION] 
-> All contributions to the UML Class Sesources section within the the `resources/` folder must follow the *explicitly* provided guidelines and rules in the aptly named file `📒 Guidelines & Rules`. 
-> Failure to do so will result in your contributions being removed or rejected within PRs!
-> These are resources for official UML CS courses and hence will be monitored closely.
+> All contributions to the UML Class Sesources section within the the `resources/` folder must follow the *explicitly* provided guidelines and rules in the aptly named file `📒 Guidelines & Rules`. Failure to do so will result in your contributions being removed or rejected within PRs! These are resources for official UML CS courses and hence will be monitored closely.
 
 </details>
 
