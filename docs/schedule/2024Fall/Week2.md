@@ -2,6 +2,7 @@
 slug: /current-schedule/week-2
 title: Week 2
 description: Information and notes from the Kickoff event of the second week of the Fall 2024 semester for the UMass Lowell Cloud Computing Club. 
+sidebar_position: 2
 ---
 
 # Week 2
