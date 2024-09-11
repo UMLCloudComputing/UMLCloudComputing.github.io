@@ -130,7 +130,7 @@ function ClubDetails() {
     const Buttons = {
         'about us': <Link class="button button--secondary button--block" to="/docs/About Us">See More</Link>,
         'join us': <Link class="button button--secondary button--block" to="https://discord.gg/WC2NdqYtDt">Discord</Link>,
-        'our projects': <Link class="button button--secondary button--block" to="/docs/projects/welcome">Project Docs</Link>,
+        'our projects': <Link class="button button--secondary button--block" to="/docs/projects">Project Docs</Link>,
     };
 
     return (
@@ -158,7 +158,7 @@ function ClubDetails() {
 
 function HomepageFeatures() {
     const Buttons = {
-        'resources': <Link class="button button--secondary button--block" to="/docs/resources/welcome">Resources</Link>,
+        'resources': <Link class="button button--secondary button--block" to="/docs/resources">Resources</Link>,
         'meetings': <Link class="button button--secondary button--block" to="/docs/current-schedule" >Meetings</Link>,
         'collaborative projects': <Link class="button button--secondary button--block" to="https://github.com/UMLCloudComputing">Github</Link>,
     };
