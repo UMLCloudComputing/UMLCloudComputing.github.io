@@ -100,14 +100,14 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
-      announcementBar: {
-        id: 'announcement-bar',
-        content:
-          '🚀Kick-off meeting next Thursday (9/12/2024)!🚀',
-        backgroundColor: '#48a0ff',
-        textColor: '#fff',
-        isCloseable: false
-      },
+      // announcementBar: {
+      //   id: 'announcement-bar',
+      //   content:
+      //     'ADD CONTENT HERE',
+      //   backgroundColor: '#48a0ff',
+      //   textColor: '#fff',
+      //   isCloseable: false
+      // },
       navbar: {
         title: 'UML Cloud Computing Club',
         logo: {
