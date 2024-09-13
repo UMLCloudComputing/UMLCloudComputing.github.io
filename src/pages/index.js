@@ -78,17 +78,17 @@ function HomepageHeader() {
                         sx={{ mt: 4 }}
                         color='primary'
                         component={RouterLink}
-                        to="docs/tutorials/welcome"
+                        to="docs/resources"
                         startIcon={<SchoolIcon/>}
                     >
-                    Explore Tutorials
+                    Explore Resources
                     </Button>
                     <Button
                         variant="contained"
                         sx={{ mt: 2, ml: 2, }}
                         color='primary'
                         component={RouterLink}
-                        to="docs/projects/welcome"
+                        to="docs/projects"
                         endIcon={<AutoStoriesIcon/>}
                     >
                     View Projects
