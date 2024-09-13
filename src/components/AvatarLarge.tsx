@@ -2,7 +2,7 @@ import React from 'react';
 import Link from "@docusaurus/Link";
 import { Backdrop, Modal, Fade, Box } from "@mui/material";
 
-function MemberCard ({ ProfileImage, Name, Subtitle, Details, Github }) {
+function MemberCard ({ ProfileImage, Name, Subtitle, Details, ButtonLink, ButtonTitle }) {
     return (
         <>
             <div className="card__header">
@@ -23,7 +23,7 @@ function MemberCard ({ ProfileImage, Name, Subtitle, Details, Github }) {
                 </small>
             </div>
             <div className="card__footer">
-                <Link className="button button--secondary button--block" to={Github}>Github</Link>
+                <Link className="button button--secondary button--block" to={ButtonLink}>{ButtonTitle}</Link>
             </div>
         </>
     );
@@ -34,7 +34,9 @@ function AvatarLarge({ member }) {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-
+    let buttonLink = member.github;
+    let buttonTitle = "Github";
+    
     return (
     <div>
         <div className="avatar" onClick={handleOpen}>
@@ -74,7 +76,8 @@ function AvatarLarge({ member }) {
                         Name={member.name}
                         Subtitle={member.subtitle}
                         Details={member.details}
-                        Github={member.github}  
+                        ButtonLink={buttonLink}
+                        ButtonTitle={buttonTitle}  
                     />
                 </Box>
             </Fade>

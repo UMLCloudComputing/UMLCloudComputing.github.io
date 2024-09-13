@@ -28,7 +28,7 @@
         "github": "https://github.com/cjcocokrisp"
     },
     {
-        "profile_image": "https://media.licdn.com/dms/image/v2/D4E03AQEnHtWDIh-mBg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1700494525950?e=1729728000&v=beta&t=SsM6J2qHqALo4otJYYdKUKOAMrcliF-dMXpmEUzC2pw",
+        "profile_image": "https://avatars.githubusercontent.com/u/93165798?v=4",
         "name": "Gurpreet Singh",
         "subtitle": "Treasurer, Club Website Lead",
         "details": "AKA Preet, one of the leads behind this website",
@@ -47,5 +47,27 @@
         "subtitle": "UniPath.io Dev, UniBot Dev",
         "details": "Noah is a charming developer with an interest in digital forensics and cybersecurity",
         "github": "https://github.com/noahshayne"
+    },
+    {
+        "profile_image": "https://www.uml.edu/Images/weis-johannes_tcm18-359582.jpg?w=x",
+        "name": "(Professor) Johannes Weis",
+        "subtitle": "Assistant Teaching Professor, Club Faculty Advisor",
+        "details": "Professor Weis brings great charm and advice into the club operations. From his class lectures to the club meetings, professor Weis is simply amazing!",
+        "github": "https://github.com/jweis1994"
+    },
+    {
+        "profile_image": "https://avatars.githubusercontent.com/u/34825728?v=4",
+        "name": "Rohan Mallu",
+        "subtitle": "UniPath.io Dev",
+        "details": "Former Fidelity Intern. A focused and capable developer. President of UML's ACM Chapter.",
+        "github": "https://github.com/AmazingConnie"
+    },
+    {
+        "profile_image": "https://media.licdn.com/dms/image/v2/D5603AQEiRTM5VcSn9Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1706157427286?e=1731542400&v=beta&t=UeQBZ3CEw58y0hjEaJGW_aloPIXIiPFVw5qxe4vxQDU",
+        "name": "Roshan Rajesh",
+        "subtitle": "UniPath.io Dev",
+        "details": "A passionate developer with a keen liking for the occasional nap.",
+        "github": "https://github.com/HoustonBoston"
     }
+    
 ]
