@@ -19,3 +19,7 @@
 ### Additional Information:
 <!-- Include any extra details for the reviewers. -->
 
+### Tested
+<!-- Yes/No, details if possible -->
+- [ ] Yes
+- [ ] No

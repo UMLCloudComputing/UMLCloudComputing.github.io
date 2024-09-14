@@ -89,6 +89,16 @@ const config = {
   //     },
   //   ],
   // ],
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      ({
+        hashed:true,
+        indexDocs:true,
+        indexBlog:true,
+      })
+    ]
+  ],
 
  
   themeConfig:
