@@ -3,6 +3,9 @@ When updating to a new semester's schedule,
 be sure to change the slug of this page in the format:
      `/schedule/SEASON-YEAR`
 and update the new semester's slug to 
-    `schedule/current-schedule`! 
+    `/current-schedule`! 
 
 Also change the sidebar position to be 2 and update the new page's sidebar's position to 1.
+
+All individual notes will always have the slug `/schedule/SEASON-YEAR/week-X`. 
+Only the primary semester 
