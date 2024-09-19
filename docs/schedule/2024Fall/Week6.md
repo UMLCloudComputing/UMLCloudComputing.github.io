@@ -11,3 +11,13 @@ sidebar_position: 6
 
 ## Thursday
 
+### 🚩 Agenda
+1. Sign in with attendance code
+2. Presentation by [Andrew Aiken](https://github.com/andrew-aiken) regarding AWS Topics
+3. Questions
+4. Break for Pizza
+5. Shift to Hands-on section
+
+### 🪄 Meeting Resources
+
+### 📓 Meeting Notes

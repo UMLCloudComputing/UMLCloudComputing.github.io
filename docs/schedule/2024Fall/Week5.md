@@ -11,3 +11,13 @@ sidebar_position: 5
 
 ## Thursday
 
+### 🚩 Agenda
+1. Sign in with attendance code
+2. Presentation by [Matthew Harper](https://github.com/DaintyJet)
+3. Questions
+4. Break for Pizza
+5. Shift to Hands-on section
+
+### 🪄 Meeting Resources
+
+### 📓 Meeting Notes
