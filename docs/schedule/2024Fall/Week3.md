@@ -26,19 +26,21 @@ sidebar_position: 3
 
 ### 📓 Meeting Notes
 
-Attendance: 31
+Attendance: 31 <br/>
 Virtual: 1
 
-#### Presentation Section:
-AWS Core Services
-Presenters: Alvin Yu, Christopher Coco, Nick Bottari
-IAM:
+#### Presentation Section
+AWS Core Services <br/>
+
+Presenters: Alvin Yu, Christopher Coco, Nick Bottari <br/>
+
+**IAM**:
 - Identity Access MAnagement
 - Manage User Accounts and grant fine grained access to AWS Resources
-- Mainly used to grant secure premissions to differnt components of your application.
+- Mainly used to grant secure premissions to differnt components of your application. <br/>
 IAM supports MFA
 
-AWS EC2:
+**AWS EC2**:
 - Launches a virtual machine with well defined resources
 - General purpose. Can run databases, APIs, storage, websites.
 - Billed based on:
@@ -46,26 +48,26 @@ AWS EC2:
     - How much DATA is transferred
     - How much STORAGE is attached
 
-AWS Lambda:
+**AWS Lambda**:
 - Runs without provisioning server resources
 - Only billed for the TIME the service runs
 - Billed in GB-seconds
 
-What is an API:
+**What is an API**:
 - Application Programming Interface
 - Middleman between two pieces of software
 - REST API - type of API for HTTP
     - Representational State Transfer (REST)
     - GET, POST, PUT, PATCH, DELETE
 
-AWS Lambda vs EC2:
+**AWS Lambda vs EC2**:
 - EC2 - Constant running service (IE web server)
 - Lambda - Occasion operations that need to be run (IE the club's attendance bot)
 
-AWS API Gateway:
+**AWS API Gateway**:
 - AWS Service to proxy and handle HTTP
 
-AWS S3:
+**AWS S3**:
 - Object Storage (not a filesystem, more like an API for uploading, and downloading files)
 - Stores "files" as "objects", which are in turn stored in buckets
 - Bucket names must be unique in global namespace
@@ -73,15 +75,15 @@ AWS S3:
     - Storage used
     - PUT, GET, DELETE requests
 
-
-How to share S3:
+**How to share S3**:
 - Get temporary PRESIGNED URL
 - Can Upload, download images with REST API
 - Example of accessing files on S3 for non-aws users.
 
-AWS CDK:
+**AWS CDK**:
 - Generates CloudFormation templates, a declerative way of specifying which AWS services to launch.
 - Can be written with Typescript, JS, Python, Golang
+<br/>
 
 [Fireship AWS Video](https://www.youtube.com/watch?v=ZzI9JE0i6Lc)
 - EC2 was the one the first and most fundamental AWS Services
@@ -103,5 +105,19 @@ AWS CDK:
     - AWs SNS
     - AWS SES  
 - AWS Amplify
-    - Frontend SDKs
-    - 
+
+
+#### Hands On Section
+Beginning development on [PhotoSky](https://github.com/UMLCloudComputing/photosky) using Github Codespaces. <br/>
+
+Followed through with preliminary configuration of the project, understand the backend architecture, and begin implementing the CDK stack.<br/>
+
+Following through the [PhotoSky Activity](../../activities/welcome.md) to the *Implementing AWS CDK Stack* section. <br/>
+
+#### More info to learn from topics of the meeting:
+[AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/home.html) <br/>
+[AWS IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) <br/>
+[AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) <br/>
+[AWS S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) <br/>
+[What is a Package Manager?](https://en.wikipedia.org/wiki/Package_manager) <br/>
+
