@@ -50,6 +50,17 @@
   background-color: grey.800;
 }
 
+.meeting_recording_iframe {
+  border:none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  height: 100%; 
+  max-width: 100%;
+}
+
 /* FontAwesome */
 .navbar__icon {
   height: 2.5rem;
