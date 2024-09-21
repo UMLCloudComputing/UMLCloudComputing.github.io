@@ -6,7 +6,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Link from '@docusaurus/Link';
 import { useColorMode } from '@docusaurus/theme-common';
 import 'animate.css';
-
 // MUI
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
@@ -225,8 +224,8 @@ function Members() {
 const LandingPageUniBotiFrame = () => (
     <div class="hero shadow--lw">
         <div class="container">
-            <h1 class="hero__title">UniBot</h1>
-            <p class="hero_subtitle">For all your UML Questions</p>
+            <h1 class="hero__title unibot_theme_hero_text">UniBot</h1>
+            <p class="hero__subtitle">For all your UML Questions</p>
             <div style={{paddingBottom: '25px'}}>
                 <Link to="https://github.com/UMLCloudComputing/UniBot" class="button button--secondary button--outline button--lg" >Github</Link>
             </div>

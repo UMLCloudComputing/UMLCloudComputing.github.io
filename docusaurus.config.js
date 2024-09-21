@@ -97,7 +97,8 @@ const config = {
         indexDocs:true,
         indexBlog:true,
       })
-    ]
+    ],
+    "@docusaurus/theme-live-codeblock",
   ],
 
  
