@@ -98,7 +98,6 @@ const config = {
         indexBlog:true,
       })
     ],
-    "@docusaurus/theme-live-codeblock",
   ],
 
  
