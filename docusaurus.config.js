@@ -97,7 +97,7 @@ const config = {
         indexDocs:true,
         indexBlog:true,
       })
-    ]
+    ],
   ],
 
  

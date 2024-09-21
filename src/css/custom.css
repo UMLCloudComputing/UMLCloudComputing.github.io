@@ -50,6 +50,20 @@
   background-color: grey.800;
 }
 
+[data-theme='dark'] .unibot_theme_hero_text {
+  background: radial-gradient(circle, #7a37a4 0%, #ac4cc4 50%, rgb(191, 127, 223) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+[data-theme='light'] .unibot_theme_hero_text {
+  background: radial-gradient(circle, #a444c4 0%, #6e3399 50%, rgb(59, 41, 67) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .meeting_recording_iframe {
   border:none;
   position: absolute;
