@@ -113,14 +113,14 @@ html[data-theme='dark'] .navbar__github {
   background: var(--ifm-color-emphasis-200);
 }
 
-[data-theme='dark'] footer {
+[data-theme='dark'] .footer--dark {
   align-items: center;
   text-align: center;
   border-radius: 16px 16px 0px 0px;
   background: linear-gradient(to right, #181221, #170e0d);
 }
 
-[data-theme='light'] footer {
+[data-theme='light'] .footer--dark {
   align-items: center;
   text-align: center;
   border-radius: 16px 16px 0px 0px;
