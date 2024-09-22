@@ -12,6 +12,7 @@ function MemberCard ({ ProfileImage, Name, Subtitle, Details, ButtonLink, Button
                         src={ProfileImage} 
                     />
                     <div className="avatar__intro">
+                        <br/>
                         <div className="avatar__name">{Name}</div>
                         <small className="avatar__subtitle">{Subtitle}</small>
                     </div>
@@ -66,8 +67,10 @@ function AvatarLarge({ member }) {
             <Fade in={open}>
                 <Box className="card" sx={{
                     position:'absolute',
+                    width: '300px',
+                    minHeight: '350px',
                     top: '50%',
-                    left:'50%',
+                    left: '50%',
                     transform: 'translate(-50%, -50%)',
                     boxShadow: 25,
                  }}>
