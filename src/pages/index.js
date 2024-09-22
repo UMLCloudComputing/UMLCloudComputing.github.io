@@ -21,8 +21,12 @@ import { createTheme,responsiveFontSizes } from '@mui/material';
 // Local
 import Layout from '@theme/Layout';
 import { ThemeProvider } from '@emotion/react';
+
 import members from "../members_meta/members.json";
+import cards_data from "../cards_meta/cards_data.json";
+
 import AvatarLarge from "../components/AvatarLarge";
+import PaperCard from '../components/PaperCard';
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
@@ -108,94 +112,32 @@ function HomepageHeader() {
     );
 }
 
-const PaperCard = ({ Header, Content, footerButton }) => (
-    <div class="card">
-        <div class="card__header text--center">
-            <h3>{Header}</h3>
-        </div>
-        <div class="card__body text--center">
-            <p>
-                {Content}
-            </p>
-        </div>
-        <div class="card__footer">
-            {footerButton}
-        </div>
-    </div>
-);
-
-function ClubDetails() {
-
-    const Buttons = {
-        'about us': <Link class="button button--secondary button--block" to="/docs/About Us">See More</Link>,
-        'join us': <Link class="button button--secondary button--block" to="https://discord.gg/WC2NdqYtDt">Discord</Link>,
-        'our projects': <Link class="button button--secondary button--block" to="/docs/projects">Project Docs</Link>,
-    };
-
+function InfoCards() {
     return (
-        <Container sx={{ py: 4 }}>
-            <Grid container spacing={4}>
-                <Grid item xs={12} sm={4} >
-                    <PaperCard Header={"About Us"} 
-                    Content={"We are a student-led organization dedicated to exploring cloud computing and its applications through hands-on learning, projects, and industry connections."}
-                    footerButton={Buttons['about us']} />
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                    <PaperCard Header={"Join Us"} 
-                    Content={"Open to all UMass Lowell students, faculty, and staff. Join us at our weekly meetings to learn, build, and connect."}
-                    footerButton={Buttons['join us']}/>
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                    <PaperCard Header={"Our Projects"} 
-                    Content={"We work on our various projects including UniPath.io, UniBot, the UML-Now-CLI, react mui resume, and more. Contribute and gain practical experience."}
-                    footerButton={Buttons['our projects']}/>
-                </Grid>
+        <Box wrap="nowrap" sx={{ display: 'block', overflowX: 'auto', py:6, pl: 4, 
+            '&::-webkit-scrollbar': {
+                display: 'none',
+            },
+            '-ms-overflow-style': 'none',  // IE and Edge
+            'scrollbar-width': 'none',  // Firefox
+        }}>
+            <Grid container spacing={4} wrap="nowrap">
+                {cards_data.map((card, idx) => {
+                    return (
+                        <Grid item key={idx} sx={{ minWidth: '320px' }}>
+                            <PaperCard 
+                                Header={card.header} 
+                                Content={card.content}
+                                footerButtonLink={card.footerButton_link}
+                                footerButtonTitle={card.footerButton_title}
+                            /> 
+                        </Grid>
+                    )
+                })}
             </Grid>
-        </Container>
+        </Box>
     );
 }
-
-function HomepageFeatures() {
-    const Buttons = {
-        'resources': <Link class="button button--secondary button--block" to="/docs/resources">Resources</Link>,
-        'meetings': <Link class="button button--secondary button--block" to="/docs/current-schedule" >Meetings</Link>,
-        'collaborative projects': <Link class="button button--secondary button--block" to="https://github.com/UMLCloudComputing">Github</Link>,
-    };
-
-    return (
-        <Container sx={{ pb: 4 }}>
-            <Grid container spacing={4}>
-                <Grid item xs={12} sm={4}>
-                    <PaperCard Header={"Hands-On Learning"} 
-                    Content={"Engage in hands-on learning experiences with cloud computing technologies like AWS, Docker, Kubernetes, and more."}
-                    footerButton={Buttons['resources']}/>
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                    <PaperCard Header={"Industry Connections"} 
-                    Content={"Connect with industry professionals through guest lectures, workshops, and networking events."}
-                    footerButton={Buttons['meetings']}/>
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                    <PaperCard Header={"Collaborative Work"} 
-                    Content={"Work on real-world projects and collaborate with peers to develop practical cloud computing skills."}
-                    footerButton={Buttons['collaborative projects']}/>
-                </Grid>
-            </Grid>
-        </Container>
-    );
-}
-
-// const AvatarLarge = ({ Image, Name, Subtitle }) =>(
-//     <div class="avatar">
-//         <img 
-//             class="avatar__photo avatar__photo--lg"
-//             src={Image} />
-//         <div class="avatar_intro">
-//             <div class="avatar__name"> {Name} </div>
-//             <small class="avatar__subtitle"> {Subtitle} </small>
-//         </div>
-//     </div>
-// );
 
 function Members() {
     return (
@@ -249,8 +191,7 @@ export default function Home() {
             <main>
                 <Members />
                 <LandingPageUniBotiFrame />
-                <ClubDetails />
-                <HomepageFeatures />
+                <InfoCards/>
             </main>
         </Layout>
     );

@@ -1,0 +1,38 @@
+[
+    {
+        "header": "About Us",
+        "content": "We are a student-led organization dedicated to exploring cloud computing and its applications through hands-on learning, projects, and industry connections.",
+        "footerButton_link": "/docs/About Us",
+        "footerButton_title": "See More"
+    },
+    {
+        "header": "Join Us",
+        "content": "Open to all UMass Lowell students, faculty, and staff. Join us at our weekly meetings to learn, build, and connect.",
+        "footerButton_link": "https://discord.gg/WC2NdqYtDt",
+        "footerButton_title": "Discord"
+    },
+    {
+        "header": "Our Projects",
+        "content": "We work on our various projects including UniPath.io, UniBot, the UML-Now-CLI, react mui resume, and more. Contribute and gain practical experience.",
+        "footerButton_link": "/docs/projects",
+        "footerButton_title": "Project Docs"
+    },
+    {
+        "header": "Hands-On Learning",
+        "content": "Engage in hands-on learning experiences with cloud computing technologies like AWS, Docker, Kubernetes, and more.",
+        "footerButton_link": "/docs/resources",
+        "footerButton_title": "Resources"
+    },
+    {
+        "header": "Industry Connections",
+        "content": "Connect with industry professionals through guest lectures, workshops, and networking events.",
+        "footerButton_link": "/docs/current-schedule",
+        "footerButton_title": "Meetings"
+    },
+    {
+        "header": "Collaborative Work",
+        "content": "Work on real-world projects and collaborate with peers to develop practical cloud computing skills.",
+        "footerButton_link": "https://github.com/UMLCloudComputing",
+        "footerButton_title": "Github"
+    }
+]

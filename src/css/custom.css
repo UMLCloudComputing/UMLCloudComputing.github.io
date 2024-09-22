@@ -50,6 +50,15 @@
   background-color: grey.800;
 }
 
+/* PaperCard Styles */
+.papercard {
+  min-height: 350px;
+}
+.papercard:hover {
+  transform: scale(1.02);
+}
+
+/* UniBot Hero Title Styles */
 [data-theme='dark'] .unibot_theme_hero_text {
   background: radial-gradient(circle, #7a37a4 0%, #ac4cc4 50%, rgb(191, 127, 223) 100%);
   -webkit-background-clip: text;
@@ -64,6 +73,7 @@
   color: transparent;
 }
 
+/* Meeting Recording iframe styles */
 .meeting_recording_iframe {
   border:none;
   position: absolute;
@@ -99,16 +109,18 @@ html[data-theme='dark'] .navbar__github {
   color: #fff;
 }
 
+.navbar__github:hover {
+  background: var(--ifm-color-emphasis-200);
+}
+
 footer {
   align-items: center;
   text-align: center;
   border-radius: 16px 16px 0px 0px;
 }
 
-.navbar__github:hover {
-  background: var(--ifm-color-emphasis-200);
-}
 
+/* IFrame for UniBot on Landing Page */
 .iframe_container {
   display: flex;
   justify-content: center;
