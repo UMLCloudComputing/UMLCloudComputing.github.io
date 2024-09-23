@@ -186,6 +186,12 @@ const config = {
                 href: 'https://discord.gg/WC2NdqYtDt',
                 label: 'Discord',
               },
+
+              // Youtube
+              {
+                href: 'https://www.youtube.com/@UMLCloudComputingClub',
+                label: 'Youtube',
+              },
               
               // Instagram
               {
