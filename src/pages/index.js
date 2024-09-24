@@ -22,8 +22,8 @@ import { createTheme,responsiveFontSizes } from '@mui/material';
 import Layout from '@theme/Layout';
 import { ThemeProvider } from '@emotion/react';
 
-import members from "../members_meta/members.json";
-import cards_data from "../cards_meta/cards_data.json";
+import members from "@site/static/meta_data/members_meta/members.json";
+import cards_data from "@site/static/meta_data/cards_meta/cards_data.json";
 
 import AvatarLarge from "../components/AvatarLarge";
 import PaperCard from '../components/PaperCard';
