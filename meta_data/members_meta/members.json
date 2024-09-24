@@ -1,0 +1,80 @@
+[
+    {
+        "profile_image": "https://avatars.githubusercontent.com/u/44274319?v=4",
+        "name": "Martin Marwad",
+        "subtitle": "Founder, First President, Alumni Advisor, 10x Dev",
+        "details": "Martin is a talented developer with a plethora of knowledge and an incredible skill to lead. He was also one of our founders our first president! He's currently an Alumni Advisor.",
+        "github": "https://github.com/MartinMarwad"
+    },
+    {
+        "profile_image": "https://avatars.githubusercontent.com/u/60448620?v=4",
+        "name": "Matthew Harper",
+        "subtitle": "Founder, First Treasurer",
+        "details": "Matt is a talented invidual with great knowledge of within the realm of Cybersecurity. He was also one of our founders and our first ever treasurer!",
+        "github": "https://avatars.githubusercontent.com/u/60448620?v=4"
+    },
+    {
+        "profile_image": "https://avatars.githubusercontent.com/u/136134023?v=4",
+        "name": "Alvin Yu",
+        "subtitle": "President, UniBot Founder, 10x Dev",
+        "details": "Alvin is one of the most active and inspirational members of our club. He's also the founder and lead developer behind UniBot!",
+        "github": "https://github.com/ultralapse"
+    },
+    {
+        "profile_image": "https://avatars.githubusercontent.com/u/81245965?v=4",
+        "name": "Nick Bottari",
+        "subtitle": "Vice President, UniPath.io General Lead",
+        "details": "Nick is one of the creative masterminds behind our club. He's involved with marketing designs for our club including our posters. He's also currently the general lead behind UniPath and our Vice President!",
+        "github": "https://github.com/nbottari9"
+    },
+    {
+        "profile_image": "https://avatars.githubusercontent.com/u/60888380?v=4",
+        "name": "Christopher Coco",
+        "subtitle": "Secretary, Attendance Bot Lead",
+        "details": "Christopher is a capable and focused developer and currently our Secretary. The creator and lead developer behind our club's attendance bot! He's also involved in research on campus @ UML!",
+        "github": "https://github.com/cjcocokrisp"
+    },
+    {
+        "profile_image": "https://avatars.githubusercontent.com/u/93165798?v=4",
+        "name": "Gurpreet Singh",
+        "subtitle": "Treasurer, Club Website Lead",
+        "details": "I'm one of the lead developers behind this website. I'm responsible for management of all club finances, club events, and to a degree marketing as well. I've been invovled with ML research @ UML as well!",
+        "github": "https://github.com/Gurpranked"
+    },
+    {
+        "profile_image": "https://avatars.githubusercontent.com/u/109564679?v=4",
+        "name": "Rahul Rajesh",
+        "subtitle": "Former VP, Technical Writer, UniPath.io Dev",
+        "details": "Rahul holds passion in hardware focused development, specifically within linux. He is also the official Technical Writer for our club and also our former vice president! He is also Roshan Rajesh's brother.",
+        "github": "https://github.com/rajeshrah22"
+    },
+    {
+        "profile_image": "https://media.licdn.com/dms/image/v2/D4E03AQGZblBKFmKCmg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1703034903861?e=1729728000&v=beta&t=lcd6aBE3hfJ7sx4_y_sGEcAcyLTnxZ6JXsHzN8Sn9DA",
+        "name": "Noah Shayne",
+        "subtitle": "UniPath.io Dev, UniBot Dev",
+        "details": "Noah is a charming developer with an interest in digital forensics and cybersecurity. He's been quite involved within the realm of CCDC @ UML at the UML Cybersecurity club!",
+        "github": "https://github.com/noahshayne"
+    },
+    {
+        "profile_image": "https://www.uml.edu/Images/weis-johannes_tcm18-359582.jpg?w=x",
+        "name": "(Professor) Johannes Weis",
+        "subtitle": "Assistant Teaching Professor, Club Faculty Advisor",
+        "details": "Professor Weis brings great charm and advice into our club's operations. From his class lectures to our club meetings, professor Weis is simply amazing!",
+        "github": "https://github.com/jweis1994"
+    },
+    {
+        "profile_image": "https://avatars.githubusercontent.com/u/34825728?v=4",
+        "name": "Rohan Mallu",
+        "subtitle": "UML ACM President, UniPath.io Dev",
+        "details": "Rohan is a former Fidelity Intern and a focused and capable developer. He is also the current president of UML's ACM chapter.",
+        "github": "https://github.com/AmazingConnie"
+    },
+    {
+        "profile_image": "https://media.licdn.com/dms/image/v2/D5603AQEiRTM5VcSn9Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1706157427286?e=1731542400&v=beta&t=UeQBZ3CEw58y0hjEaJGW_aloPIXIiPFVw5qxe4vxQDU",
+        "name": "Roshan Rajesh",
+        "subtitle": "UML ACM Treasurer, UniPath.io Dev",
+        "details": "Roshan passionate developer with a determined spirit. He is the treasurer @ UML's ACM chapter. He is also Rahul Rajesh's brother.",
+        "github": "https://github.com/HoustonBoston"
+    }
+    
+]
