@@ -16,6 +16,10 @@ const config = {
   tagline: 'Exploring Cloud Computing at UMass Lowell',
   favicon: 'img/logo_icon.png',
 
+  // Static Directories
+  staticDirectories: ['static'],
+
+
   // Set the production url of your site here
   url: 'https://UMLCloudComputing.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
