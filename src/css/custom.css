@@ -50,7 +50,7 @@
   background-color: grey.800;
 }
 
-.container {
+.iframe-container {
   position: relative;
   overflow: hidden;
   width: 100%;
