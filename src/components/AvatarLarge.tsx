@@ -18,7 +18,7 @@ function MemberCard ({ ProfileImage, Name, Subtitle, Details, ButtonLink, Button
                     </div>
                 </div>
             </div>
-            <div className="card__body">
+            <div className="card__body member_modal_body">
                 <small>
                     {Details}
                 </small>

@@ -102,6 +102,10 @@
   max-width: 100%;
 }
 
+.member_modal_body {
+  text-align: center;
+}
+
 /* FontAwesome */
 .navbar__icon {
   height: 2.5rem;
