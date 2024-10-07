@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "import": "node stream.js && rm -rf temp",
+    "import": "node stream.js && rm -rf temp_resources && rm -rf temp_activity && rm -rf temp_projects",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build && cp CNAME build/",
