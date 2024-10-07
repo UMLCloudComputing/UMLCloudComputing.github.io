@@ -11,7 +11,7 @@ position = 2;
 // Resources
 for (const [name, url] of Object.entries(resources_repos)) {
   const repoDir = join(__dirname, 'temp_resources', name);
-  const destDir = join(__dirname, 'docs', 'resources', name);
+  const destDir = join(__dirname, 'docs', 'resources');
 
   // Clone the repository
   execSync(`git clone ${url} ${repoDir}`);
