@@ -1,5 +1,5 @@
 <div align="center">
-    <a href="https://cloudcomputingclub.cs.uml.edu/">
+    <a href="https://umlcloudcomputing.org/">
         <img src="./club-logo.png" alt="Logo" width="50%" height="50%"/>
     </a>
     <hr>

@@ -20,7 +20,7 @@ for (const [name, url] of Object.entries(activity_repos)) {
   }
 
   // Copy the docs/web_docs directory to the destination
-  execSync(`cp -r ${join(repoDir, 'docs', 'web_docs')}/* ${destDir}`);
+  execSync(`cp -r ${join(repoDir, 'docs', name)}/* ${destDir}`);
 
   // Create _category_.json file
   const categoryContent = {
@@ -37,7 +37,7 @@ for (const [name, url] of Object.entries(activity_repos)) {
 }
 
 // Reset position
-position = 2;
+position = 4;
 for (const [name, url] of Object.entries(activity_repos)) {
   const repoDir = join(__dirname, 'temp_activity', name);
   const destDir = join(__dirname, 'docs', 'activities', name);
