@@ -20,7 +20,7 @@ for (const [name, url] of Object.entries(resources_repos)) {
   }
 
   // Copy the docs/web_docs directory to the destination
-  execSync(`cp -r ${join(repoDir, 'docs', name)}/* ${destDir}`);
+  execSync(`cp -r ${join(repoDir, 'docs', 'web_docs')}/* ${destDir}`);
 
   // Create _category_.json file
   const categoryContent = {
