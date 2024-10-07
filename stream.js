@@ -7,6 +7,8 @@ const activity_repos = JSON.parse(readFileSync('remote_repos/activity_repos.json
 const resources_repos = JSON.parse(readFileSync('remote_repos/resources_repos.json', 'utf8'));
 position = 2;
 
+
+// Resources
 for (const [name, url] of Object.entries(resources_repos)) {
   const repoDir = join(__dirname, 'temp_resources', name);
   const destDir = join(__dirname, 'docs', 'resources', name);
@@ -36,6 +38,8 @@ for (const [name, url] of Object.entries(resources_repos)) {
   position++;
 }
 
+
+// Activities
 // Reset position
 position = 4;
 for (const [name, url] of Object.entries(activity_repos)) {
@@ -68,6 +72,8 @@ for (const [name, url] of Object.entries(activity_repos)) {
 }
 
 
+
+// Projects
 // Reset position
 position = 2;
 for (const [name, url] of Object.entries(project_repos)) {
