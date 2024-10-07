@@ -7,7 +7,7 @@ const activity_repos = JSON.parse(readFileSync('remote_repos/activity_repos.json
 const resources_repos = JSON.parse(readFileSync('remote_repos/resources_repos.json', 'utf8'));
 position = 2;
 
-for (const [name, url] of Object.entries(activity_repos)) {
+for (const [name, url] of Object.entries(resources_repos)) {
   const repoDir = join(__dirname, 'temp_resources', name);
   const destDir = join(__dirname, 'docs', 'resources', name);
 
@@ -20,7 +20,7 @@ for (const [name, url] of Object.entries(activity_repos)) {
   }
 
   // Copy the docs/web_docs directory to the destination
-  execSync(`cp -r ${join(repoDir, 'docs', )}/* ${destDir}`);
+  execSync(`cp -r ${join(repoDir, 'docs', 'web_docs')}/* ${destDir}`);
 
   // Create _category_.json file
   const categoryContent = {
