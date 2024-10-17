@@ -95,5 +95,12 @@
         "subtitle": "Member",
         "details": "Sebastian is a determined programmer that is trying to branch out.",
         "github": "https://github.com/sejager"
+    },
+    {
+        "profile_image": "https://htmlcolorcodes.com/assets/images/colors/scarlet-color-solid-background-1920x1080.png",
+        "name": "Stephen Appiah",
+        "subtitle": "Club member",
+        "details" : "",
+        "github" : "https://github.com/Krisp24"
     }
 ]
