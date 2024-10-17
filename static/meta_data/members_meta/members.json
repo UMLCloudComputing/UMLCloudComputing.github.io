@@ -77,11 +77,30 @@
         "github": "https://github.com/HoustonBoston"
     },
     {
+        "profile_image": "https://avatars.githubusercontent.com/u/11324297?v=4",
+        "name": "Ben Tenney",
+        "subtitle": "Former Eboard",
+        "details": "Aspiring Dev",
+        "github": "https://github.com/ReesCodes"
+    },
+    {
+        "profile_image":"https://avatars.githubusercontent.com/u/102163668?v=4",
+        "name": "Ali Fallah",
+        "subtitle": "UML Research Assiatant",
+        "details": "weather and climate guy",
+        "github": "https://github.com/alifallahm"
+    },
+    {   "profile_image": "https://pbs.twimg.com/profile_images/1536840012104355842/zhF-SffH_400x400.jpg",
+        "name": "Sebastian Gyger",
+        "subtitle": "Member",
+        "details": "Sebastian is a determined programmer that is trying to branch out.",
+        "github": "https://github.com/sejager"
+    },
+    {
         "profile_image": "https://htmlcolorcodes.com/assets/images/colors/scarlet-color-solid-background-1920x1080.png",
         "name": "Stephen Appiah",
         "subtitle": "Club member",
         "details" : "",
         "github" : "https://github.com/Krisp24"
     }
-    
 ]
