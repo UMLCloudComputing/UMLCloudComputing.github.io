@@ -113,14 +113,14 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
-      // announcementBar: {
-      //   id: 'announcement-bar',
-      //   content:
-      //     'ADD CONTENT HERE',
-      //   backgroundColor: '#48a0ff',
-      //   textColor: '#fff',
-      //   isCloseable: false
-      // },
+      announcementBar: {
+        id: 'announcement-bar',
+        content:
+          '🔊 Ex-Google Software Engineer & IBM Program Manager presentations @ Week 8! Check out the details on the schedule! 🔊',
+        backgroundColor: '#48a0ff',
+        textColor: '#fff',
+        isCloseable: false
+      },
       navbar: {
         title: 'UML Cloud Computing Club',
         logo: {

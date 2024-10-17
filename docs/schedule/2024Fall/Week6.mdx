@@ -1,0 +1,183 @@
+---
+slug: /fall-2024/week-6
+title: Week 6
+description: Information and notes for the sixth week of the Fall 2024 semester for the UMass Lowell Cloud Computing Club.
+sidebar_position: 6
+---
+
+# Week 6
+
+## Tuesday
+Meeting Cancelled
+
+## Thursday
+### 🎥 Meeting Recording:
+<div class="iframe-container">
+    <iframe 
+        src="https://www.youtube.com/embed/y0zRonfxCuY?si=mGfz5hf1vDFZlvJz" 
+        title="Fall 2024 Week 6" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen
+        class="responsive-iframe"
+        style={{
+            borderRadius: '16px'
+        }}
+    >
+    </iframe>
+</div>
+
+
+### 🚩 Agenda
+1. Sign in with attendance code
+2. Presentation by [Andrew Aiken](https://github.com/andrew-aiken) regarding AWS Event Driven Services
+3. Presentation by Club E-Board regarding current long-term projects 
+4. Questions
+5. Break for Pizza
+6. Shift to Hands-on section
+
+### 🪄 Meeting Resources
+Andrew's [Presentation](https://github.com/andrew-aiken/website-ref/blob/main/aws_eventdriven/aws-event-driven.pdf)
+Other [useful resources](https://github.com/andrew-aiken/website-ref/tree/main/aws_eventdriven) from the presentation
+
+### 📓 Meeting Notes
+Virtual: 5<br/>
+In-Person: 18<br/>
+
+AWS Event Driven Architecture
+
+**What is S3** <br/>
+- Bucket and object
+- Versioning
+- Lifecycle rules
+- Storage classes
+- Permissions
+
+Quick Demo on S3
+- Explain differences between paths on file storage vs object storage
+- Demo versioning
+- Possible to turn object storage into a file server (simple webpage)
+<br/>
+
+**Lambda** <br/>
+Serverless Compute offering from AWs. <br/>
+Support multiple runtimes and follows a pay as you go pricing model.
+- Testing 
+- Monitoring and logging
+- VPC network attachment
+- AWS IAM integration
+- Enviornment variables
+- Concurrency
+    - Memory
+    - Timeouts
+    - Cold vs Warm Start
+- Event Driven triggers
+
+Quick Demo on Lambda
+- Various ways to trigger
+<br/>
+**API Gateway**<br/>
+Managed API service that supports multiple common connections, automatic scaling and integrates with other AWS services.
+- Integrations (Lambda, VPC, etc)
+- Connections
+    - HTTP
+    - REST
+    - Websocket
+
+Quick Demo on API Gateway
+
+**Simple Queue Service (SQS)**<br/>
+Fully managed message queuing for micorservices, distributed systems, and serverless applications
+- Standard Queues vs. FIFO Queues
+- Message Ordering
+- Visibility Timeouts
+
+Quick Demo on SQS
+
+**Simple Notification Service (SNS)**<br/>
+Facilitates communication between services (HTTP/s, Email, SMS, Lambda, SQS, etc)
+- Pub/Sub messaging
+- Topics and subscriptions
+- Support delivery protocols
+
+Quick Demo on SNS
+
+**EventBridge**<br/>
+Serverless event buss that can connect different services together
+- Rules
+- Targets
+- Triggers
+    - Crons
+    - AWS Events
+
+Quick Demo on EventBridge
+
+Questions <br/>
+- Q: SNS usecases?
+    - A: Usesful for integrations with webhooks. Useful to be used within a trigger sequence that would say cause messages to be sent 
+
+### 🎓 Current Projects Presentation
+**Presentation**
+<iframe src="https://studentuml.sharepoint.com/sites/UMLCloudComputingClub/_layouts/15/Doc.aspx?sourcedoc={f20302e3-9f15-4da7-aa7f-1213ef3cfbca}&amp;action=embedview&amp;wdAr=1.7777777777777777&amp;wdEaaCheck=0" 
+    style={{ width: '693px', height: '476px', frameBorder: 0, borderRadius: '16px'}}>
+</iframe>
+
+### 🧑‍💻 Hands on Section
+Intent
+- Explain Fundamentals of git
+- Add audience members to member list in website landing page 
+
+**Tasks**
+1. Install git onto audience computers
+2. Configure git profiles
+    1. `user.name`
+    2. `user.email`
+    3. GitHub SSH keys 
+3. Clone Website repository
+4. Make the appropriate edits to [members](https://github.com/UMLCloudComputing/UMLCloudComputing.github.io/blob/main/static/meta_data/members_meta/members.json) json file
+5. Commit changes to a local branch
+6. Publish branch to remote repository on GitHub
+7. Create a pull request on GitHub
+8. Await approval
+9. Merge changes and rebuild!
+
+**Content covered**
+1. Installed git onto audience computers
+2. Cloned website repository
+3. Created and commited changes to local branch
+4. Started configuring git credentials (`user.name` & `user.email`)
+5. Started process to create SSH key
+
+**To-do for members**
+1. Complete git profile configuration
+    1. `git config user.name YOUR-GITHUB-USERNAME`
+    2. `git config user.email YOUR-GITHUB-ASSOCIATED-EMAIL`
+2. Create an SSH key and add it to GitHub
+    1. `ssh-keygen` in your shell, specify where to place the generated key & provide a key passphrase (SSH key password for performing git operations)
+    2. Navigate to your GitHub SSH keys, Profile -> Settings -> SSH and GPG Keys
+    3. Click `New SSH Key`
+    4. Name the key according to where you are using it, IE Personal Laptop
+    5. Provide the content of the key from the generated `.pub` file
+    6. Add SSH Key
+    7. [More details on generating](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+    8. [More details on adding](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+3. Request admition into club GitHub Organization, @ or DM anyone from the E-Board.  
+4. Publish your branch to the git repo for the website
+5. [Request a PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+
+
+Covered fundamentals of git:
+- Branches
+- Commits
+- [Conventional commits format](https://www.conventionalcommits.org/en/v1.0.0/)
+
+## 🚀 Next Meeting
+Covering fundamental topics within CS
+- Git & GitHub
+- React.js
+- Go, Python 
+
+Looking to onboard more members to large scale projects
+
+See you next meeting!👋
