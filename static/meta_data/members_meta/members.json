@@ -69,20 +69,59 @@
         "details": "Rohan is a former Fidelity Intern and a focused and capable developer. He is also the current president of UML's ACM chapter.",
         "github": "https://github.com/AmazingConnie"
     },
-  {
-    "profile_image": "https://media.licdn.com/dms/image/v2/D5603AQEiRTM5VcSn9Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1706157427286?e=1731542400&v=beta&t=UeQBZ3CEw58y0hjEaJGW_aloPIXIiPFVw5qxe4vxQDU",
-    "name": "Roshan Rajesh",
-    "subtitle": "UML ACM Treasurer, UniPath.io Dev",
-    "details": "Roshan passionate developer with a determined spirit. He is the treasurer @ UML's ACM chapter. He is also Rahul Rajesh's brother.",
-    "github": "https://github.com/HoustonBoston"
-  },
-  {
-    "profile_image": "https://avatars.githubusercontent.com/u/182174585?v=4",
-    "name": "William Breen",
-    "subtitle": "Cloud Computing Club Member",
-    "details": "Will is a freshman at UMass Lowell who is interested in learning more about coding.",
-    "github": "https://github.com/EmeraldPyro"
-  }
-
-    
+    {
+        "profile_image": "https://media.licdn.com/dms/image/v2/D5603AQEiRTM5VcSn9Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1706157427286?e=1731542400&v=beta&t=UeQBZ3CEw58y0hjEaJGW_aloPIXIiPFVw5qxe4vxQDU",
+        "name": "Roshan Rajesh",
+        "subtitle": "UML ACM Treasurer, UniPath.io Dev",
+        "details": "Roshan passionate developer with a determined spirit. He is the treasurer @ UML's ACM chapter. He is also Rahul Rajesh's brother.",
+        "github": "https://github.com/HoustonBoston"
+    },
+    {
+        "profile_image": "https://avatars.githubusercontent.com/u/182174585?v=4",
+        "name": "William Breen",
+        "subtitle": "Cloud Computing Club Member",
+        "details": "Will is a freshman at UMass Lowell who is interested in learning more about coding.",
+        "github": "https://github.com/EmeraldPyro"
+    },
+    {
+        "profile_image": "https://media.licdn.com/dms/image/v2/D5603AQEiRTM5VcSn9Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1706157427286?e=1731542400&v=beta&t=UeQBZ3CEw58y0hjEaJGW_aloPIXIiPFVw5qxe4vxQDU",
+        "name": "Roshan Rajesh",
+        "subtitle": "UML ACM Treasurer, UniPath.io Dev",
+        "details": "Roshan passionate developer with a determined spirit. He is the treasurer @ UML's ACM chapter. He is also Rahul Rajesh's brother.",
+        "github": "https://github.com/HoustonBoston"
+    },
+    {
+        "profile_image": "https://avatars.githubusercontent.com/u/11324297?v=4",
+        "name": "Ben Tenney",
+        "subtitle": "Former Eboard",
+        "details": "Aspiring Dev",
+        "github": "https://github.com/ReesCodes"
+    },
+    {
+        "profile_image":"https://avatars.githubusercontent.com/u/102163668?v=4",
+        "name": "Ali Fallah",
+        "subtitle": "UML Research Assiatant",
+        "details": "weather and climate guy",
+        "github": "https://github.com/alifallahm"
+    },
+    {   "profile_image": "https://pbs.twimg.com/profile_images/1536840012104355842/zhF-SffH_400x400.jpg",
+        "name": "Sebastian Gyger",
+        "subtitle": "Member",
+        "details": "Sebastian is a determined programmer that is trying to branch out.",
+        "github": "https://github.com/sejager"
+    },
+    {
+      "profile_image": "https://avatars.githubusercontent.com/u/182174795",
+          "name": "Elaine Chang",
+          "subtitle": "Just a Regular ol' Member",
+          "details": ":)",
+          "github": "https://github.com/51219145"
+    },
+    {
+        "profile_image": "https://htmlcolorcodes.com/assets/images/colors/scarlet-color-solid-background-1920x1080.png",
+        "name": "Stephen Appiah",
+        "subtitle": "Club member",
+        "details" : "",
+        "github" : "https://github.com/Krisp24"
+    }
 ]
