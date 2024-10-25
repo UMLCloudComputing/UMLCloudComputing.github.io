@@ -116,7 +116,7 @@ const config = {
       // announcementBar: {
       //   id: 'announcement-bar',
       //   content:
-      //     '🔊 Ex-Google Software Engineer & IBM Program Manager presentations @ Week 8! Check out the details on the schedule! 🔊',
+      //     'ADD CONTENT HERE',
       //   backgroundColor: '#48a0ff',
       //   textColor: '#fff',
       //   isCloseable: false
