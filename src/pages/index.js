@@ -61,6 +61,7 @@ function HomepageHeader() {
             }}
         >
             <Container maxWidth="md">
+                <img src='/img/club-logo.png' alt='Club Logo' className="landing-logo"/>
                 <ThemeProvider theme = {theme}>
                     <h1 style={{fontSize: '7.4vh'}} className="animate__animated animate__fadeInDown hero__title">
                         {siteConfig.title}

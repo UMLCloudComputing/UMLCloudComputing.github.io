@@ -112,6 +112,11 @@
   width: 2.5rem;
 }
 
+.landing-logo {
+  border-radius: 24px;
+  max-width: 170px;
+}
+
 .navbar__github {
   -webkit-tap-highlight-color: transparent;
   display: flex;
