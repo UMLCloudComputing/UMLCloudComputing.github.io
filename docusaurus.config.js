@@ -248,6 +248,15 @@ const config = {
             ],
           },
           {
+            title: 'Contact',
+            items: [
+              {
+                label: 'Email',
+                href: 'mailto:cloudcomputing@uml.edu'
+              }
+            ]
+          },
+          {
             title: 'Help',
             items: [
               {

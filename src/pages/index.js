@@ -61,52 +61,24 @@ function HomepageHeader() {
             }}
         >
             <Container maxWidth="md">
+                <img src='/img/club-logo.png' alt='Club Logo' className="landing-logo"/>
                 <ThemeProvider theme = {theme}>
-                    <Typography variant="h1" component="h1" className="animate__animated animate__fadeInDown">
+                    <h1 style={{fontSize: '7.4vh'}} className="animate__animated animate__fadeInDown hero__title">
                         {siteConfig.title}
-                    </Typography>
-                    <Typography variant="h5" component="p" sx={{ mt: 2 }} className="animate__animated animate__fadeInUp">
+                    </h1>
+                    <h5 style={{fontSize: '3.0vh'}} sx={{ mt: 2 }} className="animate__animated animate__fadeInUp hero__subtitle">
                         {siteConfig.tagline}
-                    </Typography>
+                    </h5>
                 </ThemeProvider>
                 <Stack
                     sx={{ mt: 4 }}
                     direction="row"
                     justifyContent="center"
                     alignItems="center"
-                    spacing={2}
-                >
-                    <Button
-                        variant="contained"
-                        sx={{ mt: 4 }}
-                        color='primary'
-                        component={RouterLink}
-                        to="docs/resources"
-                        startIcon={<SchoolIcon/>}
-                    >
-                    Explore Resources
-                    </Button>
-                    <Button
-                        variant="contained"
-                        sx={{ mt: 2, ml: 2, }}
-                        color='primary'
-                        component={RouterLink}
-                        to="docs/projects"
-                        endIcon={<AutoStoriesIcon/>}
-                    >
-                    View Projects
-                    </Button>
+                    spacing={2}>
+                    <Link to="https://discord.gg/WC2NdqYtDt" class="button button--primary button--lg">Discord</Link>
+                    <Link to="https://github.com/UMLCloudComputing" class="button button--primary button--outline button--lg">Github</Link>
                 </Stack>
-                <Button
-                    variant="contained"
-                    sx={{ mt: 2, ml: 2, }}
-                    color='primary'
-                    component={RouterLink}
-                    to="docs/About Us"
-                    endIcon={<Groups2RoundedIcon/>}
-                    >
-                About Us
-                </Button>
             </Container>
         </Box>
     );
