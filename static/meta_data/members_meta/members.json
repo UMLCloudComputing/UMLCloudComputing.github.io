@@ -3,14 +3,14 @@
         "profile_image": "https://avatars.githubusercontent.com/u/44274319?v=4",
         "name": "Martin Marwad",
         "subtitle": "Founder, First President, Alumni Advisor, 10x Dev",
-        "details": "Martin is a talented developer with a plethora of knowledge and an incredible skill to lead. He was also one of our founders our first president! He's currently an Alumni Advisor.",
+        "details": "Martin is a talented developer with a plethora of knowledge and an incredible skill to lead. He was also one of our founders our first president! He's currently our Alumni Advisor.",
         "github": "https://github.com/MartinMarwad"
     },
     {
         "profile_image": "https://avatars.githubusercontent.com/u/60448620?v=4",
         "name": "Matthew Harper",
         "subtitle": "Founder, First Treasurer",
-        "details": "Matt is a talented invidual with great knowledge of within the realm of Cybersecurity. He was also one of our founders and our first ever treasurer!",
+        "details": "Matt is a talented graduate student with great knowledge of within the realm of Cybersecurity. He was also one of our founders and our first ever treasurer!",
         "github": "https://github.com/DaintyJet"
     },
     {
@@ -38,21 +38,21 @@
         "profile_image": "https://avatars.githubusercontent.com/u/93165798?v=4",
         "name": "Gurpreet Singh",
         "subtitle": "Treasurer, Club Website Lead, UML Undergrad ML Researcher",
-        "details": "I'm one of the lead developers behind this website. I'm responsible for management of all club finances, club events, and to a degree marketing as well. I'm also invovled with ML research @ UML as well!",
+        "details": "I'm one of the lead developers behind this website. I'm responsible for management of all club finances, club events, and to a degree marketing as well. Similarly, I'm also involved with various other club projects. I'm also involved with ML research @ UML as well!",
         "github": "https://github.com/Gurpranked"
     },
     {
         "profile_image": "https://avatars.githubusercontent.com/u/109564679?v=4",
         "name": "Rahul Rajesh",
         "subtitle": "Former VP, Technical Writer, UniPath.io Dev",
-        "details": "Rahul holds passion in hardware focused development, specifically within linux. He is also the official Technical Writer for our club and also our former vice president! He is also Roshan Rajesh's brother.",
+        "details": "Rahul holds passion in hardware focused development, specifically through linux. He is also the official Technical Writer for our club and also our former vice president! He is also Roshan Rajesh's brother.",
         "github": "https://github.com/rajeshrah22"
     },
     {
         "profile_image": "https://avatars.githubusercontent.com/u/145724750?v=4",
         "name": "Noah Shayne",
         "subtitle": "UniPath.io Dev, UniBot Dev",
-        "details": "Noah is a charming developer with an interest in digital forensics and cybersecurity. He's been quite involved within the realm of CCDC @ UML at the UML Cybersecurity club!",
+        "details": "Noah is a charming developer with an interest in digital forensics and cybersecurity. He has been quite involved within the realm of CCDC @ UML at the UML Cybersecurity club in the past! He's current a student a UMass Amherst.",
         "github": "https://github.com/noahshayne"
     },
     {
@@ -82,13 +82,6 @@
         "subtitle": "Cloud Computing Club Member",
         "details": "Will is a freshman at UMass Lowell who is interested in learning more about coding.",
         "github": "https://github.com/EmeraldPyro"
-    },
-    {
-        "profile_image": "https://media.licdn.com/dms/image/v2/D5603AQEiRTM5VcSn9Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1706157427286?e=1731542400&v=beta&t=UeQBZ3CEw58y0hjEaJGW_aloPIXIiPFVw5qxe4vxQDU",
-        "name": "Roshan Rajesh",
-        "subtitle": "UML ACM Treasurer, UniPath.io Dev",
-        "details": "Roshan passionate developer with a determined spirit. He is the treasurer @ UML's ACM chapter. He is also Rahul Rajesh's brother.",
-        "github": "https://github.com/HoustonBoston"
     },
     {
         "profile_image": "https://avatars.githubusercontent.com/u/11324297?v=4",
