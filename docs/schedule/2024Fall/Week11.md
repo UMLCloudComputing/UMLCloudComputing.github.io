@@ -50,7 +50,7 @@ N/A
     - Expose port on container to be pinged.
     - Set up automated deployments on pushes to main with GitHub actions.
 
-✨ Front End Team:
+✨ Front End Team
 - Continued designing Portal UI
 - Looking to build front-end integration to API data
 
