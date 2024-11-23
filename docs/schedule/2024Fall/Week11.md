@@ -44,8 +44,11 @@ Backend Team:
 
 
 Frontend Team:
-- Streamlined UI design within Figma
-- Implement Base UI for landing page on portal
+- Continued Figma design
+- Looked into fetching user's servers with Discord API
+- Now using devcontainers to ensure a consistent environment
+- Discord OAuth working
+
 
 ### 🚀 Next Meeting
 We'll continue making amazing progress on Immersion going forwards!
@@ -59,7 +62,7 @@ Backend Team:
 - Start to develop the Discord app
 
 Frontend Team:
-- Continue work on wireframing all of the UI for the portal
-- Implement a mutable front-end with re-routing
+- Finish sign up flow
+- Add Chakra-UI or some other component library that isn't MUI
 
 🥂 Cheers!
