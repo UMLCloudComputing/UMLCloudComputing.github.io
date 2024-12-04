@@ -8,6 +8,9 @@ sidebar_position: 13
 # Week 13
 
 ## Tuesday
+No meeting held
 
 ## Thursday
+Meeting cancelled
 
+Enjoy your Thanksgiving break! 🦃

@@ -83,6 +83,13 @@
   color: transparent;
 }
 
+.aws_trivia_night {
+  background: radial-gradient(circle, #FF9900 0%, #b97c2b 50%, rgb(255, 207, 118) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 [data-theme='light'] .unibot_theme_hero_text {
   background: radial-gradient(circle, #a444c4 0%, #6e3399 50%, rgb(59, 41, 67) 100%);
   -webkit-background-clip: text;
