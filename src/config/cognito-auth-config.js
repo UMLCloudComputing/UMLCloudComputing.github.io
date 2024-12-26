@@ -1,4 +1,4 @@
-// src/config/aws-exports.js
+// src/config/cognito-auth-config.js
 
 const cognitoAuthConfig = {
   authority: process.env.AUTHORITY,

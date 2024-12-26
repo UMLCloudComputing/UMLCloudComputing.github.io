@@ -1,4 +1,4 @@
-// src/config/amplify-config.js
+// src/config/cognito-config.js
 
 import cognitoAuthConfig from "./cognito-auth-config";
 
