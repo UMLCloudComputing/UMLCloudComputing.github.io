@@ -1,7 +1,6 @@
 
 // React
 import React, { useEffect, useState } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Link from '@docusaurus/Link';
 import { useColorMode } from '@docusaurus/theme-common';
@@ -10,12 +9,7 @@ import 'animate.css';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import Grid from '@mui/material/Unstable_Grid2';
-import SchoolIcon from '@mui/icons-material/School';
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
-import Groups2RoundedIcon from '@mui/icons-material/Groups2Rounded';
 import { createTheme,responsiveFontSizes } from '@mui/material';
 
 // Local
