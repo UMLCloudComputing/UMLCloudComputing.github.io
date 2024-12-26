@@ -2,19 +2,19 @@
 
 import React from "react";
 
-import { Amplify } from "aws-amplify";
-import { Authenticator } from "@aws-amplify/ui-react";
+// import { Amplify } from "aws-amplify";
+// import { Authenticator } from "@aws-amplify/ui-react";
 
-import { configure } from "../config/amplify-config";
+import { configure } from "../config/cognito-configure";
 import { AuthCheck } from "../components/Auth";
 
-const awsConfig = configure();
-Amplify.configure(awsConfig);
+import { AuthProvider } from 'react-oidc-context';
 
 export default function Root({ children }) {
+  const cognitoAuthConfig = configure()
   return (
-    <Authenticator.Provider>
+    <AuthProvider {...cognitoAuthConfig}>
       <AuthCheck children={children} />
-    </Authenticator.Provider>
+    </AuthProvider>
   );
 }

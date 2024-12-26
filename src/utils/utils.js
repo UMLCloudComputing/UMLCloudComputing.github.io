@@ -2,7 +2,9 @@
 
 import { useThemeConfig } from "@docusaurus/theme-common";
 
-import { useAuthenticator } from "@aws-amplify/ui-react";
+// import { useAuthenticator } from "@aws-amplify/ui-react";
+import { useAuth } from "react-oidc-context";
+
 import {
   AUTHENTICATED,
   LOGIN_BUTTON,
@@ -12,10 +14,11 @@ import {
 } from "./constants";
 
 export function useNavbarItems() {
-  const { route } = useAuthenticator((context) => [context.route]);
+  // const { route } = useAuthenticator((context) => [context.route]);
+  const auth = useAuth();
 
   let label, to;
-  if (route === AUTHENTICATED) {
+  if (auth.isAuthenticated) {
     label = LOGOUT_BUTTON;
     to = LOGOUT_PATH;
   } else {
@@ -33,7 +36,7 @@ export function useNavbarItems() {
   });
 
   // remove irrelevant items
-  if (route === AUTHENTICATED)
+  if (auth.isAuthenticated)
     items = items.filter((x) => x.label !== LOGIN_BUTTON);
   else items = items.filter((x) => x.label !== LOGOUT_BUTTON);
 
