@@ -24,6 +24,9 @@ yarn-error.log*
 # AWS Secrets
 IAM_Automation/aws_creds.py
 
+# Localhost HTTPS pem files
+*.pem
+
 # Igonre everyhting in docs/activities except md files in the root of docs/activities
 docs/activities/*
 !docs/activities/*.md
