@@ -210,6 +210,10 @@ Here are the steps:
 >[!NOTE]
 > If you don't have access to the `mkcert` command on your system, refer [here](https://github.com/FiloSottile/mkcert) to install `mkcert`.
 
+Similarly, some local environment variables must be specified in order to ensure functionality:
+1. Create a copy of the file called `env.template`
+2. Within this file populate the provided variables using information available on the AWS Console for Cognito. 
+3. Once populated with the correct information, authentication should work correctly
 
 ## 🎉Acknowledgements 
 Many thanks to the [UMass Lowell Cloud Computing Club](https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub) members, our faculty advisor [Dr. Johannes Weis](https://www.uml.edu/sciences/computer-science/people/weis-johannes.aspx), and the [UMass Lowell Computer Science Department](https://www.uml.edu/Sciences/computer-science/) for their support and guidance.
