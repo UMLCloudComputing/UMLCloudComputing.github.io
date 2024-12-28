@@ -53,7 +53,7 @@ export function AuthCheck({ children }) {
       auth.removeUser();
       return <signOutRedirect />;
     } else if (from === LOGIN_PATH) return <Redirect to={BASE} from={from} />; // Properly redirect to correct page
-
+    // Otherwise return children
     return children;
   } else { // Not authenticated
     // If recovering from logout, redirect to base URL

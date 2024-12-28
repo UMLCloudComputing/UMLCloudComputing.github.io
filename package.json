@@ -17,10 +17,10 @@
   },
   "dependencies": {
     "@aws-amplify/ui-react": "",
-    "@docusaurus/core": "^3.6.0",
-    "@docusaurus/plugin-content-blog": "^3.6.0",
-    "@docusaurus/preset-classic": "^3.6.0",
-    "@docusaurus/theme-classic": "^3.6.0",
+    "@docusaurus/core": "^3.6.3",
+    "@docusaurus/plugin-content-blog": "^3.6.3",
+    "@docusaurus/preset-classic": "^3.6.3",
+    "@docusaurus/theme-classic": "^3.6.3",
     "@easyops-cn/docusaurus-search-local": "^0.44.5",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
@@ -47,8 +47,8 @@
     "remark-mdx-frontmatter": "^5.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.6.0",
-    "@docusaurus/types": "^3.5.2"
+    "@docusaurus/module-type-aliases": "^3.6.3",
+    "@docusaurus/types": "^3.6.3"
   },
   "browserslist": {
     "production": [
