@@ -20,10 +20,8 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Install dependencies
+      - name: Install dependencies & configure AWS Cognito Env Vars and Secrets
         run: npm install
-
-      - name: Configure AWS Cognito Env Vars and Secrets
         env: 
           ENV: ${{ vars.ENV }}
           REGION: ${{ vars.REGION }}
