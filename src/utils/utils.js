@@ -6,7 +6,6 @@ import { useThemeConfig } from "@docusaurus/theme-common";
 import { useAuth } from "react-oidc-context";
 
 import {
-  AUTHENTICATED,
   LOGIN_BUTTON,
   LOGIN_PATH,
   LOGOUT_BUTTON,

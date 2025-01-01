@@ -34,6 +34,7 @@ jobs:
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           REDIRECT_URI: ${{ vars.REDIRECT_URI }}
           SCOPE: ${{ vars.SCOPE }}
+          MIGRATION_API_KEY: ${{ secrets.MIGRATION_API_KEY }}
 
       - name: Fetch Latest Documentation
         run: npm run import
