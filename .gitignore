@@ -24,6 +24,10 @@ yarn-error.log*
 # AWS Secrets
 IAM_Automation/aws_creds.py
 
+# Terraform Stack build files
+.terraform
+.terraform.lock.hcl
+
 # Localhost HTTPS pem files
 *.pem
 
