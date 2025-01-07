@@ -24,6 +24,14 @@ yarn-error.log*
 # AWS Secrets
 IAM_Automation/aws_creds.py
 
+# HTTPS pem files
+*.pem
+
+# Terraform Stack files
+*.hcl
+.terraform
+
+
 # Igonre everyhting in docs/activities except md files in the root of docs/activities
 docs/activities/*
 !docs/activities/*.md
