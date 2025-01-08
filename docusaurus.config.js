@@ -215,12 +215,6 @@ const config = {
               },
             ]
           },
-
-          // Sign In
-          {
-            type: 'custom-accountButton',
-            position: 'right',
-          },
         ],
       },
       footer: {
