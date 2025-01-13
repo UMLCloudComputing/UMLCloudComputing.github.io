@@ -27,6 +27,8 @@ IAM_Automation/aws_creds.py
 # Terraform Stack build files
 .terraform
 .terraform.lock.hcl
+terraform_tfstate.backup
+terraform_tfstate
 
 # Localhost HTTPS pem files
 *.pem

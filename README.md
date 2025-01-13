@@ -215,6 +215,12 @@ Similarly, some local environment variables must be specified in order to ensure
 2. Within this file populate the provided variables using information available on the AWS Console for Cognito. 
 3. Once populated with the correct information, authentication should work correctly
 
+## ⚠️ Danger Zone
+Terraform files defined within `coder_terraform` are files for defining cloud infrastructure and do not necessarily run during deployment. These files are critical for the Coder CDEs. 
+- `coder_template_config.tf`: Defines how the Coder Workspace for this project should be configured. Any modifications to this file will propogate to changes to the __workspace template__ designed for this repo available on coder! Edit wisely.
+- `nat_instance.tf`, `outputs.tf`: These files define a specific EC2 NAT (Network Address Translation) instance. This is particularly useful to overcome the ["Hard" NAT problem](https://tailscale.com/blog/how-nat-traversal-works) for Coder. 
+
+Feel free to [reach out](https://discord.com/channels/890983857938116729/1250232490006806610) regarding any questions regarding why these files exist or how they work!
 ## 🎉Acknowledgements 
 Many thanks to the [UMass Lowell Cloud Computing Club](https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub) members, our faculty advisor [Dr. Johannes Weis](https://www.uml.edu/sciences/computer-science/people/weis-johannes.aspx), and the [UMass Lowell Computer Science Department](https://www.uml.edu/Sciences/computer-science/) for their support and guidance.
 

@@ -13,8 +13,8 @@ variable "security_group_ingress_cidr_ipv4" {
     type = string
 }
 
-variable "ssh_key_name" {
-    description = "Name of the SSH key for the NAT instance"
+variable "ssh_key pair name" {
+    description = "Name of the SSH key-pair for the NAT instance"
     type = string
 }
 
