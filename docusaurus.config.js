@@ -96,7 +96,7 @@ const config = {
       //   sidebarPath: 'projectsSidebars.js',
       // },
     // ],
-  ],
+  // ],
   themes: [
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
