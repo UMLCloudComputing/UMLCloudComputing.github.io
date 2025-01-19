@@ -194,7 +194,7 @@ To add a new activity's instructions onto the activities section of the website,
 4. Make a Pull Request to merge your branch into **main**. Your activity will be added to the website once the PR is approved and merged.
 
 ## 🔬 Login Development 
-In order to devleop with OAuth support locally, HTTPS is required for localhost. This can done easily by creating an SSL certificate for local use. 
+In order to develop with OIDC support locally, HTTPS is required for localhost. This can done easily by creating an SSL certificate for local use. 
 Here are the steps:
 1. Run `mkcert localhost` to generate `localhost.pem` and `localhost-key.pem`
 2. Run `mkcert -install` to install the generated certificate in your trust store. After installed, restart your browser. 
