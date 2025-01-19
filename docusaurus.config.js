@@ -81,13 +81,13 @@ const config = {
     ],
   ],
 
-  // plugins: [
-  //   [
-  //     "docusaurus-plugin-dotenv",
-  //     {
-  //       path: "./.env.local",
-  //       systemvars: true,
-  //     },
+  plugins: [
+    [
+      "docusaurus-plugin-dotenv",
+      {
+        path: "./.env.local",
+        systemvars: true,
+      },
       // '@docusaurus/plugin-content-docs',
       // {
       //   id: 'projects',
@@ -95,8 +95,8 @@ const config = {
       //   routeBasePath: './projects',
       //   sidebarPath: 'projectsSidebars.js',
       // },
-    // ],
-  // ],
+    ],
+  ],
   themes: [
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
