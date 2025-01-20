@@ -81,22 +81,22 @@ const config = {
     ],
   ],
 
-  // plugins: [
-  //   [
-  //     "docusaurus-plugin-dotenv",
-  //     {
-  //       path: "./.env.local",
-  //       systemvars: true,
-  //     },
-  //     '@docusaurus/plugin-content-docs',
-  //     {
-  //       id: 'projects',
-  //       path: './projects',
-  //       routeBasePath: './projects',
-  //       sidebarPath: 'projectsSidebars.js',
-  //     },
-  //   ],
-  // ],
+  plugins: [
+    [
+      "docusaurus-plugin-dotenv",
+      {
+        path: "./.env.local",
+        systemvars: true,
+      },
+      // '@docusaurus/plugin-content-docs',
+      // {
+      //   id: 'projects',
+      //   path: './projects',
+      //   routeBasePath: './projects',
+      //   sidebarPath: 'projectsSidebars.js',
+      // },
+    ],
+  ],
   themes: [
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
