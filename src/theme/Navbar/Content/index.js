@@ -13,7 +13,11 @@ import NavbarMobileSidebarToggle from "@theme/Navbar/MobileSidebar/Toggle";
 import NavbarLogo from "@theme/Navbar/Logo";
 import NavbarSearch from "@theme/Navbar/Search";
 import styles from "./styles.module.css";
+<<<<<<< HEAD
 import { useNavbarItems } from "../../../utils/utils";
+=======
+import { useNavbarItemsDesktop } from "../../../utils/utils";
+>>>>>>> d27f2dc52315d2d90368ec678e2127a0b8b32e97
 // function useNavbarItems() {
 //   // TODO temporary casting until ThemeConfig type is improved
 // return useThemeConfig().navbar.items;
@@ -50,7 +54,11 @@ function NavbarContentLayout({ left, right }) {
 }
 export default function NavbarContent() {
   const mobileSidebar = useNavbarMobileSidebar();
+<<<<<<< HEAD
   const items = useNavbarItems();
+=======
+  const items = useNavbarItemsDesktop();
+>>>>>>> d27f2dc52315d2d90368ec678e2127a0b8b32e97
   const [leftItems, rightItems] = splitNavbarItems(items);
   const searchBarItem = items.find((item) => item.type === "search");
   return (
