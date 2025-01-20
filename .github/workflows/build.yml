@@ -20,6 +20,8 @@ jobs:
 
       - name: Install dependencies & configure AWS Cognito Env Variables
         run: npm install
+        with:
+          environment: github-pages
         env: 
           ENV: ${{ vars.ENV }}
           REGION: ${{ vars.REGION }}
