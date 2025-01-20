@@ -18,9 +18,11 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Install dependencies & configure AWS Cognito Env Variables
+      - name: Install dependencies 
         run: npm install
-        
+
+      - name: Build Docusaurus site & configure AWS Cognito Env Variables
+        run: npm run build
         env: 
           ENV: ${{ vars.ENV }}
           REGION: ${{ vars.REGION }}
@@ -34,9 +36,6 @@ jobs:
           REDIRECT_URI: ${{ vars.REDIRECT_URI }}
           SCOPE: ${{ vars.SCOPE }}
           MIGRATION_API_KEY: ${{ secrets.MIGRATION_API_KEY }}
-
-      - name: Build Docusaurus site
-        run: npm run build
 
       - name: Post success message
         if: success()

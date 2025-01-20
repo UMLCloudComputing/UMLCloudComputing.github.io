@@ -21,8 +21,15 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Install dependencies & configure AWS Cognito Env Vars and Secrets
+      - name: Install dependencies 
         run: npm install
+        
+
+      - name: Fetch Latest Documentation
+        run: npm run import
+
+      - name: Build Docusaurus site & configure AWS Cognito Env Vars and Secrets
+        run: npm run build
         env: 
           ENV: ${{ vars.ENV }}
           REGION: ${{ vars.REGION }}
@@ -36,12 +43,6 @@ jobs:
           REDIRECT_URI: ${{ vars.REDIRECT_URI }}
           SCOPE: ${{ vars.SCOPE }}
           MIGRATION_API_KEY: ${{ secrets.MIGRATION_API_KEY }}
-
-      - name: Fetch Latest Documentation
-        run: npm run import
-
-      - name: Build Docusaurus site
-        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
