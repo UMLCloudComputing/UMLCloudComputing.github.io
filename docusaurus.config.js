@@ -88,13 +88,13 @@ const config = {
   //       path: "./.env.local",
   //       systemvars: true,
   //     },
-  //     // '@docusaurus/plugin-content-docs',
-  //     // {
-  //     //   id: 'projects',
-  //     //   path: './projects',
-  //     //   routeBasePath: './projects',
-  //     //   sidebarPath: 'projectsSidebars.js',
-  //     // },
+  //     '@docusaurus/plugin-content-docs',
+  //     {
+  //       id: 'projects',
+  //       path: './projects',
+  //       routeBasePath: './projects',
+  //       sidebarPath: 'projectsSidebars.js',
+  //     },
   //   ],
   // ],
   themes: [
