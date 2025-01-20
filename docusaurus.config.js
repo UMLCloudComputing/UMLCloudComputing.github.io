@@ -83,11 +83,11 @@ const config = {
 
   plugins: [
     [
-      "docusaurus-plugin-dotenv",
-      {
-        path: "./.env.local",
-        systemvars: true,
-      },
+      // "docusaurus-plugin-dotenv",
+      // {
+      //   path: "./.env.local",
+      //   systemvars: true,
+      // },
       // '@docusaurus/plugin-content-docs',
       // {
       //   id: 'projects',
