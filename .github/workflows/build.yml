@@ -7,8 +7,8 @@ on:
 
 jobs:
   build:
-    with:
-      environment: github-pages
+    
+    environment: github-pages
 
     runs-on: ubuntu-latest
 
