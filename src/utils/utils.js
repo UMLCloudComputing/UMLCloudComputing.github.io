@@ -11,7 +11,6 @@ import {
   LOGOUT_BUTTON,
   LOGOUT_PATH,
 } from "./constants";
-import { UserManager } from "oidc-client-ts";
 
 export function useNavbarItemsMobile() {
   // const { route } = useAuthenticator((context) => [context.route]);
