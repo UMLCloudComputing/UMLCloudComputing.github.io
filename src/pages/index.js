@@ -1,7 +1,6 @@
 
 // React
 import React, { useEffect, useState } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Link from '@docusaurus/Link';
 import { useColorMode } from '@docusaurus/theme-common';
@@ -10,12 +9,7 @@ import 'animate.css';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import Grid from '@mui/material/Unstable_Grid2';
-import SchoolIcon from '@mui/icons-material/School';
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
-import Groups2RoundedIcon from '@mui/icons-material/Groups2Rounded';
 import { createTheme,responsiveFontSizes } from '@mui/material';
 
 // Local
@@ -28,15 +22,35 @@ import cards_data from "@site/static/meta_data/cards_meta/cards_data.json";
 import AvatarLarge from "../components/AvatarLarge";
 import PaperCard from '../components/PaperCard';
 
+// OIDC authentication context
+import { useAuth } from "react-oidc-context";
+
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
+
+// Max index value exclusive [min, max)
+function getRandInRange(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+// Message pool for custom message on authenticated session
+const choices = ["Howdy", "Hello", "Hola", "Bonjour", "नमस्ते", "こんにちは", "Hei", "Hallo", "Salut", "Hej", "Hai", "Bok", "Ndewo", "నమస్తే", "سلام"];
+const index = getRandInRange(0, choices.length);
+
 function HomepageHeader() {
+    const auth = useAuth();
+
     const { siteConfig } = useDocusaurusContext();
     const { colorMode } = useColorMode();
     const isDarkMode = colorMode === 'dark';
 
     const [gradientAngle, setGradientAngle] = useState(0); // Initial gradient angle
+    let authenticated_message;
+    if (auth.isAuthenticated) 
+        authenticated_message = choices[index] + " " + auth.user?.profile.name;
+    else 
+        authenticated_message = siteConfig.tagline;
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -67,8 +81,9 @@ function HomepageHeader() {
                         {siteConfig.title}
                     </h1>
                     <h5 style={{fontSize: '3.0vh'}} sx={{ mt: 2 }} className="animate__animated animate__fadeInUp hero__subtitle">
-                        {siteConfig.tagline}
+                        {authenticated_message}
                     </h5>
+                    <h6></h6>
                 </ThemeProvider>
                 <Stack
                     sx={{ mt: 4 }}

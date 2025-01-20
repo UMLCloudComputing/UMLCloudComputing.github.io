@@ -193,6 +193,28 @@ To add a new activity's instructions onto the activities section of the website,
     ```
 4. Make a Pull Request to merge your branch into **main**. Your activity will be added to the website once the PR is approved and merged.
 
+## 🔬 Login Development 
+In order to develop with OIDC support locally, HTTPS is required for localhost. This can done easily by creating an SSL certificate for local use. 
+Here are the steps:
+1. Run `mkcert localhost` to generate `localhost.pem` and `localhost-key.pem`
+2. Run `mkcert -install` to install the generated certificate in your trust store. After installed, restart your browser. 
+3. Now you can start the development session as follows:
+    ```zsh
+    HTTPS=true SSL_CRT_FILE=localhost.pem SSL_KEY_FILE=localhost-key.pem npm start
+    ```
+4. Open `https://localhost:3000/` to view your development session rendered to the browser.
+
+>[!CAUTION]
+> Never share your generated `.pem`! The `.gitignore` file is preconfigured to ignore `.pem` files within commits. There are severe security complications in exposing your `.pem` files. 
+
+>[!NOTE]
+> If you don't have access to the `mkcert` command on your system, refer [here](https://github.com/FiloSottile/mkcert) to install `mkcert`.
+
+Similarly, some local environment variables must be specified in order to ensure functionality:
+1. Create a copy of the file called `env.template`
+2. Within this file populate the provided variables using information available on the AWS Console for Cognito. 
+3. Once populated with the correct information, authentication should work correctly
+
 ## 🎉Acknowledgements 
 Many thanks to the [UMass Lowell Cloud Computing Club](https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub) members, our faculty advisor [Dr. Johannes Weis](https://www.uml.edu/sciences/computer-science/people/weis-johannes.aspx), and the [UMass Lowell Computer Science Department](https://www.uml.edu/Sciences/computer-science/) for their support and guidance.
 

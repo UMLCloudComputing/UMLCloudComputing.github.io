@@ -16,10 +16,11 @@
     "predeploy": "npm run build"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.6.0",
-    "@docusaurus/plugin-content-blog": "^3.6.0",
-    "@docusaurus/preset-classic": "^3.6.0",
-    "@docusaurus/theme-classic": "^3.6.0",
+    "@aws-amplify/ui-react": "",
+    "@docusaurus/core": "^3.6.3",
+    "@docusaurus/plugin-content-blog": "^3.6.3",
+    "@docusaurus/preset-classic": "^3.6.3",
+    "@docusaurus/theme-classic": "^3.6.3",
     "@easyops-cn/docusaurus-search-local": "^0.44.5",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
@@ -29,18 +30,27 @@
     "animate.css": "^4.1.1",
     "clsx": "^2.0.0",
     "docusaurus": "^1.14.7",
+    "docusaurus-plugin-dotenv": "^1.0.1",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
     "font-awesome": "^4.7.0",
+    "framer-motion": "^11.18.1",
     "gh-pages": "^6.1.1",
+    "oidc-client-ts": "^3.1.0",
+    "openid-client": "^5.7.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-loading": "^2.0.3",
+    "react-oidc-context": "^3.2.0",
     "rehype-katex": "^7.0.0",
     "remark-math": "^6.0.0",
     "remark-mdx-frontmatter": "^5.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.6.0",
-    "@docusaurus/types": "^3.5.2"
+    "@docusaurus/module-type-aliases": "^3.6.3",
+    "@docusaurus/types": "^3.6.3"
   },
   "browserslist": {
     "production": [

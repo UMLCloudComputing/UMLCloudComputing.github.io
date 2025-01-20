@@ -178,3 +178,15 @@ html[data-theme='dark'] .navbar__github {
   }
 }
 
+.loading_bubbles {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.profile_icon {
+  border-radius: 50%;
+  width: 2rem;
+}

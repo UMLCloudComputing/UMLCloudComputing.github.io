@@ -7,8 +7,8 @@ on:
 
 jobs:
   build:
+    environment: github-pages
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -18,11 +18,24 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Install dependencies
+      - name: Install dependencies 
         run: npm install
 
-      - name: Build Docusaurus site
+      - name: Build Docusaurus site & configure AWS Cognito Env Variables
         run: npm run build
+        env: 
+          ENV: ${{ vars.ENV }}
+          REGION: ${{ vars.REGION }}
+          USER_POOL_ID: ${{ secrets.USER_POOL_ID }}
+          USER_POOL_WEB_CLIENT_ID: ${{ secrets.USER_POOL_WEB_CLIENT_ID }}
+          OAUTH_DOMAIN: ${{ secrets.OAUTH_DOMAIN }}
+          OAUTH_REDIRECT_SIGN_OUT: ${{ vars.OAUTH_REDIRECT_SIGN_OUT }} 
+          OAUTH_REDIRECT_SIGN_RESPONSE_TYPE: ${{ vars.OAUTH_REDIRECT_SIGN_RESPONSE_TYPE }}
+          AUTHORITY: ${{ secrets.AUTHORITY }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          REDIRECT_URI: ${{ vars.REDIRECT_URI }}
+          SCOPE: ${{ vars.SCOPE }}
+          MIGRATION_API_KEY: ${{ secrets.MIGRATION_API_KEY }}
 
       - name: Post success message
         if: success()
