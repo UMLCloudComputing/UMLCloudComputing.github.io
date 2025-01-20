@@ -132,6 +132,7 @@ const config = {
           alt: 'UML Cloud Computing Club Logo',
           src: 'img/logo_icon.png',
         },
+        hideOnScroll: true,
         items: [
 
           // Schedule
@@ -172,54 +173,51 @@ const config = {
             position: 'left',
             label: 'Activities',
           },
-        
-          // Github
-          {
-            href: 'https://github.com/UMLCloudComputing',
-            'aria-label': 'GitHub',
-            className: 'navbar__icon navbar__github',
-            position: 'right',
-            html: '<i class="fa fa-github"></i>',
-          },
+          // Coder CDE link, will be integrated to the account settings page instead
+          // {
+          //   href: "https://coder.umlcloudcomputing.org",
+          //   position: "right",
+          //   label: "Coder CDE"
+          // },
 
-          // Socials (Discord, Instagram, LinkedIn)
-          {
-            type: 'dropdown',
-            label: 'Socials',
-            position: 'right',
-            items: [
+          // // Socials (Discord, Instagram, LinkedIn)
+          // {
+          //   type: 'dropdown',
+          //   label: 'Socials',
+          //   position: 'right',
+          //   items: [
               
-              // Discord
-              {
-                href: 'https://discord.gg/WC2NdqYtDt',
-                label: 'Discord',
-              },
+          //     // Discord
+          //     {
+          //       href: 'https://discord.gg/WC2NdqYtDt',
+          //       label: 'Discord',
+          //     },
 
-              // Youtube
-              {
-                href: 'https://www.youtube.com/@UMLCloudComputingClub',
-                label: 'Youtube',
-              },
+          //     // Youtube
+          //     {
+          //       href: 'https://www.youtube.com/@UMLCloudComputingClub',
+          //       label: 'Youtube',
+          //     },
               
-              // Instagram
-              {
-                href: 'https://www.instagram.com/umlcloudcomputing/',
-                label: 'Instagram',
-              },
+          //     // Instagram
+          //     {
+          //       href: 'https://www.instagram.com/umlcloudcomputing/',
+          //       label: 'Instagram',
+          //     },
 
-              // LinkedIn
-              {
-                href: 'https://www.linkedin.com/company/umass-lowell-cloud-computing-club/',
-                label: 'LinkedIn',
-              },
+          //     // LinkedIn
+          //     {
+          //       href: 'https://www.linkedin.com/company/umass-lowell-cloud-computing-club/',
+          //       label: 'LinkedIn',
+          //     },
 
-              // Engage
-              {
-                href: 'https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub',
-                label: 'Engage',
-              },
-            ]
-          },
+          //     // Engage
+          //     {
+          //       href: 'https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub',
+          //       label: 'Engage',
+          //     },
+          //   ]
+          // },
         ],
       },
       footer: {
@@ -243,6 +241,14 @@ const config = {
               {
                 label: 'LinkedIn',
                 href: 'https://www.linkedin.com/company/umass-lowell-cloud-computing-club/',
+              },
+              {
+                href: 'https://www.youtube.com/@UMLCloudComputingClub',
+                label: 'Youtube',
+              },
+              {
+                href: 'https://www.instagram.com/umlcloudcomputing/',
+                label: 'Instagram',
               },
             ],
           },

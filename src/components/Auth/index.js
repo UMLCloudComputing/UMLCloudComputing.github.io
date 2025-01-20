@@ -2,10 +2,9 @@
 
 import React from "react";
 
-// import { useAuthenticator } from "@aws-amplify/ui-react";
 import { useAuth } from "react-oidc-context";
 import { Redirect, useLocation } from "@docusaurus/router";
-
+import ReactLoading from 'react-loading';
 
 import {
   // AUTHENTICATED,
@@ -15,7 +14,6 @@ import {
   PROTECTED_PATHS,
 } from "../../utils/constants.js";
 
-// import { Login } from "../Login";
 
 export function AuthCheck({ children }) {
   const location = useLocation();
@@ -34,7 +32,10 @@ export function AuthCheck({ children }) {
   };
   // Loading
   if (auth.isLoading) {
-    return <div>Loading...</div>;
+    return <div className="loading_bubbles">
+      <img src='/img/club-logo.png' alt='Club Logo' className="landing-logo"/>
+      <ReactLoading type={"bubbles"} color={"#6e70f6"} height={'80%'} width={'80%'}/>
+      </div>;
   }
   // Error 
   if (auth.error) {
