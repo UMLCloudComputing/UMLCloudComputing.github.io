@@ -28,7 +28,7 @@ export function useNavbarItemsMobile() {
       items: [
         {
           label: "Your Account",
-          to: "/accountSettings"
+          to: "/Account"
         },
         {
           label: LOGOUT_BUTTON,
@@ -75,7 +75,7 @@ export function useNavbarItemsDesktop() {
       items: [
         {
           label: "Your Account",
-          to: "/accountSettings"
+          to: "/Account"
         },
         {
           label: LOGOUT_BUTTON,
