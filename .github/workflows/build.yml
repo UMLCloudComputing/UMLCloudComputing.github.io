@@ -8,7 +8,8 @@ on:
 jobs:
   build:
     with:
-      gutenvironment: github-pages
+      environment: github-pages
+
     runs-on: ubuntu-latest
 
     steps:
