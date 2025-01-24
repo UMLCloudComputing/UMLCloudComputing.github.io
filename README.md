@@ -193,7 +193,10 @@ To add a new activity's instructions onto the activities section of the website,
     ```
 4. Make a Pull Request to merge your branch into **main**. Your activity will be added to the website once the PR is approved and merged.
 
-## 🔬 Login Development 
+## 🔬 Local Development with HTTPS (required)
+> [!IMPORTANT]
+> As of the recent migration to OIDC with AWS Cognito, HTTPS dev sessions are required. In order to do so, please follow the directions below.
+
 In order to develop with OIDC support locally, HTTPS is required for localhost. This can done easily by creating an SSL certificate for local use. 
 Here are the steps:
 1. Run `mkcert localhost` to generate `localhost.pem` and `localhost-key.pem`
@@ -208,7 +211,11 @@ Here are the steps:
 > Never share your generated `.pem`! The `.gitignore` file is preconfigured to ignore `.pem` files within commits. There are severe security complications in exposing your `.pem` files. 
 
 >[!NOTE]
-> If you don't have access to the `mkcert` command on your system, refer [here](https://github.com/FiloSottile/mkcert) to install `mkcert`.
+> If you don't have access to the `mkcert` command on your system, refer [here](https://github.com/FiloSottile/mkcert) to install `mkcert`. 
+> IE. For ubuntu with apt: 
+> 1. `sudo apt install libnss3-tools`
+> 2. `sudo apt install mkcert`
+> 3. Confirm your installation: `mkcert --version`
 
 Similarly, some local environment variables must be specified in order to ensure functionality:
 1. Create a copy of the file called `env.template`
