@@ -221,6 +221,7 @@ Terraform files defined within `coder_terraform` are files for defining cloud in
 - `nat_instance.tf`, `outputs.tf`: These files define a specific EC2 NAT (Network Address Translation) instance. This is particularly useful to overcome the ["Hard" NAT problem](https://tailscale.com/blog/how-nat-traversal-works) for Coder. 
 
 Feel free to [reach out](https://discord.com/channels/890983857938116729/1250232490006806610) regarding any questions regarding why these files exist or how they work!
+
 ## 🎉Acknowledgements 
 Many thanks to the [UMass Lowell Cloud Computing Club](https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub) members, our faculty advisor [Dr. Johannes Weis](https://www.uml.edu/sciences/computer-science/people/weis-johannes.aspx), and the [UMass Lowell Computer Science Department](https://www.uml.edu/Sciences/computer-science/) for their support and guidance.
 
