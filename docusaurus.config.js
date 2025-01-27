@@ -118,14 +118,14 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
-      // announcementBar: {
-      //   id: 'announcement-bar',
-      //   content:
-      //     'ADD CONTENT HERE',
-      //   backgroundColor: '#48a0ff',
-      //   textColor: '#fff',
-      //   isCloseable: false
-      // },
+      announcementBar: {
+        id: 'announcement-bar',
+        content:
+          '🚀 Spring 2025 Kick-off meeting this Thursday (1/30/2025)! See our <a href="https://umlcloudcomputing.org/docs/spring-2025/week-2">schedule</a> for more details. 🚀',
+        backgroundColor: '#48a0ff',
+        textColor: '#fff',
+        isCloseable: false
+      },
       navbar: {
         title: 'UML Cloud Computing Club',
         logo: {
