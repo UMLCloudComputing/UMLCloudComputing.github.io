@@ -121,7 +121,7 @@ const config = {
       announcementBar: {
         id: 'announcement-bar',
         content:
-          '🚀 Spring 2025 Kick-off meeting this Thursday (1/30/2025)! See our <a href="https://umlcloudcomputing.org/docs/spring-2025/week-2">schedule</a> for more details. 🚀',
+          '💻 Next <a href="https://umlcloudcomputing.org/docs/current-schedule">meeting</a> @ Olsen Hall 330 on Feb 6th! 🗪',
         backgroundColor: '#48a0ff',
         textColor: '#fff',
         isCloseable: false
