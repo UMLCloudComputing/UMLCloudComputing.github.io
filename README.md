@@ -205,7 +205,7 @@ Here are the steps:
     ```zsh
     HTTPS=true SSL_CRT_FILE=localhost.pem SSL_KEY_FILE=localhost-key.pem npm start
     ```
-4. Open `https://localhost:3000/` to view your development session rendered to the browser.
+4. Open https://localhost:3000/ to view your development session rendered to the browser.
 
 >[!CAUTION]
 > Never share your generated `.pem`! The `.gitignore` file is preconfigured to ignore `.pem` files within commits. There are severe security complications in exposing your `.pem` files. 
