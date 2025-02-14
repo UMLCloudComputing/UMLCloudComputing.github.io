@@ -121,7 +121,7 @@ const config = {
       announcementBar: {
         id: 'announcement-bar',
         content:
-          '💻 Next <a href="https://umlcloudcomputing.org/docs/current-schedule">meeting</a> @ Olsen Hall 330 on Feb 20th! Come say hi! 🗪',
+          '🧑‍💻🍕💬 Next <a href="https://umlcloudcomputing.org/docs/current-schedule">meeting</a> @ Olsen Hall 330 on Feb 20th! Come join us! 💬🍕🧑‍💻',
         backgroundColor: '#48a0ff',
         textColor: '#fff',
         isCloseable: false
