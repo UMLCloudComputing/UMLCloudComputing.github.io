@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://UMLCloudComputing.github.io/blog</id>
     <title>UML Cloud Computing Club Blog</title>
-    <updated>2025-02-11T17:15:19.000Z</updated>
+    <updated>2025-02-14T17:42:10.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://UMLCloudComputing.github.io/blog"/>
     <subtitle>UML Cloud Computing Club Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[A Developer's Story]]></title>
         <id>https://UMLCloudComputing.github.io/blog/A Developer's Story</id>
         <link href="https://UMLCloudComputing.github.io/blog/A Developer's Story"/>
-        <updated>2025-02-11T17:15:19.000Z</updated>
+        <updated>2025-02-14T17:42:10.000Z</updated>
         <summary type="html"><![CDATA[Here lies a dear story of a fellow developer...]]></summary>
         <author>
             <name>UML Cloud Computing Club</name>
@@ -23,7 +23,7 @@
         <title type="html"><![CDATA[The Power of UniBot]]></title>
         <id>https://UMLCloudComputing.github.io/blog/The Power of UniBot</id>
         <link href="https://UMLCloudComputing.github.io/blog/The Power of UniBot"/>
-        <updated>2025-02-11T17:15:19.000Z</updated>
+        <updated>2025-02-14T17:42:10.000Z</updated>
         <summary type="html"><![CDATA[Let's explore the power of UniBot]]></summary>
         <author>
             <name>UML Cloud Computing Club</name>
@@ -42,7 +42,7 @@
         <title type="html"><![CDATA[The Story Behind UniPath.io]]></title>
         <id>https://UMLCloudComputing.github.io/blog/The Story Behind UniPath.io</id>
         <link href="https://UMLCloudComputing.github.io/blog/The Story Behind UniPath.io"/>
-        <updated>2025-02-11T17:15:19.000Z</updated>
+        <updated>2025-02-14T17:42:10.000Z</updated>
         <summary type="html"><![CDATA[Here's the story behind the origin of UniPath.io]]></summary>
         <author>
             <name>UML Cloud Computing Club</name>
@@ -60,7 +60,7 @@
         <title type="html"><![CDATA[🔊 We have some exciting news!]]></title>
         <id>https://UMLCloudComputing.github.io/blog/week-8-blog</id>
         <link href="https://UMLCloudComputing.github.io/blog/week-8-blog"/>
-        <updated>2025-02-11T17:15:19.000Z</updated>
+        <updated>2025-02-14T17:42:10.000Z</updated>
         <summary type="html"><![CDATA[Week 8 is here! We'll be hosting two industry speakers (Ex-Google & IBM) and transitioning our work to our amazing large scale projects.]]></summary>
         <author>
             <name>UML Cloud Computing Club</name>
@@ -77,7 +77,7 @@
         <title type="html"><![CDATA[🚀 Welcome to the UML Cloud Computing Club!]]></title>
         <id>https://UMLCloudComputing.github.io/blog/welcome-fall-2024</id>
         <link href="https://UMLCloudComputing.github.io/blog/welcome-fall-2024"/>
-        <updated>2025-02-11T17:15:19.000Z</updated>
+        <updated>2025-02-14T17:42:10.000Z</updated>
         <summary type="html"><![CDATA[The UML Cloud Computing Club is a thriving hub for all students and faculty passionate about Cloud Computing, DevOps, Software Engineering, and Frontend Web Development. We encourage people from all backgrounds to join our community, share their insights, and learn together.]]></summary>
         <author>
             <name>UML Cloud Computing Club</name>
