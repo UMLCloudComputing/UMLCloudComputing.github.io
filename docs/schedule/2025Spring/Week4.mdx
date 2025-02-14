@@ -13,11 +13,11 @@ tag: meeting-notes
 - **Date:** Feb 13th, 2025
 - **Time:** 6:30pm-8:30pm
 
-### 🎥 Meeting Recording:
-{/* <div class="iframe-container">
+### 🎥 Meeting Recording
+<div class="iframe-container">
     <iframe  
-        src="" 
-        title="" 
+        src="https://www.youtube.com/embed/uQm-kL_4kUo?si=9ywOOou60HSN6nmS" 
+        title="Spring 2025 Week 4 Meeting" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" 
@@ -28,29 +28,85 @@ tag: meeting-notes
         }}
     >
     </iframe>
-</div> */}
+</div>
 
 
 ### 🚩 Agenda
-1. Have fun with some Pizza and general conversation
-2. Introduction to the Immersion Project
-    1. Discuss project impact
-    2. Discuss details of Project infrastructure
-3. Form project teams with discussion of responsibilities for each time
-4. On-board onto Coder/Immersion team
+1. Break for Pizza at the beginning
+2. Introducing Immersion
+3. Break into Teams and work
 
 
 ### 📓 Meeting Notes
 
 **📄 Attendance**
-- In-Person: 
-- Virtual: 
-<br/>
+- In-Person: 14
+- Virtual: 1
 
-### Presentation Section
+### 🗣️ Presentation Section
+The problem:
+- Integrate Discord with Engage @ UML
+
+Features:
+- MVP:
+    - Sync event data 
+    - With introductory email
+
+Project Architecture:
+- Lambda functions
+    - Pull data
+    - Update and parse cache data
+    - Acting as a translation layer
+- ECS Cluster to manage and contain, process, and feed data 
+- Discord application with Front-End 
+
+
+Teams
+- Infrastructure Team
+    - ECS Cluster is configured
+- API Team
+    - Prelim Python Code is done
+- Front-End Team
+    - Front-end dashboard is mostly functional
+    - On-Boarding process is done
+    - Define settings to control in the dashboard
+
+![Immersion Project Architecture](https://cdn.discordapp.com/attachments/1041436332402167879/1329181171804012675/image.png?ex=67b04c2e&is=67aefaae&hm=2e1a63ac0ae16e5131fa18783bc548425a7e64eff4fdadc7d1978cfc33ce6233&)
 
 ### 🧑‍💻 Hands On Section
 
+Front-End Team progress:
+- Introduced current working front-end 
+- Explained fundamentals of web development with HTML & CSS and some ReactJS/NextJS
+- UI explain on Figma, some parts still work in progress
+
+API Team progress:
+- Introduced role of the Team
+- Familiarized everyone with Git VCS
+- Determined the types of objects and their purposes, still work in progress
+- Began work on AWS Lambda functions, still work in progress
+
+Infrastructure Team:
+- Began deploying the CDK stack for DynamoDB with deletion protection
+- Preliminary work on the ECS Cluster, scaling still work in progress
+
 ### 🪄 Meeting Resources
 
+<iframe src="https://studentuml.sharepoint.com/sites/UMLCloudComputingClub/_layouts/15/Doc.aspx?sourcedoc={148a3fb0-501d-4a67-92c4-223abe2bf571}&amp;action=embedview&amp;wdAr=1.7777777777777777" 
+    style={{ width: '693px', height: '476px', frameBorder: 0, borderRadius: '16px'}}>
+</iframe>
+
 #### 🚀 Next meeting(s)
+
+We'll continue working on Immersion. Be sure to review some fundamentals for your team:
+
+Front-End:
+- HTML, CSS, React, Figma
+
+API:
+- Lambda Functions, Git, DynamoDB
+
+Infrastructure:
+- ECS Cluster, Project Architecture
+
+We'll see you at the next meeting! 
