@@ -118,14 +118,14 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
-      announcementBar: {
-        id: 'announcement-bar',
-        content:
-          '🧑‍💻🍕💬 Next <a href="https://umlcloudcomputing.org/docs/current-schedule">meeting</a> @ Olsen Hall 330 on Feb 27th! Come join us! 💬🍕🧑‍💻',
-        backgroundColor: '#48a0ff',
-        textColor: '#fff',
-        isCloseable: false
-      },
+      // announcementBar: {
+      //   id: 'announcement-bar',
+      //   content:
+      //     '🧑‍💻🍕💬 Next <a href="https://umlcloudcomputing.org/docs/current-schedule">meeting</a> @ Olsen Hall 330 on Feb 27th! Come join us! 💬🍕🧑‍💻',
+      //   backgroundColor: '#48a0ff',
+      //   textColor: '#fff',
+      //   isCloseable: false
+      // },
       navbar: {
         title: 'UML Cloud Computing Club',
         logo: {
