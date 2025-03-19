@@ -121,7 +121,7 @@ const config = {
       announcementBar: {
         id: 'announcement-bar',
         content:
-          '🌿 Enjoy your Spring break! 🌿',
+          '🧑‍💻 Week 9 Meeting this upcoming Thursday! Immersion continues! 🍕',
         backgroundColor: '#48a0ff',
         textColor: '#fff',
         isCloseable: false
