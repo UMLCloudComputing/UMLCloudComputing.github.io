@@ -118,14 +118,14 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
-      announcementBar: {
-        id: 'announcement-bar',
-        content:
-          '🧑‍💻 Sam from SAIC this Thursday (Week 12)! Come learn about Kubernetes in the Cloud! 🍕',
-        backgroundColor: '#48a0ff',
-        textColor: '#fff',
-        isCloseable: false
-      },
+      // announcementBar: {
+      //   id: 'announcement-bar',
+      //   content:
+      //     '🧑‍💻 Sam from SAIC this Thursday (Week 12)! Come learn about Kubernetes in the Cloud! 🍕',
+      //   backgroundColor: '#48a0ff',
+      //   textColor: '#fff',
+      //   isCloseable: false
+      // },
       navbar: {
         title: 'UML Cloud Computing Club',
         logo: {
