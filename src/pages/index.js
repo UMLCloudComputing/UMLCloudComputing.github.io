@@ -193,7 +193,7 @@ const LandingPageUMLClassResources = () => (
     <div class="hero shadow--lw">
         <div class="container">
             <h1 class="hero__title classResources_theme_hero_text">UML Class Resources</h1>
-            <p class="hero__subtitle">Academic Resources. For Students, by Students.</p>
+            <p class="hero__subtitle">Academic Resources<br/>For Students, by Students</p>
             <div style={{paddingBottom: '25px'}}>
                 <Link to="https://github.com/UMLCloudComputing/UML-Class-Resources" class="button button--secondary button--outline button--lg" >GitHub</Link>
             </div>
@@ -205,7 +205,7 @@ const LandingPageAttendanceBot = () => (
     <div class="hero shadow--lw">
         <div class="container">
             <h1 class="hero__title ">Attendance Bot</h1>
-            <p class="hero__subtitle">Discord Attendance Bot for event tracking. Powered by the Cloud.</p>
+            <p class="hero__subtitle">Discord Attendance Bot for event tracking<br/>Powered by the Cloud.</p>
             <div style={{paddingBottom: '25px'}}>
                 <Link to="https://github.com/UMLCloudComputing/attendance" class="button button--secondary button--outline button--lg" >GitHub</Link>
             </div>
