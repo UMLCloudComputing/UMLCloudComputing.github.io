@@ -121,7 +121,7 @@ const config = {
       // announcementBar: {
       //   id: 'announcement-bar',
       //   content:
-      //     '🧑‍💻 Sam from SAIC this Thursday (Week 12)! Come learn about Kubernetes in the Cloud! 🍕',
+      //     '🗣️💬 Club Elections during our next and final meeting of the semester! ✍️',
       //   backgroundColor: '#48a0ff',
       //   textColor: '#fff',
       //   isCloseable: false
