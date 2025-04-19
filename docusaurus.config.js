@@ -118,14 +118,14 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
-      // announcementBar: {
-      //   id: 'announcement-bar',
-      //   content:
-      //     '🗣️💬 Club Elections during our next and final meeting of the semester! ✍️',
-      //   backgroundColor: '#48a0ff',
-      //   textColor: '#fff',
-      //   isCloseable: false
-      // },
+      announcementBar: {
+        id: 'announcement-bar',
+        content:
+          '🗣️💬 Club Elections during our next and final meeting of the semester! Candidates on Week 14 Notes and Discord ✍️',
+        backgroundColor: '#48a0ff',
+        textColor: '#fff',
+        isCloseable: false
+      },
       navbar: {
         title: 'UML Cloud Computing Club',
         logo: {
