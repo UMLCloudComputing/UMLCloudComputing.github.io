@@ -121,7 +121,7 @@ const config = {
       announcementBar: {
         id: 'announcement-bar',
         content:
-          '🗣️💬 Club Elections during our next and final meeting of the semester! Candidates on Week 14 Notes and Discord ✍️',
+          '☀️ Summer Meetings start Virtually on May 17th! ✍️',
         backgroundColor: '#48a0ff',
         textColor: '#fff',
         isCloseable: false

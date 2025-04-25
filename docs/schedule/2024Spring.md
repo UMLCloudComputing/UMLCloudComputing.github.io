@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 title: 🌿 Spring 2024
 slug: /schedule/spring-2023
 ---
@@ -15,7 +15,7 @@ This schedule is outdated and refers to a past semester. Please check the [lates
 
 </center>
 
-# UMass Lowell Cloud Computing Club: Spring 2024
+# 🌿 Spring 2024
 
 Welcome to the UMass Lowell Cloud Computing Club! Our mission is to explore cloud computing and its applications using Amazon Web Services (AWS) and related technologies. Whether you're a beginner or an expert, join us as we learn together, build projects, and connect with industry professionals.
 
