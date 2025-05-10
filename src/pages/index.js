@@ -156,13 +156,58 @@ const LandingPageUniBotiFrame = () => (
             <h1 class="hero__title unibot_theme_hero_text">UniBot</h1>
             <p class="hero__subtitle">For all your UML Questions</p>
             <div style={{paddingBottom: '25px'}}>
-                <Link to="https://github.com/UMLCloudComputing/UniBot" class="button button--secondary button--outline button--lg" >Github</Link>
+                <Link to="https://github.com/UMLCloudComputing/UniBot" class="button button--secondary button--outline button--lg" >GitHub</Link>
             </div>
             <div>
                 <iframe
                     src="https://unibotio.streamlit.app?embed=true"
                     class="iframe_container"
                 >UniBot iFrame</iframe>
+            </div>
+        </div>
+    </div>
+);
+
+const LandingPageImmersion = () => (
+    <div class="hero shadow--lw">
+        <div class="container">
+            <h1 class="hero__title immersion_theme_hero_text">Immersion</h1>
+            <p class="hero__subtitle">College Campus Club data synchronization to Discord</p>
+            <div style={{paddingBottom: '10px'}}>
+                <Link to="https://github.com/UMLCloudComputing/immersion" class="button button--secondary button--outline button--lg" >GitHub</Link>
+            </div>
+            <div style={{paddingBottom: '25px'}}>
+                <Link to="https://github.com/UMLCloudComputing/immersion-dashboard" class="button button--secondary button--outline button--lg" >Dashboard GitHub</Link>
+            </div>
+            <div>
+                <iframe
+                    src="https://immersion.umlcloudcomputing.org/"
+                    class="iframe_container"
+                >Immersion iFrame</iframe>
+            </div>
+        </div>
+    </div>
+);
+
+const LandingPageUMLClassResources = () => (
+    <div class="hero shadow--lw">
+        <div class="container">
+            <h1 class="hero__title classResources_theme_hero_text">UML Class Resources</h1>
+            <p class="hero__subtitle">Academic Resources<br/>For Students, by Students</p>
+            <div style={{paddingBottom: '25px'}}>
+                <Link to="https://github.com/UMLCloudComputing/UML-Class-Resources" class="button button--secondary button--outline button--lg" >GitHub</Link>
+            </div>
+        </div>
+    </div>
+);
+
+const LandingPageAttendanceBot = () => (
+    <div class="hero shadow--lw">
+        <div class="container">
+            <h1 class="hero__title ">Attendance Bot</h1>
+            <p class="hero__subtitle">Discord Attendance Bot for event tracking<br/>Powered by the Cloud.</p>
+            <div style={{paddingBottom: '25px'}}>
+                <Link to="https://github.com/UMLCloudComputing/attendance" class="button button--secondary button--outline button--lg" >GitHub</Link>
             </div>
         </div>
     </div>
@@ -177,8 +222,13 @@ export default function Home() {
             <HomepageHeader />
             <main>
                 <Members />
-                <LandingPageUniBotiFrame />
+                <LandingPageImmersion />
                 <InfoCards/>
+                <LandingPageUniBotiFrame />
+                <br/>
+                <LandingPageAttendanceBot />
+                <br/>
+                <LandingPageUMLClassResources />
             </main>
         </Layout>
     );

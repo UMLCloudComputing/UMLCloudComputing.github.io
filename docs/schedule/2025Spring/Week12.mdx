@@ -1,5 +1,5 @@
 ---
-slug: /spring-2024/week-12
+slug: /spring-2025/week-12
 title: Week 12
 description: Information and notes for the twelfth week of the Fall 2024 semester for the UMass Lowell Cloud Computing Club.
 sidebar_position: 12
@@ -13,10 +13,10 @@ sidebar_position: 12
 - **Time:** 6:30pm-8:30pm
 
 ### 🎥 Meeting Recording:
-{/* <div class="iframe-container">
+<div class="iframe-container">
     <iframe  
-        src="" 
-        title="" 
+        src="https://www.youtube.com/embed/s_qhMC--0XA?si=nSDovkgZPXYudWPv" 
+        title="Spring 2025 Week 12 - Sam DeLap Kubernetes in the Cloud" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" 
@@ -27,26 +27,142 @@ sidebar_position: 12
         }}
     >
     </iframe>
-</div> */}
+</div>
 
 
 ### 🚩 Agenda
-1. ...
-2. 
-3. 
+1. Break for Pizza
+2. Sam from SAIC will talk about Kubernetes in the Cloud!
+3. Questions and Discussion
 
 
 ### 📓 Meeting Notes
 
 **📄 Attendance**
-- In-Person: 
-- Virtual: 
+- In-Person: 19
+- Virtual: 0 
 <br/>
 
-### Presentation Section
+### 🗣️ Presentation Section
 
-### 🧑‍💻 Hands On Section
+A Crash Course on Kubernetes
+
+Sam DeLap:
+- AWS Lead @ SAIC
+- Working with Cloud infrastructure and Kubernetes in the Cloud
+- Graduated in 2021 with Dual bachelors in Biology and Math
+
+VM:
+- Virutal Machine
+- Host Hardware
+- Host OS
+- Hypervisor
+- VM runs on top of Hypervisor
+- Issues
+    - Multiple Apps per VM
+        - Multiple file systems, can cause overwrites
+    - Each VM has it's own OS
+    - Hard to avoid collisions between Apps
+    - Non-graceful error/crash recovery
+    - Tough to manage at scale
+
+Containers:
+- Docker Containers
+- Contained applications in user space
+- Host OS is same for all Containers
+- Much lower overhead
+- Can partition and isolate a filesystem
+- Issues
+    - Inter-container communications are hard and weak
+    - Hard to scale again
+
+Kubernetes:
+- Container orchestration platform
+- Can run mutliple containers
+- Provides a core set of compnonents to manage containers
+- Central way to manage containers
+    - Deploy, scale, update, and monitor applications
+- Original for container orchestration only, now more dynamic
+
+Cluster
+- Server
+- Cloud Controller
+- Controller manager
+- Pods
+    - Application units on Nodes
+- Nodes
+    - Physical or virtual machines
+- Control Plane - Typically runs on seperate on one or more servers
+    - API Server
+        - Takes API input and output from Nodes
+    - Scheduler
+        - Scheduling algorithm for pods
+    - Etcd
+        - Key value store all of kubernetes
+    - kproxy
+        - Proxy for API Server and Nodes
+- Highly extensible and structured, base format
+
+Pods, Services, Deployments
+- Pod lives within a node
+    - Pod 2 SVC
+        - Network pods in a cluster
+        - A service for providing IP address and DNS names for each contianer
+- Yaml files for defining objects in Kubernetes per pod
+
+
+Helm
+- Package manager for Kubernetes applications
+- Install, update, and manage applications in Kubernetes
+- Chart
+    - Kubernetes objects that make up a cluster application
+- Still using `yaml`
+- Define configuration for entire deployment and not just individual applications
+
+ArgoCD
+- CNCF Ecosystem tour
+- GitOps
+    - Continuous Delivery and Deployment for Kubernetes applications
+- Deploy applications for kubernetes using GitOps
+
+Istio
+- A Zero Trust application automation platform for microservices
+- A control plane
+    - Handle connections between pods
+    - Automatic network isolation
+    - Mutual TLS
+    - Process level control of what can and can't connect
+
+Prometheus
+- Metrics engine for monitoring and alerting everything about your cluster
+- 
+
+Kiali
+- Metrics and visualzation tool for kubernetes cluster
+- Performance
+
+KeyCloak
+- OAuth for authentication and authorization
+- Centralized place to define authentication and authorization policies
+
+Ecosystems as a Service
+- EaaS
+- [Big Bang](https://docs-bigbang.dso.mil/latest/)
+- Used for quickly get your application up and running
+- Automate and maintain the secure set of base applications you need for your application
+
+[UDS - Unicorn Delivery System](https://uds.defenseunicorns.com/structure/packages/)
+- Deployements where you can't be connected to the internet
+- Zarf
+    - Portable Package Handler
+    - All containers, charts, deployment instructions
+- Custom kubernetes Resources
 
 ### 🪄 Meeting Resources
+[AWS EKS](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)<br/>
+[Kubernetes Fundamentals](https://kubernetes.io/docs/tutorials/kubernetes-basics/)<br/>
+[Sam's Homelab Setup](https://github.com/sam-delap/k8s-homelab)
 
 #### 🚀 Next meeting(s)
+
+Working through GitHub issues for Immersion.

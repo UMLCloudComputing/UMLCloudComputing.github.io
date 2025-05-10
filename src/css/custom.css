@@ -55,6 +55,7 @@
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  border-radius: 16px;
 }
 
 .responsive-iframe {
@@ -189,4 +190,32 @@ html[data-theme='dark'] .navbar__github {
 .profile_icon {
   border-radius: 50%;
   width: 2rem;
+}
+
+[data-theme='dark'] .immersion_theme_hero_text {
+  background: radial-gradient(circle, #2d8fbc 0%, #ac4cc4 50%, rgb(60, 118, 188) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+[data-theme='light'] .immersion_theme_hero_text {
+  background: radial-gradient(circle, #277aa0 0%, #be4edb 50%, rgb(41, 107, 187) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+[data-theme='dark'] .classResources_theme_hero_text {
+  background: radial-gradient(circle, #d1be54 0%, #d6bc29 50%, rgb(251, 239, 12) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+[data-theme='light'] .classResources_theme_hero_text {
+  background: radial-gradient(circle, #ae9f49 0%, #dbc235 50%, rgb(239, 229, 35) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
