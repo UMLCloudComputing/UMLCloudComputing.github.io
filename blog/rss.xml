@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>UML Cloud Computing Club Blog</title>
         <link>https://UMLCloudComputing.github.io/blog</link>
         <description>UML Cloud Computing Club Blog</description>
-        <lastBuildDate>Sat, 10 May 2025 19:43:03 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 17 May 2025 20:59:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,16 +12,28 @@
             <title><![CDATA[A Developer's Story]]></title>
             <link>https://UMLCloudComputing.github.io/blog/A Developer's Story</link>
             <guid>https://UMLCloudComputing.github.io/blog/A Developer's Story</guid>
-            <pubDate>Sat, 10 May 2025 19:43:03 GMT</pubDate>
+            <pubDate>Sat, 17 May 2025 20:59:12 GMT</pubDate>
             <description><![CDATA[Here lies a dear story of a fellow developer...]]></description>
+            <content:encoded><![CDATA[<p>Here lies a dear story of a fellow developer...</p>
+<p>Maxime harum non et dolor enim quia. Corporis eum doloremque aspernatur esse reiciendis ut unde. Labore minus quisquam nostrum suscipit. Hic in perferendis possimus animi hic pariatur nulla ipsam. Ex exercitationem similique deleniti et rerum possimus.</p>
+<p>Id repellat sed architecto. Et odit quia autem eaque. Sed perferendis qui aut. Praesentium minima unde eos aliquid excepturi perspiciatis.</p>
+<p>Voluptatum veritatis et rerum quis nulla eos modi sunt. Ut blanditiis iste placeat explicabo repudiandae autem quo occaecati. Eligendi voluptatem nemo dolorem non debitis nam. Aut voluptatem nisi ut. Consequatur est minima similique ab vitae vel repellendus nostrum. Qui occaecati beatae natus.</p>
+<p>Voluptatem eius beatae ut quia quis modi. Commodi quas eos id reiciendis vel ex aliquam molestiae. Dolor sed est delectus non reiciendis.</p>
+<p>Et illum ullam labore. Et occaecati a commodi eveniet ea explicabo porro. Doloribus minus minus dicta qui aperiam rerum. Corporis qui omnis ipsum corporis et inventore neque et. Nulla cumque dicta deleniti quaerat aut velit. Et inventore qui fuga deserunt excepturi maxime voluptatibus hic.</p>]]></content:encoded>
             <author>cloudcomputingclub@uml.edu (UML Cloud Computing Club)</author>
         </item>
         <item>
             <title><![CDATA[The Power of UniBot]]></title>
             <link>https://UMLCloudComputing.github.io/blog/The Power of UniBot</link>
             <guid>https://UMLCloudComputing.github.io/blog/The Power of UniBot</guid>
-            <pubDate>Sat, 10 May 2025 19:43:03 GMT</pubDate>
+            <pubDate>Sat, 17 May 2025 20:59:12 GMT</pubDate>
             <description><![CDATA[Let's explore the power of UniBot]]></description>
+            <content:encoded><![CDATA[<p>Let's explore the power of UniBot</p>
+<p>Maxime harum non et dolor enim quia. Corporis eum doloremque aspernatur esse reiciendis ut unde. Labore minus quisquam nostrum suscipit. Hic in perferendis possimus animi hic pariatur nulla ipsam. Ex exercitationem similique deleniti et rerum possimus.</p>
+<p>Id repellat sed architecto. Et odit quia autem eaque. Sed perferendis qui aut. Praesentium minima unde eos aliquid excepturi perspiciatis.</p>
+<p>Voluptatum veritatis et rerum quis nulla eos modi sunt. Ut blanditiis iste placeat explicabo repudiandae autem quo occaecati. Eligendi voluptatem nemo dolorem non debitis nam. Aut voluptatem nisi ut. Consequatur est minima similique ab vitae vel repellendus nostrum. Qui occaecati beatae natus.</p>
+<p>Voluptatem eius beatae ut quia quis modi. Commodi quas eos id reiciendis vel ex aliquam molestiae. Dolor sed est delectus non reiciendis.</p>
+<p>Et illum ullam labore. Et occaecati a commodi eveniet ea explicabo porro. Doloribus minus minus dicta qui aperiam rerum. Corporis qui omnis ipsum corporis et inventore neque et. Nulla cumque dicta deleniti quaerat aut velit. Et inventore qui fuga deserunt excepturi maxime voluptatibus hic.</p>]]></content:encoded>
             <author>cloudcomputingclub@uml.edu (UML Cloud Computing Club)</author>
             <author>alvin_yu@student.uml.edu (Alvin Yu)</author>
             <category>UniBot</category>
@@ -31,8 +43,15 @@
             <title><![CDATA[The Story Behind UniPath.io]]></title>
             <link>https://UMLCloudComputing.github.io/blog/The Story Behind UniPath.io</link>
             <guid>https://UMLCloudComputing.github.io/blog/The Story Behind UniPath.io</guid>
-            <pubDate>Sat, 10 May 2025 19:43:03 GMT</pubDate>
+            <pubDate>Sat, 17 May 2025 20:59:12 GMT</pubDate>
             <description><![CDATA[Here's the story behind the origin of UniPath.io]]></description>
+            <content:encoded><![CDATA[<p>Here's the story behind the origin of UniPath.io</p>
+<p><img decoding="async" loading="lazy" alt="UniPath.io Logo" src="https://umlcloudcomputing.github.io/assets/images/UniPath_Logo-6a36d7c68d4d56d3040ea7d20860b4f6.png" width="800" height="200" class="img_ev3q"></p>
+<p>Maxime harum non et dolor enim quia. Corporis eum doloremque aspernatur esse reiciendis ut unde. Labore minus quisquam nostrum suscipit. Hic in perferendis possimus animi hic pariatur nulla ipsam. Ex exercitationem similique deleniti et rerum possimus.</p>
+<p>Id repellat sed architecto. Et odit quia autem eaque. Sed perferendis qui aut. Praesentium minima unde eos aliquid excepturi perspiciatis.</p>
+<p>Voluptatum veritatis et rerum quis nulla eos modi sunt. Ut blanditiis iste placeat explicabo repudiandae autem quo occaecati. Eligendi voluptatem nemo dolorem non debitis nam. Aut voluptatem nisi ut. Consequatur est minima similique ab vitae vel repellendus nostrum. Qui occaecati beatae natus.</p>
+<p>Voluptatem eius beatae ut quia quis modi. Commodi quas eos id reiciendis vel ex aliquam molestiae. Dolor sed est delectus non reiciendis.</p>
+<p>Et illum ullam labore. Et occaecati a commodi eveniet ea explicabo porro. Doloribus minus minus dicta qui aperiam rerum. Corporis qui omnis ipsum corporis et inventore neque et. Nulla cumque dicta deleniti quaerat aut velit. Et inventore qui fuga deserunt excepturi maxime voluptatibus hic.</p>]]></content:encoded>
             <author>cloudcomputingclub@uml.edu (UML Cloud Computing Club)</author>
             <author>martin_marwad@student.uml.edu (Martin Marwad)</author>
             <category>UniPath.io</category>
@@ -41,8 +60,62 @@
             <title><![CDATA[🔊 We have some exciting news!]]></title>
             <link>https://UMLCloudComputing.github.io/blog/week-8-blog</link>
             <guid>https://UMLCloudComputing.github.io/blog/week-8-blog</guid>
-            <pubDate>Sat, 10 May 2025 19:43:03 GMT</pubDate>
+            <pubDate>Sat, 17 May 2025 20:59:12 GMT</pubDate>
             <description><![CDATA[Week 8 is here! We'll be hosting two industry speakers (Ex-Google & IBM) and transitioning our work to our amazing large scale projects.]]></description>
+            <content:encoded><![CDATA[<br>
+<p>Over the next week, we'll be hosting two industry speakers (Ex-Google &amp; IBM) and transitioning our work to our amazing large scale projects.<br>
+Join us to embark on a journey of discovery, collaboration, and innovation!<br>
+Continue reading for the details! 👇</p>
+<!-- -->
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="-our-exciting-upcoming-meetings-next-week">🗪 Our Exciting Upcoming Meetings Next Week!<a href="https://umlcloudcomputing.github.io/blog/week-8-blog#-our-exciting-upcoming-meetings-next-week" class="hash-link" aria-label="Direct link to 🗪 Our Exciting Upcoming Meetings Next Week!" title="Direct link to 🗪 Our Exciting Upcoming Meetings Next Week!">​</a></h2>
+<ul>
+<li><strong>Tuesday (Oct 22nd):</strong> Virtual Presentation by <a href="https://www.linkedin.com/in/mike-dame-98600b35/" target="_blank" rel="noopener noreferrer">Mike Dame</a> (Ex-Google Software Engineer) on the value of Open-Source development in Computer Science!<!-- -->
+<ul>
+<li><strong>Meeting Time:</strong> 6:30 PM - 9:20 PM</li>
+<li><strong>Location:</strong> Virtual on Discord</li>
+</ul>
+</li>
+<li><strong>Thursday (Oct 24th):</strong> In-Person Presentation by <a href="https://www.linkedin.com/in/idith/" target="_blank" rel="noopener noreferrer">Professor Idith Tal-Kohen</a> (Program Manager @ IBM) on project management &amp; collaboration within industry!<!-- -->
+<ul>
+<li><strong>Meeting Time:</strong> 6:30 PM - 9:20 PM</li>
+<li><strong>Location:</strong> In-Person at <a href="https://www.uml.edu/maps/search/markers/fff8e7b7-4b66-41b8-900a-390643438993?query=Dandean" target="_blank" rel="noopener noreferrer">Dandeneau Hall 321</a></li>
+</ul>
+</li>
+</ul>
+<p>Pizza will be provided at the in-person meeting on Thursday! 🍕</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="-our-general-meeting-schedule">📅 Our General Meeting Schedule<a href="https://umlcloudcomputing.github.io/blog/week-8-blog#-our-general-meeting-schedule" class="hash-link" aria-label="Direct link to 📅 Our General Meeting Schedule" title="Direct link to 📅 Our General Meeting Schedule">​</a></h2>
+<ul>
+<li><strong>Meeting Time:</strong> Every Thursday, 6:30 PM - 9:30 PM</li>
+<li><strong>Location &amp; Events:</strong> Dandeneau Hall, Room 417</li>
+<li><strong>Presentation Section (6:30 PM - 8:00 PM):</strong> Reserved for presentations, demos, and guest speakers, focusing on weekly topics. Plus, enjoy some delicious pizza 🍕 with us right after the presentations!</li>
+<li><strong>Hands-On Section (8:00 PM - 9:30 PM):</strong> Allocated for the semester projects and activities. This time is interactive, free-flowing, and encourages collaboration.</li>
+</ul>
+<p>Join us for a blend of structured learning and hands-on experience, perfect for personal and professional growth. Don't miss the chance to connect, learn, and enjoy some pizza 🍕 on us!</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="-who-we-are">🌍 Who We Are<a href="https://umlcloudcomputing.github.io/blog/week-8-blog#-who-we-are" class="hash-link" aria-label="Direct link to 🌍 Who We Are" title="Direct link to 🌍 Who We Are">​</a></h2>
+<p>We are a dynamic group of students and faculty dedicated to demystifying cloud technologies and harnessing their potential to fuel innovation and growth. Whether you're embarking on your cloud journey or are an experienced professional, our club offers a unique platform to learn, build, and connect.</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="️-why-cloud-computing">☁️ Why Cloud Computing?<a href="https://umlcloudcomputing.github.io/blog/week-8-blog#%EF%B8%8F-why-cloud-computing" class="hash-link" aria-label="Direct link to ☁️ Why Cloud Computing?" title="Direct link to ☁️ Why Cloud Computing?">​</a></h2>
+<p>In the digital era, Cloud Computing is the backbone of modern businesses and technological advancements, offering scalable, efficient, and cost-effective solutions. Delving into cloud computing opens up a realm of opportunities, equipping you with skills vital in today's tech landscape.</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="-what-we-offer">🔍 What We Offer<a href="https://umlcloudcomputing.github.io/blog/week-8-blog#-what-we-offer" class="hash-link" aria-label="Direct link to 🔍 What We Offer" title="Direct link to 🔍 What We Offer">​</a></h2>
+<ul>
+<li>
+<p>Hands-on Projects: Dive into real-world applications like UniPath.io, a comprehensive web tool for academic planning.</p>
+</li>
+<li>
+<p>Learning &amp; Development: Benefit from workshops, guest lectures, and collaborative projects to enhance your skills.</p>
+</li>
+<li>
+<p>Networking Opportunities: Connect with industry leaders, alumni, and peers to expand your professional network.</p>
+</li>
+<li>
+<p>Skill Enhancement: Gain practical experience in trending technologies within the cloud domain.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="-stay-engaged">🤝 Stay Engaged<a href="https://umlcloudcomputing.github.io/blog/week-8-blog#-stay-engaged" class="hash-link" aria-label="Direct link to 🤝 Stay Engaged" title="Direct link to 🤝 Stay Engaged">​</a></h2>
+<p>Keep up with the latest club news and projects through our various platforms:</p>
+<center><a style="padding:4px" href="https://discord.gg/TZuMgMsC8X"><img style="border-radius:8px" src="https://img.shields.io/discord/890983857938116729?logo=discord&amp;logoColor=white&amp;style=for-the-badge" alt="Join our Discord community"></a><br><a style="padding:4px" href="mailto:cloudcomputingclub@uml.edu"><img style="border-radius:8px" src="https://img.shields.io/badge/Email-cloudcomputingclub%40uml.edu-red.svg?logo=gmail&amp;logoColor=white&amp;style=for-the-badge" alt="Contact us via email"></a></center>
+<hr>
+<center>UML Cloud Computing Club</center>
+<center>Exploring the Cloud with Purpose</center>]]></content:encoded>
             <author>cloudcomputingclub@uml.edu (UML Cloud Computing Club)</author>
             <author>gurpreet_singh@student.uml.edu (Gurpreet Singh)</author>
         </item>
@@ -50,8 +123,67 @@
             <title><![CDATA[🚀 Welcome to the UML Cloud Computing Club!]]></title>
             <link>https://UMLCloudComputing.github.io/blog/welcome-fall-2024</link>
             <guid>https://UMLCloudComputing.github.io/blog/welcome-fall-2024</guid>
-            <pubDate>Sat, 10 May 2025 19:43:03 GMT</pubDate>
+            <pubDate>Sat, 17 May 2025 20:59:12 GMT</pubDate>
             <description><![CDATA[The UML Cloud Computing Club is a thriving hub for all students and faculty passionate about Cloud Computing, DevOps, Software Engineering, and Frontend Web Development. We encourage people from all backgrounds to join our community, share their insights, and learn together.]]></description>
+            <content:encoded><![CDATA[<center><img src="https://avatars.githubusercontent.com/u/126843517?s=400&amp;u=e5f3b4c17f654443727ffa175403684a138d42a7&amp;v=4" alt="Club Logo" width="400"></center>
+<br>
+<p>The UML Cloud Computing Club is a thriving hub for all students and faculty passionate about Cloud Computing, DevOps, Software Engineering, and Frontend Web Development. We encourage people from all backgrounds to join our community, share their insights, and learn together. <br></p>
+<!-- -->
+<p>Whether you're just starting out or have extensive experience, there's a place for you here to explore, collaborate, and grow in the ever-evolving field of cloud computing. <br>
+No prior experience? No problem! We're here to guide you through the basics and beyond in the dynamic world of cloud computing. Join us to embark on a journey of discovery, collaboration, and innovation.</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="-kickoff-event-announcement">📣 Kickoff Event Announcement<a href="https://umlcloudcomputing.github.io/blog/welcome-fall-2024#-kickoff-event-announcement" class="hash-link" aria-label="Direct link to 📣 Kickoff Event Announcement" title="Direct link to 📣 Kickoff Event Announcement">​</a></h2>
+<p>Hello everyone!
+Join us for our kickoff event with faculty speaker <a href="https://www.uml.edu/sciences/computer-science/people/weis-johannes.aspx" target="_blank" rel="noopener noreferrer">Dr. Johannes Weis</a> to learn about what is the cloud and learn more about our club and the various projects we have been working on!</p>
+<ul>
+<li><strong>Meeting Time:</strong> September 12th, 2024: 6:30 PM - 8:00 PM</li>
+<li><strong>Location:</strong> <a href="https://www.uml.edu/maps/categories/buildings/markers/fff8e7b7-4b66-41b8-900a-390643438993" target="_blank" rel="noopener noreferrer">Dandeneau Hall, Room 417</a></li>
+</ul>
+<p>There will be pizza 🍕, so come enjoy the presentation, network with your peers, make new friends, and learn something on the way.</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="-join-us-for-regular-meetings">📅 Join Us for Regular Meetings<a href="https://umlcloudcomputing.github.io/blog/welcome-fall-2024#-join-us-for-regular-meetings" class="hash-link" aria-label="Direct link to 📅 Join Us for Regular Meetings" title="Direct link to 📅 Join Us for Regular Meetings">​</a></h2>
+<p>This semester we will be meeting twice a week with our regular Thursday meetings along with optional vitrual meetings on Tuesday to continue work on our projects.</p>
+<u><strong>In-Person Thursday Meeting Information:</strong></u>
+<ul>
+<li><strong>Meeting Schedule:</strong> Every Thursday, 6:30 PM - 9:30 PM</li>
+<li><strong>Location &amp; Events:</strong> <a href="https://umlcloudcomputing.github.io/docs/current-schedule">Dandeneau Hall, Room 417</a></li>
+<li><strong>Presentation Section (6:30 PM - 8:00 PM):</strong> Reserved for presentations, demos, and guest speakers, focusing on weekly topics. Plus, enjoy some delicious pizza 🍕 with us right after the presentations!</li>
+<li><strong>Hands-On Section (8:00 PM - 9:30 PM):</strong> Allocated for the semester project. This time is interactive, free-flowing, and encourages collaboration.</li>
+</ul>
+<u><strong>Virtual Tuesday Meeting Information:</strong></u>
+<ul>
+<li><strong>Meeting Time:</strong> Every Tuesday, 6:30 PM - 9:30 PM</li>
+<li><strong>Location &amp; Events:</strong> <a href="https://discord.gg/TZuMgMsC8X" target="_blank" rel="noopener noreferrer">Our Discord Server</a></li>
+<li><strong>Project Work (6:30 PM - 9:30 PM):</strong> Time allocated to work on our various ongoing projects.</li>
+</ul>
+<center><a class="button button--primary" href="https://umlcloudcomputing.github.io/docs/current-schedule">Fall 2024 Schedule</a></center>
+<br>
+<center><a href="https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub/events" target="_blank" rel="noopener noreferrer" class="button button--primary">Engage Events</a></center>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="-who-we-are">🌍 Who We Are<a href="https://umlcloudcomputing.github.io/blog/welcome-fall-2024#-who-we-are" class="hash-link" aria-label="Direct link to 🌍 Who We Are" title="Direct link to 🌍 Who We Are">​</a></h2>
+<p>We are a dynamic group of students and faculty dedicated to demystifying cloud technologies and harnessing their potential to fuel innovation and growth. Whether you're embarking on your cloud journey or are an experienced professional, our club offers a unique platform to learn, build, and connect.</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="️-why-cloud-computing">☁️ Why Cloud Computing?<a href="https://umlcloudcomputing.github.io/blog/welcome-fall-2024#%EF%B8%8F-why-cloud-computing" class="hash-link" aria-label="Direct link to ☁️ Why Cloud Computing?" title="Direct link to ☁️ Why Cloud Computing?">​</a></h2>
+<p>In the digital era, Cloud Computing is the backbone of modern businesses and technological advancements, offering scalable, efficient, and cost-effective solutions. Delving into cloud computing opens up a realm of opportunities, equipping you with skills vital in today's tech landscape.</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="-what-we-offer">🔍 What We Offer<a href="https://umlcloudcomputing.github.io/blog/welcome-fall-2024#-what-we-offer" class="hash-link" aria-label="Direct link to 🔍 What We Offer" title="Direct link to 🔍 What We Offer">​</a></h2>
+<ul>
+<li><strong>Hands-on Projects:</strong> Dive into real-world applications like UniPath.io, a comprehensive web tool for academic planning.</li>
+<li><strong>Learning &amp; Development:</strong> Benefit from workshops, guest lectures, and collaborative projects to enhance your skills.</li>
+<li><strong>Networking Opportunities:</strong> Connect with industry leaders, alumni, and peers to expand your professional network.</li>
+<li><strong>Skill Enhancement:</strong> Gain practical experience in trending technologies within the cloud domain.</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="-our-projects">📐 Our Projects<a href="https://umlcloudcomputing.github.io/blog/welcome-fall-2024#-our-projects" class="hash-link" aria-label="Direct link to 📐 Our Projects" title="Direct link to 📐 Our Projects">​</a></h2>
+<ul>
+<li><a href="https://github.com/UMLCloudComputing/UniPath.io" target="_blank" rel="noopener noreferrer">📆 UniPath.io</a>: a full-stack web application that allows users to create, plan, and share their class schedules for their entire degree program.</li>
+<li><a href="https://github.com/UMLCloudComputing/UniBot" target="_blank" rel="noopener noreferrer">🤖 UniBot</a>: a chatbot for universities. It utilizes Retrieval Augmented Generation (RAG) to improve the accuracy of responses.</li>
+<li><a href="https://github.com/UMLCloudComputing/UML-NOW-CLI" target="_blank" rel="noopener noreferrer">⌨️ UML NOW CLI</a>: a Command Line Interface for the University of Massachusetts Lowell's NOW Student Dashboard API.</li>
+<li><a href="https://github.com/UMLCloudComputing/UMLCloudComputing.github.io" target="_blank" rel="noopener noreferrer">🖥️ Club Website</a>: this very website which we use to host all of our project documentation, semester schedule, and more.</li>
+<li><a href="https://github.com/UMLCloudComputing/attendance" target="_blank" rel="noopener noreferrer">📒 Attendance System</a>: a Discord application that we use to track attendance at our events.</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="-stay-engaged">🤝 Stay Engaged<a href="https://umlcloudcomputing.github.io/blog/welcome-fall-2024#-stay-engaged" class="hash-link" aria-label="Direct link to 🤝 Stay Engaged" title="Direct link to 🤝 Stay Engaged">​</a></h2>
+<p>Keep up with the latest club news and projects through our various platforms:</p>
+<center><a style="padding:4px" href="https://discord.gg/TZuMgMsC8X"><img src="https://img.shields.io/discord/890983857938116729?logo=discord&amp;logoColor=white&amp;style=for-the-badge" alt="Join our Discord community"></a><a style="padding:4px" href="https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub"><img src="https://img.shields.io/badge/Website-UML%20Cloud%20Computing%20Club-blue.svg?style=for-the-badge" alt="View our club website"></a></center>
+<br>
+<center><a style="padding:4px" href="https://github.com/UMLCloudComputing/"><img src="https://img.shields.io/badge/GitHub-UMLCloudComputing-brightgreen.svg?style=for-the-badge&amp;logo=github" alt="Explore our projects"></a><a style="padding:4px" href="mailto:cloudcomputingclub@uml.edu"><img src="https://img.shields.io/badge/Email-cloudcomputingclub%40uml.edu-red.svg?logo=gmail&amp;logoColor=white&amp;style=for-the-badge" alt="Contact us via email"></a></center>
+<hr>
+<center>UML Cloud Computing Club</center>
+<center>Exploring the Cloud with Purpose</center>]]></content:encoded>
             <author>cloudcomputingclub@uml.edu (UML Cloud Computing Club)</author>
             <author>martin_marwad@student.uml.edu (Martin Marwad)</author>
             <author>christopher_coco@student.uml.edu (Christopher Coco)</author>
