@@ -5,6 +5,7 @@ import React from "react";
 import { useAuth } from "react-oidc-context";
 import { Redirect, useLocation } from "@docusaurus/router";
 import ReactLoading from 'react-loading';
+import { isEnvLocalLoaded } from '../../utils/env';
 
 import {
   // AUTHENTICATED,
@@ -20,8 +21,15 @@ export function AuthCheck({ children }) {
   let from = location.pathname;
   const auth = useAuth();
 
-  const [local_logout_uri, prod_logout_uri] = process.env.OAUTH_REDIRECT_SIGN_OUT.split(",");
-  
+  // If .env.local is missing, skip all auth logic and just render children
+  if (!isEnvLocalLoaded()) {
+    return <>{children}</>;
+  }
+
+  // Defensive: Only split if OAUTH_REDIRECT_SIGN_OUT is defined
+  const signOutUris = process.env.OAUTH_REDIRECT_SIGN_OUT ? process.env.OAUTH_REDIRECT_SIGN_OUT.split(",") : ["", ""];
+  const [local_logout_uri, prod_logout_uri] = signOutUris;
+
   const signOutRedirect = () => {
     const clientId = process.env.CLIENT_ID;
     const logoutUri = process.env.ENV === "localhost"
