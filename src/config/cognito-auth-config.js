@@ -1,11 +1,15 @@
 // src/config/cognito-auth-config.js
 
+import { isEnvLocalLoaded, getEnvVar } from '../utils/env';
+
 const cognitoAuthConfig = {
-  authority: process.env.AUTHORITY,
-  client_id: process.env.CLIENT_ID,
-  redirect_uri: process.env.REDIRECT_URI,
-  response_type: process.env.OAUTH_REDIRECT_SIGN_RESPONSE_TYPE,
-  scope: process.env.SCOPE,
+  authority: getEnvVar('AUTHORITY'),
+  client_id: getEnvVar('CLIENT_ID'),
+  redirect_uri: getEnvVar('REDIRECT_URI'),
+  response_type: getEnvVar('OAUTH_REDIRECT_SIGN_RESPONSE_TYPE', 'code'),
+  scope: getEnvVar('SCOPE', 'email openid phone'),
+  // Add a flag for local mode
+  isLocalDev: !isEnvLocalLoaded(),
 };
 
 export default cognitoAuthConfig;
