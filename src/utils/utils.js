@@ -11,13 +11,9 @@ import {
   LOGOUT_BUTTON,
   LOGOUT_PATH,
 } from "./constants";
-import { isEnvLocalLoaded } from './env';
 
 export function useNavbarItemsMobile() {
-  if (!isEnvLocalLoaded()) {
-    // If .env.local is missing, do not render auth-related navbar items
-    return useThemeConfig().navbar.items;
-  }
+  // const { route } = useAuthenticator((context) => [context.route]);
   const auth = useAuth();
 
   let authElement;
@@ -65,10 +61,7 @@ export function useNavbarItemsMobile() {
 }
 
 export function useNavbarItemsDesktop() {
-  if (!isEnvLocalLoaded()) {
-    // If .env.local is missing, do not render auth-related navbar items
-    return useThemeConfig().navbar.items;
-  }
+  // const { route } = useAuthenticator((context) => [context.route]);
   const auth = useAuth();
 
   let authElement;
