@@ -5,7 +5,7 @@
   "scripts": {
     "import": "node stream.js && rm -rf temp_resources && rm -rf temp_activity && rm -rf temp_projects",
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "start": "./configure_dev && docusaurus start",
     "build": "docusaurus build && cp CNAME build/",
     "swizzle": "docusaurus swizzle",
     "deploy": "gh-pages -d build",
