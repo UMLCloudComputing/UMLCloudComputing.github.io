@@ -40,9 +40,9 @@ done < "$gt_file"
 
 # Conditionally set exit status
 if [ "$is_invalid" = true ]; then
-    exit 0
+    exit 3
 else 
-    echo -e "\nEnvironment variables validated against $gt_file"
+    echo -e "Environment variables validated against $gt_file"
     echo -e "----------------------------------------------\n";
-    exit 2
+    exit 0
 fi
