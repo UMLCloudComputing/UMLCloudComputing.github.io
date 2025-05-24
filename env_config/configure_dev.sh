@@ -26,14 +26,10 @@ declare -A env_vars
 if [ -f "$env_file" ]; then
   # If the file exists, source it and validate the contents
   . validate_vars.sh "$gt_file" "$env_file"
-  if ![ $? -eq 0 ]; then
-    echo -e "Invalid configuration, please check if variables are configured as per $gt_file!\n"
-    exit 1
-  fi
 
 else
   # If the file does not exist, prompt for and create it
   . process_gt.sh "$gt_file" "$env_file"
 fi
-export 
+export ENV=$ENV
 echo -e "Environment variables set successfully!\n"

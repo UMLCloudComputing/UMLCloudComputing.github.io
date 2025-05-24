@@ -40,9 +40,9 @@ done < "$gt_file"
 
 # Conditionally set exit status
 if [ "$is_invalid" = true ]; then
+    echo -e "Invalid configuration, please check if variables are configured as per $gt_file!\n"
     exit 3
 else 
     echo -e "Environment variables validated against $gt_file"
-    echo -e "----------------------------------------------\n";
-    exit 0
+    echo -e "----------------------------------------------";
 fi
