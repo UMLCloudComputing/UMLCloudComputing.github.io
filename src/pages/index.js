@@ -179,12 +179,12 @@ const LandingPageImmersion = () => (
             <div style={{paddingBottom: '25px'}}>
                 <Link to="https://github.com/UMLCloudComputing/immersion-dashboard" class="button button--secondary button--outline button--lg" >Dashboard GitHub</Link>
             </div>
-            <div>
+            {/* <div>
                 <iframe
                     src="https://immersion.umlcloudcomputing.org/"
                     class="iframe_container"
                 >Immersion iFrame</iframe>
-            </div>
+            </div> */}
         </div>
     </div>
 );
