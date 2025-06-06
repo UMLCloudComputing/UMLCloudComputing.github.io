@@ -26,8 +26,8 @@ export function envType() {
 
   // Prod, authentication enabled, deployed on server
   else {
-    if (! REQUIRED_ENV_VARS.every((key) => (typeof process.env[key] === 'string') && (process.env[key] !== '')) && process.env.NODE_ENV === "production") {
-        throw new Error('FATAL: Missing required environment variables for AUTHENTICATION\nENV: ' + process.env.ENV);
+    if (! REQUIRED_ENV_VARS.every((key) => (typeof process.env[key] === 'string') && (process.env[key] !== ''))) {
+        throw new Error('FATAL: Missing required environment variables for AUTHENTICATION\nENV: ' + process.env.ENV)
     } else {
       return 'prod';
     } 
