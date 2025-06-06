@@ -10,7 +10,7 @@ env_file=$2
 is_invalid=false
 
 declare -A env_vars
-source "$env_file"
+source $env_file
 
 validate_var() {
     local var_name=$1

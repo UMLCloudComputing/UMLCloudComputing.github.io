@@ -158,12 +158,12 @@ const LandingPageUniBotiFrame = () => (
             <div style={{paddingBottom: '25px'}}>
                 <Link to="https://github.com/UMLCloudComputing/UniBot" class="button button--secondary button--outline button--lg" >GitHub</Link>
             </div>
-            <div>
+            {/* <div>
                 <iframe
                     src="https://unibotio.streamlit.app?embed=true"
                     class="iframe_container"
                 >UniBot iFrame</iframe>
-            </div>
+            </div> */}
         </div>
     </div>
 );
