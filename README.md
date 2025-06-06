@@ -217,10 +217,10 @@ Here are the steps:
 > 2. `sudo apt install mkcert`
 > 3. Confirm your installation: `mkcert --version`
 
-Similarly, some local environment variables must be specified in order to ensure functionality:
-1. Create a copy of the file called `env.template`
-2. Within this file populate the provided variables using information available on the AWS Console for Cognito. 
-3. Once populated with the correct information, authentication should work correctly
+Similarly, some local environment variables must be specified in order to ensure functionality with authenication:
+- Use `npm run local` to develop locally **without** authentication enabled
+- Use `npm start` to develop locally **with** authentication
+    - If environment variables are not configured, you will be prompted to provide them
 
 ## 🎉Acknowledgements 
 Many thanks to the [UMass Lowell Cloud Computing Club](https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub) members, our faculty advisor [Dr. Johannes Weis](https://www.uml.edu/sciences/computer-science/people/weis-johannes.aspx), and the [UMass Lowell Computer Science Department](https://www.uml.edu/Sciences/computer-science/) for their support and guidance.

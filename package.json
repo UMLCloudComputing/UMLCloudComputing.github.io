@@ -5,12 +5,13 @@
   "scripts": {
     "import": "node stream.js && rm -rf temp_resources && rm -rf temp_activity && rm -rf temp_projects",
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "local": "export NODE_ENV=test && docusaurus start",
+    "start": "./env_config/configure_dev.sh && docusaurus start",
     "build": "docusaurus build && cp CNAME build/",
     "swizzle": "docusaurus swizzle",
     "deploy": "gh-pages -d build",
     "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
+    "serve": "export NODE_ENV=prod docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "predeploy": "npm run build"

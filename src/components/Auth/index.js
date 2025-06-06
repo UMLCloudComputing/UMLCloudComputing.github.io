@@ -1,10 +1,10 @@
 // src/components/Auth/index.js
 
 import React from "react";
-
 import { useAuth } from "react-oidc-context";
 import { Redirect, useLocation } from "@docusaurus/router";
 import ReactLoading from 'react-loading';
+import { envType, getEnvVar } from "../../utils/utils.js";
 
 import {
   // AUTHENTICATED,
@@ -20,11 +20,19 @@ export function AuthCheck({ children }) {
   let from = location.pathname;
   const auth = useAuth();
 
+  // If .env.local is missing, skip all auth logic and just render children
+  if (envType() === 'local') {
+    // If the path is protected, redirect to sign in
+    if (PROTECTED_PATHS.filter((x) => from.includes(x)).length)
+      return <Redirect to={BASE} from={from}/>;
+    return children;
+  }
+
   const [local_logout_uri, prod_logout_uri] = process.env.OAUTH_REDIRECT_SIGN_OUT.split(",");
-  
+
   const signOutRedirect = () => {
     const clientId = process.env.CLIENT_ID;
-    const logoutUri = process.env.ENV === "localhost"
+    const logoutUri = process.env.ENV === "local"
                       ? local_logout_uri
                       : prod_logout_uri;
     const cognitoDomain = process.env.OAUTH_DOMAIN;
@@ -67,3 +75,4 @@ export function AuthCheck({ children }) {
     return children;
   }
 }
+
