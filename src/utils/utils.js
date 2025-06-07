@@ -10,10 +10,42 @@ import {
   LOGIN_PATH,
   LOGOUT_BUTTON,
   LOGOUT_PATH,
+  REQUIRED_ENV_VARS,
 } from "./constants";
 
+export function envType() {
+  // Local, authentication disabled
+  if (process.env.NODE_ENV === "test") {
+    return 'local';
+  }
+
+  // Dev, authentication enabled, locally developed
+  else if (process.env.NODE_ENV === "development") {
+    return 'dev';
+  }
+
+  // Prod, authentication enabled, deployed on server
+  else {
+    if (REQUIRED_ENV_VARS.every((key) => (typeof process.env[key] === 'string') && (process.env[key] !== ''))) {
+        throw new Error('FATAL: Missing required environment variables for AUTHENTICATION\nENV: ' + process.env.ENV)
+    } else {
+      return 'prod';
+    } 
+  }
+  // If any required env var is missing, assume .env.* is not loaded
+}
+
+export function getEnvVar(key) {
+  if (typeof process.env[key] === 'string' && process.env[key] !== '') {
+    return process.env[key];
+  }
+}
+
 export function useNavbarItemsMobile() {
-  // const { route } = useAuthenticator((context) => [context.route]);
+  if (envType() === 'local') {
+    // If .env.local is missing, do not render auth-related navbar items
+    return useThemeConfig().navbar.items;
+  }
   const auth = useAuth();
 
   let authElement;
@@ -61,7 +93,10 @@ export function useNavbarItemsMobile() {
 }
 
 export function useNavbarItemsDesktop() {
-  // const { route } = useAuthenticator((context) => [context.route]);
+  if (envType() === 'local') {
+    // If .env.local is missing, do not render auth-related navbar items
+    return useThemeConfig().navbar.items;
+  }
   const auth = useAuth();
 
   let authElement;

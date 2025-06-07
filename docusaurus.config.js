@@ -9,6 +9,7 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
 const process = require('node:process');
+const env_type = process.env.ENV;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -85,7 +86,8 @@ const config = {
     [
       "docusaurus-plugin-dotenv",
       {
-        path: "./.env.local",
+        default: "./.env.local",
+        path: "./.env.dev",
         systemvars: true,
       },
       // '@docusaurus/plugin-content-docs',
@@ -118,14 +120,14 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
-      announcementBar: {
-        id: 'announcement-bar',
-        content:
-          '☀️ Summer Meetings start Virtually on May 17th! ✍️',
-        backgroundColor: '#48a0ff',
-        textColor: '#fff',
-        isCloseable: false
-      },
+      // announcementBar: {
+      //   id: 'announcement-bar',
+      //   content:
+      //     '☀️ Summer Meetings start Virtually on May 17th! ✍️',
+      //   backgroundColor: '#48a0ff',
+      //   textColor: '#fff',
+      //   isCloseable: false
+      // },
       navbar: {
         title: 'UML Cloud Computing Club',
         logo: {

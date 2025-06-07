@@ -10,19 +10,20 @@
 .docusaurus
 .cache-loader
 
+# Generated env files
+.env.local
+.env.dev
+
 # Misc
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# .env.local
+# .env.development.local
+# .env.test.local
+# .env.production.local
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# AWS Secrets
-IAM_Automation/aws_creds.py
 
 # Terraform Stack build files
 .terraform

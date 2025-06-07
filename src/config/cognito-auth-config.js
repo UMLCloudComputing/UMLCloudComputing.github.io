@@ -1,11 +1,13 @@
 // src/config/cognito-auth-config.js
 
+import { envType, getEnvVar } from '../utils/utils';
+
 const cognitoAuthConfig = {
   authority: process.env.AUTHORITY,
   client_id: process.env.CLIENT_ID,
   redirect_uri: process.env.REDIRECT_URI,
   response_type: process.env.OAUTH_REDIRECT_SIGN_RESPONSE_TYPE,
-  scope: process.env.SCOPE,
+  scope: process.env.SCOPE
 };
 
 export default cognitoAuthConfig;
