@@ -219,3 +219,9 @@ html[data-theme='dark'] .navbar__github {
   background-clip: text;
   color: transparent;
 }
+
+.meeting-pictures {
+  border-radius: 8px;
+  max-width: 500px;
+  max-height: 300px;
+}
