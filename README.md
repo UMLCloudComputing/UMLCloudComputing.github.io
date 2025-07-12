@@ -203,7 +203,7 @@ Here are the steps:
 2. Run `mkcert -install` to install the generated certificate in your trust store. After installed, restart your browser. 
 3. Now you can start the development session as follows:
     ```zsh
-    HTTPS=true SSL_CRT_FILE=localhost.pem SSL_KEY_FILE=localhost-key.pem npm start
+    HTTPS=true npm start
     ```
 4. Open https://localhost:3000/ to view your development session rendered to the browser.
 
@@ -221,6 +221,11 @@ Similarly, some local environment variables must be specified in order to ensure
 - Use `npm run local` to develop locally **without** authentication enabled
 - Use `npm start` to develop locally **with** authentication
     - If environment variables are not configured, you will be prompted to provide them
+    - Provide the `pem` files as follows when configuring the environment variables:
+        ```zsh
+         SSL_CRT_FILE=localhost.pem 
+         SSL_KEY_FILE=localhost-key.pem
+        ```
 
 ## 🎉Acknowledgements 
 Many thanks to the [UMass Lowell Cloud Computing Club](https://umasslowellclubs.campuslabs.com/engage/organization/cloudcomputingclub) members, our faculty advisor [Dr. Johannes Weis](https://www.uml.edu/sciences/computer-science/people/weis-johannes.aspx), and the [UMass Lowell Computer Science Department](https://www.uml.edu/Sciences/computer-science/) for their support and guidance.
