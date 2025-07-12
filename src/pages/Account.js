@@ -28,11 +28,67 @@ function ProfileHero () {
     );
 }
 
-function AccessCoder() {
-    let message = "Coder Cloud Development Environment";
+function EditProfile() {
     return (
-        <a class="button button--primary button--lg" href='https://coder.umlcloudcomputing.org'><i href="https://avatars.githubusercontent.com/u/95932066?s=48&v=4"/>{message}</a>
+        <div>
+            <h1>Edit your Profile</h1>
+            <div class="pagination-nav">
+                <div class="pagination-nav__item">
+                    <a class="pagination-nav__link" href="">
+                        <div class="pagination-nav__sublabel">Edit</div>
+                        <div class="pagination-nav__label">Profile Picture 📸</div>
+                    </a>
+                </div>
+                <div class="pagination-nav__item">
+                    <a class="pagination-nav__link" href="">
+                        <div class="pagination-nav__sublabel">Edit</div>
+                        <div class="pagination-nav__label">User Name 起</div>
+                    </a>
+                </div>
+                <div class="pagination-nav__item">
+                    <a class="pagination-nav__link" href="">
+                        <div class="pagination-nav__sublabel">Change</div>
+                        <div class="pagination-nav__label">Password 🔒</div>
+                    </a>
+                </div>
+            </div>
+            <br/>
+            <br/>
+        </div>
     );
+}
+
+function AccessCoder() {
+    return (
+        <div>
+            <h1>Resources</h1>
+            <nav class="pagination-nav">
+                <div class="pagination-nav__item">
+                    <a class="pagination-nav__link" href="https://coder.umlcloudcomputing.org">
+                        <div class="pagination-nav__sublabel">Access</div>
+                        <div class="pagination-nav__label">Coder Cloud Development Environment</div>
+                    </a>
+                </div>
+            </nav>
+            <br/>
+            <br/>
+        </div>
+    );
+}
+
+function UnconfirmedEmailWarning() {
+    const auth = useAuth();
+    let emailConfirmed = auth.user?.profile.email_verified;
+    if (!emailConfirmed) {
+        return (
+            <div>
+                <br/>
+                <div class="alert alert--warning" role="alert">
+                    Your email is <strong>unconfirmed</strong>. Please check your email to validate your credentials!
+                </div>
+            </div>
+        );
+    }
 }
 
 export default function AccountPage() {
@@ -42,8 +98,12 @@ export default function AccountPage() {
             description="Configure your Account settings"
         >
             <ProfileHero/>
-            <div class="alert alert--info" role="alert">This page is currently being developed, please pardon the mess!</div>
-            <AccessCoder/>
+            <div class="container">
+                <UnconfirmedEmailWarning/>
+                <br/>
+                <EditProfile/>
+                <AccessCoder/>
+            </div>
         </Layout>
     );
 }

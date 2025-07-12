@@ -92,7 +92,7 @@ function HomepageHeader() {
                     alignItems="center"
                     spacing={2}>
                     <Link to="https://discord.gg/WC2NdqYtDt" class="button button--primary button--lg">Discord</Link>
-                    <Link to="https://github.com/UMLCloudComputing" class="button button--primary button--outline button--lg">Github</Link>
+                    <Link to="https://github.com/UMLCloudComputing" class="button button--primary button--outline button--lg">GitHub</Link>
                 </Stack>
             </Container>
         </Box>
