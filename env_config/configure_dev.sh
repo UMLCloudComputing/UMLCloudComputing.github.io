@@ -33,6 +33,9 @@ if [ -f "$env_file" ]; then
 else
   # If the file does not exist, prompt for and create it
   . ./env_config/process_gt.sh "$gt_file" "$env_file"
+
+  # Then validate immediately
+  . ./env_config/validate_vars.sh "$gt_file" "$env_file"
 fi
 
 set -a
