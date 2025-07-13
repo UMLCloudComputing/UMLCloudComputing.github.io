@@ -1,32 +1,7 @@
 import Layout from '@theme/Layout';
 import { useAuth } from 'react-oidc-context';
-
-
-function ProfileHero () {
-    const auth = useAuth();
-    let username = auth.user?.profile.name;
-    let picture = auth.user?.profile.picture;
-    return (
-        <div class="hero shadow--lw">
-            <div class="container">
-                <h1 class="hero__title">Your Account</h1>
-                <br/>
-                <div class="avatar">
-                <a
-                    class="avatar__photo-link avatar__photo avatar__photo--lg"
-                    href={picture}>
-                    <img 
-                    alt={username}
-                    src={picture} />
-                </a>
-                <div class="avatar__intro">
-                    <div class="hero__subtitle">{username}</div>
-                </div>
-                </div>
-            </div>
-        </div>
-    );
-}
+import ProfileHero from '../components/profileHero';
+import Link from '@docusaurus/Link';
 
 function EditProfile() {
     return (
@@ -34,22 +9,22 @@ function EditProfile() {
             <h1>Edit your Profile</h1>
             <div class="pagination-nav">
                 <div class="pagination-nav__item">
-                    <a class="pagination-nav__link" href="">
+                    <Link class="pagination-nav__link" to="/account_configuration/newProfilePicture">
                         <div class="pagination-nav__sublabel">Edit</div>
                         <div class="pagination-nav__label">Profile Picture 📸</div>
-                    </a>
+                    </Link>
                 </div>
                 <div class="pagination-nav__item">
-                    <a class="pagination-nav__link" href="">
+                    <Link class="pagination-nav__link" to="/newUsername">
                         <div class="pagination-nav__sublabel">Edit</div>
                         <div class="pagination-nav__label">User Name 起</div>
-                    </a>
+                    </Link>
                 </div>
                 <div class="pagination-nav__item">
-                    <a class="pagination-nav__link" href="">
+                    <Link class="pagination-nav__link" to="/newPassword">
                         <div class="pagination-nav__sublabel">Change</div>
                         <div class="pagination-nav__label">Password 🔒</div>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <br/>
@@ -64,10 +39,10 @@ function AccessCoder() {
             <h1>Resources</h1>
             <nav class="pagination-nav">
                 <div class="pagination-nav__item">
-                    <a class="pagination-nav__link" href="https://coder.umlcloudcomputing.org">
+                    <Link class="pagination-nav__link" to="https://coder.umlcloudcomputing.org">
                         <div class="pagination-nav__sublabel">Access</div>
                         <div class="pagination-nav__label">Coder Cloud Development Environment</div>
-                    </a>
+                    </Link>
                 </div>
             </nav>
             <br/>

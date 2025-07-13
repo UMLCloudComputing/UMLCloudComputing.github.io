@@ -1,10 +1,9 @@
 // src/components/Auth/index.js
 
-import React from "react";
 import { useAuth } from "react-oidc-context";
 import { Redirect, useLocation } from "@docusaurus/router";
 import ReactLoading from 'react-loading';
-import { envType, getEnvVar } from "../../utils/utils.js";
+import { envType } from "../../utils/utils.js";
 
 import {
   // AUTHENTICATED,
