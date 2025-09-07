@@ -120,14 +120,14 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
-      // announcementBar: {
-      //   id: 'announcement-bar',
-      //   content:
-      //     '☀️ Summer Meetings start Virtually on May 17th! ✍️',
-      //   backgroundColor: '#48a0ff',
-      //   textColor: '#fff',
-      //   isCloseable: false
-      // },
+      announcementBar: {
+        id: 'announcement-bar',
+        content:
+          '🍂 Fall 2025 Meetings start Sept 11th! 🍂',
+        backgroundColor: '#48a0ff',
+        textColor: '#fff',
+        isCloseable: false
+      },
       navbar: {
         title: 'UML Cloud Computing Club',
         logo: {
