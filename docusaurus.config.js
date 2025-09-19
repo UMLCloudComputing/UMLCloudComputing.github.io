@@ -123,7 +123,7 @@ const config = {
       announcementBar: {
         id: 'announcement-bar',
         content:
-          '🍂 Fall 2025 Meetings start Sept 11th! 🍂',
+          '🚀 AWS YouthTech x UML Event this upcoming Friday! Check the schedule for details 🚀',
         backgroundColor: '#48a0ff',
         textColor: '#fff',
         isCloseable: false
