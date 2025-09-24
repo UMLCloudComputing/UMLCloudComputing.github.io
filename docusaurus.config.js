@@ -259,7 +259,7 @@ const config = {
             items: [
               {
                 label: 'Email',
-                href: 'mailto:cloudcomputing@uml.edu'
+                href: 'mailto:CloudComputingClub@uml.edu'
               }
             ]
           },
