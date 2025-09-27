@@ -120,14 +120,14 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
-      announcementBar: {
-        id: 'announcement-bar',
-        content:
-          '🚀 AWS YouthTech x UML Event this upcoming Friday! Check the schedule for details 🚀',
-        backgroundColor: '#48a0ff',
-        textColor: '#fff',
-        isCloseable: false
-      },
+      // announcementBar: {
+      //   id: 'announcement-bar',
+      //   content:
+      //     '🚀 AWS YouthTech x UML Event this upcoming Friday! Check the schedule for details 🚀',
+      //   backgroundColor: '#48a0ff',
+      //   textColor: '#fff',
+      //   isCloseable: false
+      // },
       navbar: {
         title: 'UML Cloud Computing Club',
         logo: {
