@@ -120,14 +120,14 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
-      announcementBar: {
-        id: 'announcement-bar',
-        content:
-          '🗣️ Chris Morales coming this Thursday (11/13). Check the schedule for details! 🔥',
-        backgroundColor: '#48a0ff',
-        textColor: '#fff',
-        isCloseable: false
-      },
+      // announcementBar: {
+      //   id: 'announcement-bar',
+      //   content:
+      //     '🗣️ Chris Morales coming this Thursday (11/13). Check the schedule for details! 🔥',
+      //   backgroundColor: '#48a0ff',
+      //   textColor: '#fff',
+      //   isCloseable: false
+      // },
       navbar: {
         title: 'UML Cloud Computing Club',
         logo: {
