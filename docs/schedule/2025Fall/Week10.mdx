@@ -35,9 +35,63 @@ tag: meeting-notes
 2. Presentation about Ansible/Terraform by [Chris Morales](https://www.linkedin.com/in/christopher-morales-2021/)
 
 **📄 Attendance**
-- In-Person: 
-- Virtual: 
+- In-Person: 10
 <br/>
+
+### Infrastructure as Code
+Terraform
+- Plan 
+- Apply
+- Uses HCL
+- Stateful
+
+Ansible
+- Stateless
+- Uses playbooks
+
+Use Terraform to provision resources
+Use Ansible to configure your provisioned resources
+
+### Demo Notes
+Terraform
+- Specify Provider
+- Keywords
+    - `resource`
+    - `provider`
+    - `tags`
+        - User defined attributes
+
+Ansible
+- Used to configure your provisioned resource
+- Reproducible
+- Agentless
+- Playbooks
+    - Contain plays
+        - Contain tasks
+- Roles are a set of tasks to do
+- Inventory file
+    - Contains which machinces the playbook will affect
+    - Hostname or IPs
+    - Structure
+```ansible
+[all:children]
+WindowsWorkstations
+LinuxWorkstations
+
+[LinuxWorkstations]
+linuxWork1
+linuxWork2
+192.168.2.236
+
+[WindowsWorkstations]
+windowsWork1
+windowsWork2
+```
+Ansible Galaxy hosts collections for your to reference within your playbook
+[Ansible Playbook](https://galaxy.ansible.com/ui/)
 
 
 ## 🚀 Next meeting(s)
+Election Discussions
+Work on projects
+Assist in any environement setup for AWS
