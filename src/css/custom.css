@@ -76,7 +76,7 @@
   transform: scale(1.02);
 }
 
-/* UniBot Hero Title Styles */
+/* unibot-v2 Hero Title Styles */
 [data-theme='dark'] .unibot_theme_hero_text {
   background: radial-gradient(circle, #7a37a4 0%, #ac4cc4 50%, rgb(191, 127, 223) 100%);
   -webkit-background-clip: text;
@@ -162,15 +162,6 @@ html[data-theme='dark'] .navbar__github {
 }
 
 
-/* IFrame for UniBot on Landing Page */
-.iframe_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 450px;
-  display: block;
-}
 
 /** In mobile view, reduce the padding */
 @media screen and (max-width: 996px) {
@@ -215,6 +206,20 @@ html[data-theme='dark'] .navbar__github {
 
 [data-theme='light'] .classResources_theme_hero_text {
   background: radial-gradient(circle, #ae9f49 0%, #dbc235 50%, rgb(239, 229, 35) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+[data-theme='light'] .coder_theme_hero_text {
+  background: radial-gradient(circle, #0f0f0f 0%, #cfcfcf 50%, rgb(26, 26, 26) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+[data-theme='dark'] .coder_theme_hero_text {
+  background: radial-gradient(circle, #ffffff 0%, #565656 50%, rgb(214, 214, 214) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

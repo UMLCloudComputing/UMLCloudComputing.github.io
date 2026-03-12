@@ -175,12 +175,13 @@ const config = {
             position: 'left',
             label: 'Activities',
           },
+
           // Coder CDE link, will be integrated to the account settings page instead
-          // {
-          //   href: "https://coder.umlcloudcomputing.org",
-          //   position: "right",
-          //   label: "Coder CDE"
-          // },
+          {
+            href: "https://coder.umlcloudcomputing.org",
+            position: "right",
+            label: "Coder CDE"
+          },
 
           // // Socials (Discord, Instagram, LinkedIn)
           // {

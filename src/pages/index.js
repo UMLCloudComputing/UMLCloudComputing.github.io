@@ -150,20 +150,32 @@ function Members() {
     );
 }
 
-const LandingPageUniBotiFrame = () => (
+const LandingPageUnibotv2 = () => (
     <div class="hero shadow--lw">
         <div class="container">
-            <h1 class="hero__title unibot_theme_hero_text">UniBot</h1>
-            <p class="hero__subtitle">For all your UML Questions</p>
-            <div style={{paddingBottom: '25px'}}>
-                <Link to="https://github.com/UMLCloudComputing/UniBot" class="button button--secondary button--outline button--lg" >GitHub</Link>
+            <h1 class="hero__title unibot_theme_hero_text">unibot-v2</h1>
+            <p class="hero__subtitle">For all your UML Questions, now improved</p>
+            <div style={{paddingBottom: '10px'}}>
+                <Link to="https://unibot-v2.umlcloudcomputing.org" class="button button--secondary button--lg">Check it out</Link>
             </div>
-            {/* <div>
-                <iframe
-                    src="https://unibotio.streamlit.app?embed=true"
-                    class="iframe_container"
-                >UniBot iFrame</iframe>
-            </div> */}
+            <div style={{paddingBottom: '25px'}}>
+                <Link to="https://github.com/UMLCloudComputing/unibot-v2" class="button button--secondary button--outline button--lg" >GitHub</Link>
+            </div>
+        </div>
+    </div>
+);
+
+const LandingCoder = () => (
+    <div class="hero shadow--lw">
+        <div class="container">
+            <h1 class="hero__title coder_theme_hero_text">Coder CDE</h1>
+            <p class="hero__subtitle">Your personal development workspaces<br/>Accessible anywhere</p>
+            <div style={{paddingBottom: '10px'}}>
+                <Link to="https://coder.umlcloudcomputing.org" class="button button--secondary button--lg">Access your workspace</Link>
+            </div>
+            <div style={{paddingBottom: '25px'}}>
+                <Link to="https://github.com/UMLCloudComputing/coder-cde" class="button button--secondary button--outline button--lg" >GitHub</Link>
+            </div>
         </div>
     </div>
 );
@@ -222,9 +234,11 @@ export default function Home() {
             <HomepageHeader />
             <main>
                 <Members />
-                <LandingPageImmersion />
+                <LandingPageUnibotv2 />
+                <br/>
+                <LandingCoder />
                 <InfoCards/>
-                <LandingPageUniBotiFrame />
+                <LandingPageImmersion />
                 <br/>
                 <LandingPageAttendanceBot />
                 <br/>
