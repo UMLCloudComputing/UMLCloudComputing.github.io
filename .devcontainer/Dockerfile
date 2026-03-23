@@ -7,6 +7,6 @@ RUN apt-get update && apt-get install -y libnss3-tools \
     && mv mkcert-v*-linux-amd64 /usr/local/bin/mkcert
 
 # Pre-install npm dependencies (optional but speeds up CDE startup)
-COPY package*.json ./
-RUN npm install
+# COPY package*.json ./
+# RUN npm install
 
