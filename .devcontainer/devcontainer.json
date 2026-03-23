@@ -16,10 +16,10 @@
       "onAutoForward": "notify",
       "protocol": "http"
     }
-  },
-  "postCreateCommand": "mkcert localhost 127.0.0.1"
-  "remoteEnv": {
-    "SSL_CRT_FILE": "${containerWorkspaceFolder}/dev-cert.pem",
-    "SSL_KEY_FILE": "${containerWorkspaceFolder}/dev-key.pem"
   }
+  // "postCreateCommand": "mkcert localhost 127.0.0.1",
+  // "remoteEnv": {
+  //   "SSL_CRT_FILE": "${containerWorkspaceFolder}/dev-cert.pem",
+  //   "SSL_KEY_FILE": "${containerWorkspaceFolder}/dev-key.pem"
+  // }
 }
